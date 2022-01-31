@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/Registro.css">">
+    <link rel="stylesheet" href="../estilos/Registro.css">
     <title>Document</title>
 </head>
 
@@ -16,62 +16,49 @@
                 <h4>George Prada</h4>
             </div>
             <div class="contenedorPagina">
-                <div>
+                <div class="primeraImg">
                     <img src="../img/user-circle-solid.svg" alt="">
                 </div>
                 <form class="formulario" action="">
-                    <div class="cajaDatos">
+                    <div class="cajaDatos nombre">
                         <label for="nombreUsuario">
                             <img src="../img/user-circle-solid.svg" alt="">
                         </label>
-                        <input class="datos" type="text" id="nombreUsuario" placeholder="Ingresa tu nombre">
+                        <input class="datos" type="text" id="nombreUsuario" placeholder="Ingresa tu nombre" required>
                     </div>
-                    <div class="cajaDatos">
+                    <div class="cajaDatos usuario">
                         <label for="contraUsuario">
                             <img src="../img/user-circle-solid.svg" alt="">
                         </label>
-                        <input class="datos" type="mail" id="contraUsuario" placeholder="Ingresa tu usuario">
+                        <input class="datos" type="text" id="contraUsuario" placeholder="Ingresa tu usuario" required>
                     </div>
-                    <div class="cajaDatos">
+                    <div class="cajaDatos correo">
                         <label for="nombreUsuario">
                             <img src="../img/envelope-regular.svg" alt="">
                         </label>
-                        <input class="datos" type="text" id="nombreUsuario" placeholder="Ingresa tu correo">
+                        <input class="datos" type="mail" id="nombreUsuario" placeholder="Ingresa tu correo" required>
                     </div>
-                    <div class="cajaDatos">
+                    <div class="cajaDatos contraseña1">
                         <label for="nombreUsuario">
                             <img src="../img/lock-solid.svg" alt="">
                         </label>
-                        <input class="datos" type="password" id="nombreUsuario" placeholder="Ingresa tu contraseña">
+                        <input class="datos" type="password" id="nombreUsuario" placeholder="Ingresa tu contraseña" required>
                     </div>
-                    <div class="cajaDatos">
+                    <div class="cajaDatos contraseña2">
                         <label for="nombreUsuario">
                             <img src="../img/lock-solid.svg" alt="">
                         </label>
-                        <input class="datos" type="password" id="nombreUsuario" placeholder="Confirmar contraseña">
+                        <input class="datos" type="password" id="nombreUsuario" placeholder="Confirmar contraseña" required >
                     </div>
-                    <input type="submit" value="Iniciar Sesion">
-                    <nav>
+                    <div class="boton">
+                        <input type="submit" value="Registrate">
+                    </div>
+                    <nav class="forgotPasw">
                         <a href="">Olvidaste tu Contraseña?</a>
-                        <div>
-                            <a href="#">No tienes cuenta? Crea una ahora</a>
-                        </div>
                     </nav>
                 </form>
-                <div>
-                    <p> O ingresa con ...</p>
-                    <div class="ingresoEnlazado">
-                        <button>
-                            <img src="../img/facebook-f-brands.svg" alt="">
-                        </button>
-                        <button>
-                            <img src="../img/google-brands.svg" alt="">
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     </body>
 </body>
-
 </html>

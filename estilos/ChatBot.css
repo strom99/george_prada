@@ -43,7 +43,7 @@ main{
     left: 59px;
 }
 
-p{
+#p{
     border: black solid 2.5px;
     width: 400px;
     height: 33px;
@@ -94,7 +94,7 @@ p{
         left: 59px;
     }
     
-    p{
+    #p{
         border: black solid 2.5px;
         width: 400px;
         height: 33px;
@@ -146,7 +146,7 @@ p{
         left: 59px;
     }
     
-    p{
+    #p{
         border: black solid 2.5px;
         width: 400px;
         height: 33px;

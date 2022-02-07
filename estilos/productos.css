@@ -13,12 +13,13 @@ img{
     height: 100%;
 }
 
-body{
+body::-webkit-scrollbar {
+    display: none;
     height: 100vh;
     width: 100%;
 }
 .barra-menu{
-    background-color: greenyellow;
+    background-color: #33d475;
     height: 8%;
     display: flex;
     justify-content: space-between;
@@ -33,6 +34,8 @@ body{
 
 .menu-hamburguesa button{
     width: 40px;
+    background: none;
+    border: none;
 }
 
 nav{
@@ -42,15 +45,11 @@ nav{
 }
 
 nav a {
-    width: 40px;
+    width: 30px;
 }
 
 h2{
     flex-grow: 1;
-}
-
-.presentacion-producto{
-    background-color: aqua;
 }
 
 .header-presentacion-producto{
@@ -61,18 +60,27 @@ h2{
     width: 10%;
 }
 
+.imagenes-productos{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenPrincipal{
+    display: flex;
+}
 .imagenes-secundarias{
     display: flex;
     width: 100%;
-    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 .imagenes-secundarias img{
     width: 150px;
 }
 
-.estrellas-producto img{
-    width: 30px;
+.estrella{
+    color: #33d475;
+    font-size: 20px;
 }
 
 .form-seleccionar-tallas{
@@ -95,14 +103,25 @@ h2{
 .form-seleccion-botones{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 6px;
 }
 
 .form-seleccion-botones input{
     padding: 8px 10px;
+    width: 250px;
 }
 
 .form-seleccion-botones p{
     text-align: center;
+}
+
+.descripcion-producto{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
 .descripcion-producto ul {
@@ -110,4 +129,38 @@ h2{
     flex-direction: column;
     gap: 10px;
     list-style-position: inside;
+}
+
+.valoracion-principal-producto h3{
+    padding: 10px 0px;
+}
+
+.valoracion-cliente-estrellas{
+    display: flex;
+}
+
+.valoracion-cliente-estrellas img{
+    width: 20px;
+    gap: 10px;
+}
+
+.informacion-valoracion{
+    display: flex;
+    justify-content: space-between
+}
+
+.valoraciones-producto h3{
+    margin: 20px 0px;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caja-comentario{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
 }

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+main{
+    padding: 10px 20px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+.barra-menu{
+    background-color: greenyellow;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-hamburguesa{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-hamburguesa button{
+    width: 40px;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+nav a {
+    width: 40px;
+}
+
+h2{
+    flex-grow: 1;
+}
+
+.presentacion-producto{
+    background-color: aqua;
+}
+
+.header-presentacion-producto{
+    display: flex;
+}
+
+.header-presentacion-producto button{
+    width: 10%;
+}
+
+.imagenes-secundarias{
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.imagenes-secundarias img{
+    width: 150px;
+}
+
+.estrellas-producto img{
+    width: 30px;
+}
+
+.form-seleccionar-tallas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-seleccionar-tallas .button-seleccionar-talla{
+    width: 200px;
+    padding: 5px 10px;
+}
+
+.formularios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-seleccion-botones{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-seleccion-botones input{
+    padding: 8px 10px;
+}
+
+.form-seleccion-botones p{
+    text-align: center;
+}
+
+.descripcion-producto ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-position: inside;
+}

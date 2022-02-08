@@ -1,15 +1,16 @@
 <?php
-$baseDatos  = new mysqli("localhost", "root", "", "transversal");
+
+$baseDatos  = new mysqli("localhost", "root", "", "Proyecto_Transversal_Prueba");
 
 //comprobar si la conexion existe
-
+/*
 if (!$baseDatos->connect_errno) {
     $result = $baseDatos->query('SELECT nombre FROM usuarios');
 
     if ($result) {
         /*while ($usuario = $result->fetch_assoc()) {
             echo $usuario['nombre'] . '<br>';
-        }*/
+        }
 
         echo 'Usuarios en la base de datos: ' . $result->num_rows . '<br>';
 
@@ -23,3 +24,4 @@ if (!$baseDatos->connect_errno) {
         echo  "Error en la consulta";
     }
 }
+*/

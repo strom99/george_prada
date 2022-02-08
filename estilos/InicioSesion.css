@@ -5,8 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
-
+    background-color: #c8ecd3;
 }
 
 .centro{
@@ -16,25 +15,33 @@ body{
     flex-direction: column;
     gap: 30px;
     height: 100vh;
-    
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    top: -20px;
+    position: relative;
+    padding: 0px 20px;
 }
 button{
     width: 300px;
     height: 200px;
+    background-color: #33d475;
 }
 
 .contenedorPagina{
     width: 90%;
-    height: 670px;
+    height: 600px;
     background-color: white;
     padding: 20px;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .iconUser{
@@ -48,6 +55,8 @@ img{
 
 .ingresoEnlazado{
     display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .datos{
@@ -62,19 +71,20 @@ img{
 
 .imagen-user{
     width: 100px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     bottom: 50px;
     height: 103px;
     display: flex;
     padding: 10px;
     border-radius: 50%;
-    background-color: #1ad1c3;
+    background-color: #c8ecd3;
 
 }
 
 .cajaDatos label{
-    width: 30px;
+    width: 25px;
+    height: 30px;
 }
 
 .boton-inicio{
@@ -82,6 +92,7 @@ img{
     width: 100%;
     height: 40px;
     border-radius: 10px;
+    background-color: #33d475;
 }
 
 .navegador{
@@ -91,8 +102,29 @@ img{
 }
 
 .ingresoEnlazado button{
+<<<<<<< HEAD
     width: 300px;
+=======
+    width: 100%;
+>>>>>>> 538495cb17b44a14d912613199db56b0d894abf9
     height: 40px;
     border-radius: 10px;
     padding: 6px;
+    
+}
+
+@media only screen and (min-width:500px) {
+    .contenedorPagina{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:800px) {
+    .contenedorPagina{
+        width: 60%;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .contenedorPagina{
+        width: 40%;
+    }
 }

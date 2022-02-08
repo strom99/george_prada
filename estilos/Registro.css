@@ -119,7 +119,7 @@ img{
         border-radius: 50%;
         background-color: #19d1c2;
         padding: 10px;
-        margin-left: -500px;
+        left: -68px;
     }
 
     .cajaDatos label{
@@ -128,7 +128,7 @@ img{
 
     .contenedorPagina{
         width: 90%;
-        height: 450px;
+        height: 500px;
         background-color: white;
         padding: 20px;
     }
@@ -165,7 +165,7 @@ img{
     }
     
     .forgotPasw{
-        margin-left: 38%;
+        margin-left: 40%;
     }
 }
 
@@ -173,7 +173,6 @@ img{
 
     .primeraImg{
         width: 135px;
-        margin: auto;
         height: 135px;
         position: relative;
         bottom: 61px;
@@ -181,6 +180,7 @@ img{
         border-radius: 50%;
         background-color: #19d1c2;
         padding: 10px;
+        left: -68px;
     }
 
     .cajaDatos label{
@@ -189,7 +189,7 @@ img{
 
     .contenedorPagina{
         width: 90%;
-        height: 450px;
+        height: 510px;
         background-color: white;
         padding: 20px;
     }

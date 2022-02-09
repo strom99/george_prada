@@ -60,53 +60,50 @@ img{
     gap: 10px;
 }
 
-@media screen and (max-width: 660px) {
-
-    .cajaDatos label{
-        width: 30px;
-    }
-
-    .contenedorPagina{
-        width: 90%;
-        height: 450px;
-        background-color: white;
-        padding: 20px;
-    }
-
-    button{
-        width: 300px;
-        height: 200px;
-    }
-    
-    .boton{
-        margin-bottom: 3%;
-        margin-left: 43%;
-    }
-    
-    .nombre{
-        margin-bottom: 3%;
-    }
-    
-    .usuario{
-        margin-bottom: 3%;
-    }
-    
-    .correo{
-        margin-bottom: 3%;
-    }
-    
-    .contraseña1{
-        margin-bottom: 3%;
-    }
-    
-    .contraseña2{
-        margin-bottom: 5%;
-    }
-    
-    .forgotPasw{
-        margin-left: 32%;
-    }    
+.cajaDatos label{
+    width: 30px;
 }
+
+.contenedorPagina{
+    width: 90%;
+    height: 450px;
+    background-color: white;
+    padding: 20px;
+}
+
+button{
+    width: 300px;
+    height: 200px;
+}
+    
+.boton{
+    margin-bottom: 3%;
+    margin-left: 43%;
+}
+    
+.nombre{
+    margin-bottom: 3%;
+}
+    
+.usuario{
+    margin-bottom: 3%;
+}
+    
+.correo{
+    margin-bottom: 3%;
+}
+    
+.contraseña1{
+    margin-bottom: 3%;
+}
+    
+.contraseña2{
+    margin-bottom: 5%;
+}
+    
+.forgotPasw{
+    margin-left: 32%;
+}    
 
 @media screen and (min-width: 661px) and (max-width: 1023px) {
 

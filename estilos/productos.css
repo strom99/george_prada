@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 
 main{
@@ -20,6 +19,7 @@ body::-webkit-scrollbar {
 }
 .barra-menu{
     background-color: #33d475;
+    padding: 10px 0px;
     height: 8%;
     display: flex;
     justify-content: space-between;
@@ -33,10 +33,11 @@ body::-webkit-scrollbar {
 }
 
 .menu-hamburguesa button{
-    width: 40px;
     background: none;
     border: none;
+    font-size: 30px;
 }
+
 
 nav{
     display: flex;
@@ -46,6 +47,11 @@ nav{
 
 nav a {
     width: 30px;
+    color: black;
+}
+
+.user , .bolsa{
+    font-size: 30px;
 }
 
 h2{
@@ -58,6 +64,9 @@ h2{
 
 .header-presentacion-producto button{
     width: 10%;
+    font-size: 30px;
+    background: none;
+    border: none;
 }
 
 .imagenes-productos{
@@ -146,7 +155,8 @@ h2{
 
 .informacion-valoracion{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    color: gray;
 }
 
 .valoraciones-producto h3{

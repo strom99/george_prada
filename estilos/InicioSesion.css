@@ -28,6 +28,7 @@ body{
     position: relative;
     padding: 0px 20px;
 }
+
 button{
     width: 300px;
     height: 200px;
@@ -102,11 +103,7 @@ img{
 }
 
 .ingresoEnlazado button{
-<<<<<<< HEAD
     width: 300px;
-=======
-    width: 100%;
->>>>>>> 538495cb17b44a14d912613199db56b0d894abf9
     height: 40px;
     border-radius: 10px;
     padding: 6px;

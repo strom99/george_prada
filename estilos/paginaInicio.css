@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.barra-menu{
+    background-color: #33d475;
+    padding: 10px 0px;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-hamburguesa{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-hamburguesa button{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+nav a {
+    width: 30px;
+    color: black;
+}
+
+.user , .bolsa{
+    font-size: 30px;
+}

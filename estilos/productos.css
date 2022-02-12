@@ -61,38 +61,51 @@ h2{
 }
 
 .header-presentacion-producto button{
-    width: 10%;
     font-size: 30px;
     background: none;
     border: none;
 }
 
-.imagenes-productos{
-    display: flex;
-    flex-direction: column;
+.banner-container,
+.carousel-container,
+.carousel-container-inner{
+    height: 100%;
 }
 
-.imagenPrincipal{
-    display: flex;
-}
-
-.imagenPrincipal img{
-    max-width: 450px;
+.carousel-container{
+    position: relative;
 }
 
 .imagenes-secundarias{
-    display: flex;
-    width: 100%;
-    overflow-x: scroll;
-}
-
-.imagenes-secundarias img{
-    width: 150px;
-}
-
-.imagenes-secundarias::-webkit-scrollbar{
     display: none;
 }
+
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 50px;
+    z-index: 10;
+}
+
+
+.flecha-anterior {
+    left: 5px;
+}
+
+.flecha-siguiente {
+    right: 5px;
+}
+
+.banner-container img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 
 .estrella{
     color: #33d475;
@@ -200,4 +213,55 @@ h2{
     gap: 5px;
     display: flex;
     flex-direction: column;
+}
+
+.cambio2{
+    display: none;
+}
+
+
+@media screen and (min-width:600px){
+
+    .banner-container{
+        display: flex;
+        gap: 10px;
+        height: 800px;
+    }
+
+    .imagenes-secundarias{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 10px;
+    }
+
+    .imagenes-secundarias img{
+        width: 200px;
+    }
+
+    .carousel-container{
+        flex-grow: 1;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:850px){
+
+    main{
+        padding: 32px 46px;
+    }
+    .presentacion-producto {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .banner-container{
+        height: 700px;
+    }
+
+    .cambio{
+        display: none;
+    }
+
 }

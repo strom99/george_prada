@@ -6,7 +6,17 @@
 
 body{
     background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
+input {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-family: inherit;
+}
+
+input, p, label {
+    font-size: 16px;
 }
 
 .primeraImg{
@@ -28,14 +38,8 @@ body{
     flex-direction: column;
     gap: 40px;
     height: 100vh;
-    
-}
 
-.formulario{
-    flex-direction: column;
-    position: relative;
-    top: -50px;
-}  
+}
 
 .iconUser{
     width: 100px;
@@ -46,183 +50,33 @@ img{
     height: 100%;
 }
 
-.ingresoEnlazado{
-    display: flex;
-}
-
-.datos{
-    flex-grow: 1;
-}
-
 .cajaDatos{
-    display: flex;
     width: 100%;
-    gap: 10px;
+    margin-bottom: 5px;
 }
 
-.cajaDatos label{
-    width: 30px;
+.cajaDatos input {
+    width: 100%;
+}
+
+.formulario-footer {
+    margin-top: 20px;
+}
+
+.boton {
+    background-color: #6CBF83;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    border: 0;
+    font-size: 18px;
+    margin: 10px auto;
+    cursor: pointer;
 }
 
 .contenedorPagina{
     width: 90%;
-    height: 450px;
+    max-width: 600px;
     background-color: white;
     padding: 20px;
 }
-
-button{
-    width: 300px;
-    height: 200px;
-}
-    
-.boton{
-    margin-bottom: 3%;
-    margin-left: 43%;
-}
-    
-.nombre{
-    margin-bottom: 3%;
-}
-    
-.usuario{
-    margin-bottom: 3%;
-}
-    
-.correo{
-    margin-bottom: 3%;
-}
-    
-.contraseña1{
-    margin-bottom: 3%;
-}
-    
-.contraseña2{
-    margin-bottom: 5%;
-}
-    
-.forgotPasw{
-    margin-left: 32%;
-}    
-
-@media screen and (min-width: 661px) and (max-width: 1023px) {
-
-    .primeraImg{
-        width: 135px;
-        height: 135px;
-        position: relative;
-        bottom: 61px;
-        display: flex;
-        border-radius: 50%;
-        background-color: #19d1c2;
-        padding: 10px;
-        left: -68px;
-    }
-
-    .cajaDatos label{
-        width: 30px;
-    }
-
-    .contenedorPagina{
-        width: 90%;
-        height: 500px;
-        background-color: white;
-        padding: 20px;
-    }
-
-    .primeraImg{
-        margin-left: 50%;
-        margin-bottom: 2%;
-    }
-    
-    .boton{
-        margin-top: 1%;
-        margin-bottom: 2%;
-        margin-left: 45%;
-    }
-    
-    .nombre{
-        margin-bottom: 3%;
-    }
-    
-    .usuario{
-        margin-bottom: 3%;
-    }
-    
-    .correo{
-        margin-bottom: 3%;
-    }
-    
-    .contraseña1{
-        margin-bottom: 3%;
-    }
-    
-    .contraseña2{
-        margin-bottom: 3%;
-    }
-    
-    .forgotPasw{
-        margin-left: 40%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .primeraImg{
-        width: 135px;
-        height: 135px;
-        position: relative;
-        bottom: 61px;
-        display: flex;
-        border-radius: 50%;
-        background-color: #19d1c2;
-        padding: 10px;
-        left: -68px;
-    }
-
-    .cajaDatos label{
-        width: 30px;
-    }
-
-    .contenedorPagina{
-        width: 90%;
-        height: 510px;
-        background-color: white;
-        padding: 20px;
-    }
-
-    .primeraImg{
-        margin-left: 50%;
-        margin-bottom: 2%;
-    }
-    
-    .boton{
-        margin-top: 1%;
-        margin-bottom: 2%;
-        margin-left: 48%;
-    }
-    
-    .nombre{
-        margin-bottom: 1%;
-    }
-    
-    .usuario{
-        margin-bottom: 1%;
-    }
-    
-    .correo{
-        margin-bottom: 1%;
-    }
-    
-    .contraseña1{
-        margin-bottom: 1%;
-    }
-    
-    .contraseña2{
-        margin-bottom: 2.5%;
-    }
-    
-    .forgotPasw{
-        margin-left: 44.5%;
-    }
-  }

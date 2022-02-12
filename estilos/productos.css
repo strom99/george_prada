@@ -90,6 +90,10 @@ h2{
     width: 150px;
 }
 
+.imagenes-secundarias::-webkit-scrollbar{
+    display: none;
+}
+
 .estrella{
     color: #33d475;
     font-size: 20px;

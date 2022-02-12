@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
+* {
+  box-sizing: border-box;
+}
 
 body{
   height: 100%; 
@@ -9,20 +12,18 @@ body{
 
 
 .contact_form{  
-  width: 450px; 
+  max-width: 450px;
   height: auto;
   margin: 8px auto;
-  border-radius: 10px;  
-  padding-top: 8px;
-  padding-bottom: 20px;  
+  border-radius: 10px;
   background-color: #fbfbfb; 
-  padding-left: 25px; 
+  padding: 15px;
 }
 
 
 input{
   background-color: #fbfbfb; 
-  width: 408px; 
+  width: 100%;
   height: 40px; 
   border-radius: 5px;  
   border-style: solid; 
@@ -36,7 +37,7 @@ input{
 
 textarea{
   background-color: #fbfbfb; 
-  width: 405px; 
+  width: 100%;
   height: 150px; 
   border-radius: 5px;  
   border-style: solid; 
@@ -50,8 +51,7 @@ textarea{
 
 
 label{
-  display: block; 
-  float: center;  
+  display: block;
 }
 
 
@@ -63,8 +63,9 @@ button{
   margin-top: 10px;
   background-color: #32d476;
   border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
+  border-radius: 10px;
+  max-width: 420px;
+  width: 100%;
   cursor: pointer;
 }
 

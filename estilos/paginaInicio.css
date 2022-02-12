@@ -4,21 +4,19 @@
     box-sizing: border-box;
 }
 
-/*img{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    object-fit: cover;*/
-/*}*/
+img{
+    width: 100%;
+    object-fit: cover;
+}
 
 .barra-menu{
     background-color: #33d475;
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .menu-hamburguesa{
-    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +31,6 @@
 nav{
     display: flex;
     gap: 30px;
-    padding-right: 20px;
 }
 
 nav a {
@@ -41,7 +38,7 @@ nav a {
     color: black;
 }
 
-.user , .bolsa{
+.user, .bolsa{
     font-size: 30px;
 }
 
@@ -65,6 +62,11 @@ nav a {
     height: 100%;
 }
 
+.carousel-image {
+    background: url(https://pbstudio.es/wp-content/uploads/2021/09/P-4-scaled.jpg) no-repeat center / cover;
+    height: 100%;
+}
+
 .flecha {
     position: absolute;
     top: 50%;
@@ -72,6 +74,7 @@ nav a {
     color: white;
     font-size: 50px;
     z-index: 10;
+    cursor: pointer;
 }
 
 
@@ -110,6 +113,60 @@ nav a {
     color: white;
     text-decoration: none;
     display: table;
+}
+
+.servicios {
+    padding: 15px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.servicios > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicios img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.servicios p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (min-width: 600px) {
+
+    .productoDetalle {
+        bottom: initial;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 150px;
+    }
+
+    .productoDetalle p {
+        font-size: 40px;
+    }
+
+    .productoDetalle a {
+        font-size: 30px;
+    }
+
+    .servicios {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .servicios > div {
+        margin: 0;
+        width: 200px;
+    }
 }
 
 footer {

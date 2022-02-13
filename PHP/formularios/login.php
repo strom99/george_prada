@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,27 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
-<?PHP
-include('../registro/conexionBD.php');
-
-$usuario = $_POST['usuario'];
-
-$consultaLogin = "SELECT * FROM persona WHERE usuario = '$usuario'";
-
-
-
-?>
 
 <body>
 
-    <form action="../registro/paginaInicio.php" method="POST">
+    <form action="../procesos/proceso_login.php" method="POST">
         <label for="usuario">Usuario : </label>
         <input type="text" id="usuario" name="usuario"><br>
         <label for="contrasena">Contraseña : </label>
         <input type="password" id="contrasena" name="contrasena"><br>
-        <input type="submit" value="Ingresar">
-        <a href="../registro/registroUser.php">No estoy registrado </a>
+        <input type="submit" value="Ingresar" name="btn_login">
+        <a href="../formularios/registroUser.php">No estoy registrado </a>
     </form>
+
+    <?php
+
+    if (isset($_SESSION['bienvenido'])) {
+        echo $_SESSION['bienvenido'] + $usuario;
+    } else if (isset($_SESSION['error'])) {
+        echo $_SESSION['error'];
+    }
+
+    ?>
 
 
 </body>

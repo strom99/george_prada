@@ -22,9 +22,7 @@
 
     <?php
 
-    if (isset($_SESSION['bienvenido'])) {
-        echo $_SESSION['bienvenido'] + $usuario;
-    } else if (isset($_SESSION['error'])) {
+    if (isset($_SESSION['error'])) {
         echo $_SESSION['error'];
     }
 

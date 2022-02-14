@@ -22,8 +22,6 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
 
     $verificar_usuario = $baseDatos->query("SELECT * FROM persona WHERE usuario = '$usuario'");
 
-
-
     if ($verificar_usuario) {
         if ($verificar_usuario->num_rows > 0) {
             $_SESSION['usuario_existente'] = "el usuario ya existe";
@@ -32,8 +30,11 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
         } else {
             $resultadoConsulta = $baseDatos->query($registrarUsuario);
             if ($resultadoConsulta) {
-                if (!isset($_SESSION['usuario'])) {
-                    $_SESSION['usuario'] = $usuario;
+                //recoleccion datos usuario registrado
+                $usuarioInsertadoConsultado = $baseDatos->query("SELECT * FROM persona WHERE usuario = '$usuario'");
+                $datosUsuario = $usuarioInsertadoConsultado->fetch_assoc();
+                if (!isset($_SESSION['datosUsuario'])) {
+                    $_SESSION['datosUsuario'] = $datosUsuario;
                     header('Location: http://localhost/maquetacion-M09/PHP/formularios/paginaInicio.php');
                     exit;
                 }

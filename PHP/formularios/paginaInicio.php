@@ -1,4 +1,12 @@
-<?php session_start() ?>
+<?php
+session_start();
+
+if (!isset($_SESSION['datosUsuario'])) {
+    header('Location: http://localhost/maquetacion-M09/PHP/formularios/login.php');
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +19,7 @@
 
 <body>
 
-    <h2>Bienvenido <?php echo $_SESSION['usuario']; ?></h2>
+    <h2>Bienvenido <?php echo $_SESSION['datosUsuario']['Usuario']; ?></h2>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis dolores veritatis quaerat magni, consectetur aspernatur, numquam sunt dolore aperiam eum, incidunt quam id eos. Suscipit, ipsam atque! Numquam, tempora?</p>
 

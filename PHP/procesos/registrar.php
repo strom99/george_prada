@@ -2,6 +2,8 @@
 
 session_start();
 
+//Incluimos la base de datos para traer toda la informacion
+
 include("conexionBD.php");
 
 if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['email']) && isset($_POST['nombre']) && isset($_POST['apellido1']) && isset($_POST['apellido2']) && isset($_POST['telefono']) && isset($_POST['direccion']) && isset($_POST['edad'])) {
@@ -15,11 +17,11 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
     $direccion = $_POST['direccion'];
     $edad = $_POST['edad'];
     $contraseña_encriptada = password_hash($contraseña, PASSWORD_BCRYPT);
-
+    //Para encriptar la contraseña
 
     $registrarUsuario = "INSERT INTO persona(Usuario, Contrasena, Email,Nombre,Apellido1,Apellido2 , Telefono , Direccion ,Edad) VALUES('$usuario' , '$contraseña_encriptada', '$email' , '$nombre' ,'$apellido1' , '$apellido2' ,'$telefono', '$direccion' , '$edad')";
 
-
+    /*Es para verificar que no haya un usuario con el mismo nombre*/
     $verificar_usuario = $baseDatos->query("SELECT * FROM persona WHERE usuario = '$usuario'");
 
     if ($verificar_usuario) {

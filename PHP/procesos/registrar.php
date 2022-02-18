@@ -21,7 +21,8 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
 
     $registrarUsuario = "INSERT INTO persona(Usuario, Contrasena, Email,Nombre,Apellido1,Apellido2 , Telefono , Direccion ,Edad) VALUES('$usuario' , '$contraseña_encriptada', '$email' , '$nombre' ,'$apellido1' , '$apellido2' ,'$telefono', '$direccion' , '$edad')";
 
-    /*Es para verificar que no haya un usuario con el mismo nombre*/
+    /*Es para verificar que no haya un usuario con el mismo nombregit status
+    */
     $verificar_usuario = $baseDatos->query("SELECT * FROM persona WHERE usuario = '$usuario'");
 
     if ($verificar_usuario) {

@@ -21,14 +21,13 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
 
     $registrarUsuario = "INSERT INTO persona(Usuario, Contrasena, Email,Nombre,Apellido1,Apellido2 , Telefono , Direccion ,Edad) VALUES('$usuario' , '$contraseña_encriptada', '$email' , '$nombre' ,'$apellido1' , '$apellido2' ,'$telefono', '$direccion' , '$edad')";
 
-    /*Es para verificar que no haya un usuario con el mismo nombregit status
-    */
+    /*Es para verificar que no haya un usuario con el mismo nombre*/
     $verificar_usuario = $baseDatos->query("SELECT * FROM persona WHERE usuario = '$usuario'");
 
     if ($verificar_usuario) {
         if ($verificar_usuario->num_rows > 0) {
             $_SESSION['usuario_existente'] = "el usuario ya existe";
-            header('Location: http://localhost/prueba-php-BD/html/Registro.php');
+            header('Location: http://localhost/maquetacion-M09/PHP/formularios/registroUser.php');
             exit;
         } else {
             $resultadoConsulta = $baseDatos->query($registrarUsuario);
@@ -38,7 +37,7 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
                 $datosUsuario = $usuarioInsertadoConsultado->fetch_assoc();
                 if (!isset($_SESSION['datosUsuario'])) {
                     $_SESSION['datosUsuario'] = $datosUsuario;
-                    header('Location: http://localhost/prueba-php-BD/html/InicioSesion.php');
+                    header('Location: http://localhost/maquetacion-M09/PHP/formularios/paginaInicio.php');
                     exit;
                 }
             }

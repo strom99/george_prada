@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,23 @@
     <link rel="stylesheet" href="../estilos/paginaInicio.css">
     <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <section class="portada">
         <header class="barra-menu">
-        <div class="menu-hamburguesa">
-            <button>
-                <i class=" menu fas fa-bars"></i>
-            </button>
-        </div>
-        <nav>
-            <a href="">
-                <i class="user fas fa-user-circle"></i>
-            </a>
-            <a href="">
-                <i class="bolsa fas fa-shopping-bag"></i>
-            </a>
-        </nav>
+            <div class="menu-hamburguesa">
+                <button>
+                    <i class=" menu fas fa-bars"></i>
+                </button>
+            </div>
+            <nav>
+                <a href="">
+                    <i class="user fas fa-user-circle"></i>
+                </a>
+                <a href="">
+                    <i class="bolsa fas fa-shopping-bag"></i>
+                </a>
+            </nav>
         </header>
         <main>
             <section class="banner-container">
@@ -31,8 +33,6 @@
                     <div class="flecha flecha-anterior fas fa-chevron-left"></div>
                     <div class="carousel-container-inner">
                         <div class="carousel-image"></div>
-<!--                        <img src="https://pbstudio.es/wp-content/uploads/2021/09/P-4-scaled.jpg" alt="">-->
-<!--                        <img src="https://pbstudio.es/wp-content/uploads/2021/09/P-4-scaled.jpg" alt="">-->
                     </div>
                     <div class="flecha flecha-siguiente fas fa-chevron-right"></div>
                 </div>
@@ -41,22 +41,6 @@
                     <a href="#">Quiero verlos</a>
                 </div>
             </section>
-<!--            <section>-->
-<!--                <img src="../img/girl.jpeg" alt="">-->
-<!--                <img src="../img/girl.jpeg" alt="">-->
-<!--                <img src="../img/girl.jpeg" alt="">-->
-<!--                <div>-->
-<!--                    <div></div>-->
-<!--                    <div></div>-->
-<!--                    <span></span>-->
-<!--                    <span></span>-->
-<!--                    <span></span>-->
-<!--                </div>-->
-<!--            </section>-->
-<!--            <section>-->
-<!--                -->
-<!--            </section>-->
-
         </main>
     </section>
     <section class="servicios">
@@ -68,9 +52,14 @@
             <img src="https://pbstudio.es/wp-content/uploads/2021/09/P-1-scaled.jpg" alt="">
             <p>Apoyo directo por Chatbot 24/7</p>
         </div>
+        <div class="chat">
+            <i class="fa-solid fa-message"></i>
+        </div>
+
     </section>
     <footer>
         <p>Propiedad de George Prada &copy;</p>
     </footer>
 </body>
+
 </html>

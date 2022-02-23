@@ -27,7 +27,7 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
     if ($verificar_usuario) {
         if ($verificar_usuario->num_rows > 0) {
             $_SESSION['usuario_existente'] = "el usuario ya existe";
-            header('Location: http://localhost/maquetacion-M09/PHP/formularios/registroUser.php');
+            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
             exit;
         } else {
             $resultadoConsulta = $baseDatos->query($registrarUsuario);
@@ -37,7 +37,7 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña']) && isset($_POST['em
                 $datosUsuario = $usuarioInsertadoConsultado->fetch_assoc();
                 if (!isset($_SESSION['datosUsuario'])) {
                     $_SESSION['datosUsuario'] = $datosUsuario;
-                    header('Location: http://localhost/maquetacion-M09/PHP/formularios/paginaInicio.php');
+                    header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/paginaInicio.php');
                     exit;
                 }
             }

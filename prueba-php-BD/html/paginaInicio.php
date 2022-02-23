@@ -57,6 +57,9 @@
         </div>
 
     </section>
+    <form action="../PHP/procesos/logout.php" method="POST">
+        <input type="submit" value="Salir" name="salir">
+    </form>
     <footer>
         <p>Propiedad de George Prada &copy;</p>
     </footer>

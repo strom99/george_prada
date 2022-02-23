@@ -1,9 +1,8 @@
 <?PHP
 session_start();
-include('../procesos/conexionBD.php');
+include('conexionBD.php');
 
-
-if (isset($_POST['btn_login'])) {
+if (isset($_POST['boton-inicio'])) {
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
     //$usuario = $_POST['usuario'] ?? null;
@@ -17,11 +16,13 @@ if (isset($_POST['btn_login'])) {
 
         $_SESSION['bienvenido'] = "Bienvenido";
         $_SESSION['datosUsuario'] = $datosUsuario;
-        header('Location: http://localhost/maquetacion-M09/PHP/formularios/paginaInicio.php');
+        header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/paginaInicio.php');
         exit;
     } else {
         $_SESSION['error'] = "usuario o contraseña incorrectos";
-        header('Location: http://localhost/maquetacion-M09/PHP/formularios/login.php');
+        header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/InicioSesion.php');
         exit;
     }
+} else {
+    echo "fallo";
 }

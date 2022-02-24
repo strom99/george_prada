@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,61 +25,61 @@
                     <p>
                         Nombre de usuario*
                     </p>
-                    <input class="datos" type="text" id="contraUsuario" name="usuario" placeholder="Ingresa tu usuario" required>
+                    <input class="datos" type="text" id="contraUsuario" name="usuario" placeholder="Ingresa tu usuario">
                 </div>
                 <div class="cajaDatos contraseña1">
                     <p>
                         Contraseña*
                     </p>
-                    <input class="datos" type="password" id="nombreUsuario" name="contraseña" placeholder="Ingresa tu contraseña" required>
+                    <input class="datos" type="password" id="nombreUsuario" name="contraseña" placeholder="Ingresa tu contraseña">
                 </div>
                 <!--<div class="cajaDatos contraseña2">
-                        <p>
-                            Confirmar Contraseña*
-                        </p>
-                        <input class="datos" type="password" id="nombreUsuario" placeholder="Confirmar contraseña" required >
-                    </div>-->
+                    <p>
+                        Confirmar Contraseña*
+                    </p>
+                    <input class="datos" type="password" id="nombreUsuario" name="confirmar_contraseña" placeholder="Confirmar contraseña">
+                </div>-->
                 <div class="cajaDatos correo">
                     <p>
                         Correo*
                     </p>
-                    <input class="datos" type="mail" id="nombreUsuario" name="email" placeholder="Ingresa tu correo" required>
+                    <input class="datos" type="email" id="nombreUsuario" name="email" placeholder="Ingresa tu correo">
                 </div>
                 <div class="cajaDatos nombre">
                     <p>
                         Nombre*
                     </p>
-                    <input class="datos" type="text" id="nombreUsuario" name="nombre" placeholder="Ingresa tu nombre" required>
+                    <input class="datos" type="text" id="nombreUsuario" name="nombre" placeholder="Ingresa tu nombre">
                 </div>
                 <div class="cajaDatos nombre">
                     <p>
                         Primer Apellido*
                     </p>
-                    <input class="datos" type="text" id="nombreUsuario" name="apellido1" placeholder="Ingresa tu Primer Apellido" required>
+                    <input class="datos" type="text" id="nombreUsuario" name="apellido1" placeholder="Ingresa tu Primer Apellido">
                 </div>
                 <div class="cajaDatos nombre">
                     <p>
                         Segundo Apellido*
                     </p>
-                    <input class="datos" type="text" id="nombreUsuario" name="apellido2" placeholder="Ingresa tu Segundo Apellido" required>
+                    <input class="datos" type="text" id="nombreUsuario" name="apellido2" placeholder="Ingresa tu Segundo Apellido">
                 </div>
                 <div class="cajaDatos nombre">
                     <p>
                         Telefono*
                     </p>
-                    <input class="datos" type="number" id="nombreUsuario" name="telefono" placeholder="Ingrese su Telefono" required>
+                    <input class="datos" type="number" id="nombreUsuario" name="telefono" placeholder="Ingrese su Telefono">
                 </div>
                 <div class="cajaDatos nombre">
                     <p>
                         Direccion*
                     </p>
-                    <input class="datos" type="text" id="nombreUsuario" name="direccion" placeholder="Ingrese su Direccion" required>
+                    <input class="datos" type="text" id="nombreUsuario" name="direccion" placeholder="Ingrese su Direccion">
                 </div>
                 <div class="cajaDatos nombre">
                     <p>
                         Edad*
                     </p>
-                    <input class="datos" type="number" id="nombreUsuario" min="18" max="100" name="edad" placeholder="Ingrese su edad" required>
+                    <input class="datos" type="number" id="nombreUsuario" min="18" max="100" name="edad" placeholder="Ingrese su edad">
                 </div>
                 <div class="formulario-footer">
                     <p class="terminos">Al registrarte aceptos nuestros términos</p>
@@ -89,10 +90,19 @@
     </div>
 
     <?php
-    if (isset($_SESSION['usuario_existente'])) { ?>
-        <p><?php echo $_SESSION['usuario_existente']; ?></p>
-    <?php
+
+    if (isset($_SESSION['incompleto'])) {
+        echo $_SESSION['incompleto'];
     }
+
+    if (isset($_SESSION['yaexiste'])) {
+        echo $_SESSION['yaexiste'];
+    }
+
+    if (isset($_SESSION['contraseñasDiferentes'])) {
+        echo $_SESSION['contraseñasDiferentes'];
+    }
+
     ?>
 </body>
 

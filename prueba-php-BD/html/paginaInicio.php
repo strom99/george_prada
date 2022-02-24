@@ -11,6 +11,16 @@
 </head>
 
 <body>
+
+    <?php
+    session_start();
+
+    if (!isset($_SESSION['datosUsuario'])) {
+        header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/InicioSesion.php');
+        exit;
+    }
+
+    ?>
     <section class="portada">
         <header class="barra-menu">
             <div class="menu-hamburguesa">
@@ -19,6 +29,7 @@
                 </button>
             </div>
             <nav>
+                <h3><?php echo $_SESSION['datosUsuario']['Usuario'] ?></h3>
                 <a href="">
                     <i class="user fas fa-user-circle"></i>
                 </a>
@@ -27,6 +38,9 @@
                 </a>
             </nav>
         </header>
+        <form class="salir" action="../PHP/procesos/logout.php">
+            <input type="submit" value="Cerrar sesion">
+        </form>
         <main>
             <section class="banner-container">
                 <div class="carousel-container">
@@ -52,14 +66,9 @@
             <img src="https://pbstudio.es/wp-content/uploads/2021/09/P-1-scaled.jpg" alt="">
             <p>Apoyo directo por Chatbot 24/7</p>
         </div>
-        <div class="chat">
-            <i class="fa-solid fa-message"></i>
-        </div>
 
     </section>
-    <form action="../PHP/procesos/logout.php" method="POST">
-        <input type="submit" value="Salir" name="salir">
-    </form>
+
     <footer>
         <p>Propiedad de George Prada &copy;</p>
     </footer>

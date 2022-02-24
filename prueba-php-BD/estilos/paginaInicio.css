@@ -31,6 +31,7 @@ img{
 nav{
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 nav a {
@@ -140,18 +141,14 @@ nav a {
     font-size: 18px;
 }
 
-.chat{
-    width: 90px;
-    height: 90px;
-    background-color: gray;
-    border-radius: 50%;
+.salir{
+    position: absolute;
+    z-index: 30;
+    display: flex;
+    right: 0;
+    margin-top: 55px;
 }
 
-.chat i {
-    color: black;
-    font-size: 40px;
-    margin: 0;
-}
 
 @media (min-width: 600px) {
 

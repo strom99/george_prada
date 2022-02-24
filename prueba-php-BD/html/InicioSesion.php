@@ -27,13 +27,13 @@
                     <label for="nombreUsuario">
                         <img src="../img/user-circle-solid.svg" alt="icono usuario">
                     </label>
-                    <input class="datos" name="usuario" type="text" id="nombreUsuario" placeholder="Usuario" required>
+                    <input class="datos" name="usuario" type="text" id="nombreUsuario" placeholder="Usuario">
                 </div>
                 <div class="cajaDatos">
                     <label for="contraUsuario">
                         <img src="../img/lock-solid.svg" alt="icono candado">
                     </label>
-                    <input class="datos" name="contrasena" type="password" id="contraUsuario" placeholder="Contraseña" required>
+                    <input class="datos" name="contrasena" type="password" id="contraUsuario" placeholder="Contraseña">
                 </div>
                 <input class="boton-inicio" name="boton-inicio" type="submit" value="Iniciar Sesion">
                 <nav class="navegador">
@@ -42,20 +42,24 @@
                 <div>
                     <p> O ingresa con ...</p>
                     <div class="ingresoEnlazado">
-                        <a href="https://www.facebook.com/">
+                        <a href=#>
                             <img src="../img/facebook-f-brands.svg" alt="">
                         </a>
-                        <a href="https://www.google.es/">
+                        <a href=#>
                             <img src="../img/google-brands.svg" alt="">
                         </a>
                     </div>
-                    <a class="contacto" href="Contacto.html">Ponte en contacto con nosotros</a>
+                    <a class="contacto" href=#>Ponte en contacto con nosotros</a>
                 </div>
             </form>
             <?php
 
-            if (isset($_SESSION['error'])) {
-                echo $_SESSION['error'];
+            if (isset($_SESSION['incorrectoLogin'])) {
+                echo $_SESSION['incorrectoLogin'];
+            }
+
+            if (isset($_SESSION['campoVacio'])) {
+                echo $_SESSION['campoVacio'];
             }
 
             ?>

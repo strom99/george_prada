@@ -25,27 +25,27 @@
                     <p>
                         Nombre de usuario*
                     </p>
-                    <input class="datos" type="text" id="contraUsuario" name="usuario" placeholder="Ingresa tu usuario">
+                    <input class="datos" type="text" name="usuario" placeholder="Ingresa tu usuario">
                 </div>
                 <div class="cajaDatos contraseña1">
                     <p>
                         Contraseña*
                     </p>
-                    <input class="datos" type="password" id="nombreUsuario" name="contraseña" placeholder="Ingresa tu contraseña">
+                    <input class="datos" type="password" name="contrasena" placeholder="Ingresa tu contraseña">
                 </div>
-                <!--<div class="cajaDatos contraseña2">
+                <div class="cajaDatos contrasena2">
                     <p>
                         Confirmar Contraseña*
                     </p>
-                    <input class="datos" type="password" id="nombreUsuario" name="confirmar_contraseña" placeholder="Confirmar contraseña">
-                </div>-->
+                    <input class="datos" type="password" name="contrasena2" placeholder="Confirmar contraseña">
+                </div>
                 <div class="cajaDatos correo">
                     <p>
                         Correo*
                     </p>
-                    <input class="datos" type="email" id="nombreUsuario" name="email" placeholder="Ingresa tu correo">
+                    <input class="datos" type="email" name="email" placeholder="Ingresa tu correo">
                 </div>
-                <div class="cajaDatos nombre">
+                <!--<div class="cajaDatos nombre">
                     <p>
                         Nombre*
                     </p>
@@ -80,30 +80,23 @@
                         Edad*
                     </p>
                     <input class="datos" type="number" id="nombreUsuario" min="18" max="100" name="edad" placeholder="Ingrese su edad">
-                </div>
+                </div>-->
                 <div class="formulario-footer">
                     <p class="terminos">Al registrarte aceptos nuestros términos</p>
                     <button class="boton" type="submit" name="registrar">Registrar</button>
                 </div>
+
+
+                <?php
+
+                if (isset($_SESSION['error'])) {
+                    echo $_SESSION['error'];
+                }
+
+                ?>
             </form>
         </div>
     </div>
-
-    <?php
-
-    if (isset($_SESSION['incompleto'])) {
-        echo $_SESSION['incompleto'];
-    }
-
-    if (isset($_SESSION['yaexiste'])) {
-        echo $_SESSION['yaexiste'];
-    }
-
-    if (isset($_SESSION['contraseñasDiferentes'])) {
-        echo $_SESSION['contraseñasDiferentes'];
-    }
-
-    ?>
 </body>
 
 </html>

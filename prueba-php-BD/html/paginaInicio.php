@@ -29,7 +29,7 @@
                 </button>
             </div>
             <nav>
-                <h3><?php echo $_SESSION['datosUsuario']['Usuario'] ?></h3>
+                <h3><?php echo $_SESSION['datosUsuario']['usuario'] ?></h3>
                 <a href="">
                     <i class="user fas fa-user-circle"></i>
                 </a>

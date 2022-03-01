@@ -34,6 +34,12 @@ if (isset($_POST['registrar'])) {
             }
 
             if ($verificar_correo->num_rows > 0) {
+
+                // Haremos la verificacion dcel dominio del correo para que en el rol sea administrador o no de la tabla roles
+                if(){
+
+                }
+
                 $_SESSION['yaexiste'] = "el correo ya existe";
                 header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
                 exit;

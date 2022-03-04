@@ -32,26 +32,12 @@ if (isset($_POST['registrar'])) {
             exit;
         }
 
-<<<<<<< HEAD
-            if ($verificar_correo->num_rows > 0) {
-
-                // Haremos la verificacion dcel dominio del correo para que en el rol sea administrador o no de la tabla roles
-                if(){
-
-                }
-
-                $_SESSION['yaexiste'] = "el correo ya existe";
-                header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
-                exit;
-            }
-=======
         // Si existe un email en la base de datos salimos con error.
         if ($verificar_correo && $verificar_correo->num_rows > 0) {
             $_SESSION['error'] = "el correo ya existe";
             header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
             exit;
         }
->>>>>>> 9ea5be20ca4e203cc9ab139b90bd9262ffdf8496
 
         // creamos persona antes de usuario vacia
         $personaQuery = $baseDatos->query('INSERT INTO persona() VALUES ()');

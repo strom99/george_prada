@@ -30,7 +30,7 @@ img{
 
 nav{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -145,6 +145,10 @@ nav a {
     display: flex;
     padding: 5px 8px;
     border-radius: 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
 }
 
 

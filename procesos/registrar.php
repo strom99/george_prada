@@ -17,7 +17,7 @@ if (isset($_POST['registrar'])) {
         // Comprobamos contraseñas sean iguales, si no, salimos del flujo.
         if ($contrasena !== $contrasena2) {
             $_SESSION['error'] = "las contraseñas no son iguales";
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
+            header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
@@ -28,14 +28,14 @@ if (isset($_POST['registrar'])) {
         // Si existe un usuario en la base de datos salimos con error.
         if ($verificar_usuario && $verificar_usuario->num_rows > 0) {
             $_SESSION['error'] = "el usuario ya existe";
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
+            header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
         // Si existe un email en la base de datos salimos con error.
         if ($verificar_correo && $verificar_correo->num_rows > 0) {
             $_SESSION['error'] = "el correo ya existe";
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
+            header('Location:' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
@@ -44,7 +44,7 @@ if (isset($_POST['registrar'])) {
 
         if (!$personaQuery) {
             $_SESSION['error'] = "Error al crear la persona " . $baseDatos->error;
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
+            header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
@@ -62,7 +62,7 @@ if (isset($_POST['registrar'])) {
         // Si la query del usuario no sale bien, salimos del flujo.
         if (!$usuarioQuery) {
             $_SESSION['error'] = "Error al crear el usuario " . $baseDatos->error;
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
+            header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
@@ -72,12 +72,12 @@ if (isset($_POST['registrar'])) {
         $datosUsuario = $usuarioInsertadoConsultado->fetch_assoc();
         if (!isset($_SESSION['datosUsuario'])) {
             $_SESSION['datosUsuario'] = $datosUsuario;
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/paginaInicio.php');
+            header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=paginaInicio');
             exit;
         }
     } else {
         $_SESSION['error'] = "falta rellenar";
-        header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/Registro.php');
+        header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
         exit;
     }
 }

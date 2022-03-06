@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+    <?php
+    if (!isset($_SESSION['datosUsuario'])) {
+        header('Location: ' . $_SESSION['RUTA_BASE'] . '/index.php?page=InicioSesion');
+        exit;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../estilos/paginaInicio.css">
-    <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+    ?>
     <section class="portada">
         <header class="barra-menu">
             <div class="menu-hamburguesa">
@@ -19,12 +13,10 @@
                 </button>
             </div>
             <nav>
-                <a href="">
-                    <i class="user fas fa-user-circle"></i>
-                </a>
-                <a href="">
-                    <i class="bolsa fas fa-shopping-bag"></i>
-                </a>
+                <h3><?php echo $_SESSION['datosUsuario']['usuario'] ?></h3>
+                <form action="procesos/logout.php">
+                    <input class="boton_salir" type="submit" value="Cerrar sesion">
+                </form>
             </nav>
         </header>
         <main>
@@ -38,7 +30,7 @@
                 </div>
                 <div class="productoDetalle">
                     <p>Nombre de producto</p>
-                    <a href="#">Quiero verlos</a>
+                    <a class="boton" href="#">Quiero verlos</a>
                 </div>
             </section>
         </main>
@@ -52,14 +44,5 @@
             <img src="https://pbstudio.es/wp-content/uploads/2021/09/P-1-scaled.jpg" alt="">
             <p>Apoyo directo por Chatbot 24/7</p>
         </div>
-        <div class="chat">
-            <i class="fa-solid fa-message"></i>
-        </div>
-
     </section>
-    <footer>
-        <p>Propiedad de George Prada &copy;</p>
-    </footer>
-</body>
-
-</html>
+    <?php include "html/footer.php"; ?>

@@ -31,6 +31,7 @@ img{
 nav{
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 nav a {
@@ -106,13 +107,13 @@ nav a {
     margin-bottom: 10px;
 }
 
-.productoDetalle a {
+.productoDetalle .boton{
     background-color: black;
     border: 1px solid white;
+    border-radius: 10px;
     padding: 10px;
     color: white;
     text-decoration: none;
-    display: table;
 }
 
 .servicios {
@@ -140,18 +141,12 @@ nav a {
     font-size: 18px;
 }
 
-.chat{
-    width: 90px;
-    height: 90px;
-    background-color: gray;
-    border-radius: 50%;
+.boton_salir{
+    display: flex;
+    padding: 5px 8px;
+    border-radius: 10px;
 }
 
-.chat i {
-    color: black;
-    font-size: 40px;
-    margin: 0;
-}
 
 @media (min-width: 600px) {
 

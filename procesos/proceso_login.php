@@ -1,6 +1,6 @@
 <?PHP
 session_start();
-include('conexionBD.php');
+include 'conexionBD.php';
 $_SESSION['error'] = '';
 
 if (isset($_POST['boton-inicio'])) {
@@ -17,16 +17,16 @@ if (isset($_POST['boton-inicio'])) {
 
         if ($numResult > 0 && password_verify($contrasena, $userContrasena)) {
             $_SESSION['datosUsuario'] = $datosUsuario;
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/paginaInicio.php');
+            header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=paginaInicio');
             exit;
         } else {
             $_SESSION['error'] = "usuario o contraseña incorrectos";
-            header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/InicioSesion.php');
+            header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=InicioSesion');
             exit;
         }
     } else {
         $_SESSION['error'] = "rellena todos los campos";
-        header('Location: http://localhost/maquetacion-M09/prueba-php-BD/html/paginaInicio.php');
+        header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=paginaInicio');
         exit;
     }
 }

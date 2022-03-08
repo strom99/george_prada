@@ -11,7 +11,6 @@
 <body>    
   
     <div class="contact_form">
-  
       <div class="formulario">      
         <h1 class="animate__animated animate__backInLeft">Formulario de Contacto</h1>
         <form action="Contacto.html" method="post">                     

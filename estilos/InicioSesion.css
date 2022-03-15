@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #1B1B1B;
+    background-color: #c8ecd3;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
-    color: white;
+    color: black;
 }
 span{
     font-weight: bold;
@@ -42,7 +42,8 @@ button{
 
 .contenedorPagina{
     width: 90%;
-    height: 600px;
+    height: 534px;
+    min-width: 600px;
     background-color: white;
     padding: 20px;
     border-radius: 30px;
@@ -77,16 +78,16 @@ img{
 } 
 
 .imagen-user{
-    width: 100px;
+    width: 135px;
     margin: 0 auto;
     position: relative;
     bottom: 50px;
-    height: 103px;
+    height: 135px;
     display: flex;
     padding: 10px;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 2px 2px 0.5px;
+    box-shadow: 1.5px 1.5px 0.5px gray;
 }
 
 

@@ -6,7 +6,7 @@
 
 body{
     background-color: #c8ecd3;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input {
@@ -27,8 +27,9 @@ input, p, label {
     bottom: 61px;
     display: flex;
     border-radius: 50%;
-    background-color: #c8ecd3;
+    background-color: white;
     padding: 10px;
+    box-shadow: 1.5px 1.5px 0.5px gray;
 }
 
 .centro{
@@ -63,14 +64,16 @@ img{
 }
 
 .boton {
-    background-color: #6CBF83;
+    background-color: #008CB2;
     color: black;
     padding: 5px 10px;
     display: block;
-    border: 0;
-    font-size: 18px;
+    border: none;
+    font-size: 17px;
     margin: 10px auto;
     cursor: pointer;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contenedorPagina{
@@ -79,4 +82,10 @@ img{
     background-color: white;
     padding: 20px;
     border-radius: 20px;
+}
+input{
+    border:1.5px solid gray;
+    background-color: white;
+    height: 35px;
+    border-radius: 5px;
 }

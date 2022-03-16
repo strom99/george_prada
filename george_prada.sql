@@ -4,6 +4,8 @@ CREATE DATABASE george_prada;
 
 USE george_prada;
 
+SELECT * FROM usuario;
+
 CREATE TABLE rol (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nombre VARCHAR(100) NOT NULL

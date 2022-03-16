@@ -1,31 +1,31 @@
 <div class="centro">
     <div>
-        <h4>George Prada</h4>
+        <h1>George Prada</h1>
     </div>
     <div class="contenedorPagina">
         <div class="imagen-user">
-            <img src="img/user-circle-solid.svg" alt="icono usuario">
+            <img src="img/user5.webp" alt="icono usuario">
         </div>
         <form class="formulario" action="procesos/proceso_login.php" method="POST">
 
             <div class="cajaDatos">
                 <label for="nombreUsuario">
-                    <img src="img/user-circle-solid.svg" alt="icono usuario">
+                    <img src="img/user15.png" alt="icono usuario">
                 </label>
                 <input class="datos" name="usuario" type="text" id="nombreUsuario" placeholder="Usuario">
             </div>
             <div class="cajaDatos">
                 <label for="contraUsuario">
-                    <img src="img/lock-solid.svg" alt="icono candado">
+                    <img src="img/candado1.png" alt="icono candado">
                 </label>
                 <input class="datos" name="contrasena" type="password" id="contraUsuario" placeholder="Contraseña">
             </div>
             <input class="boton-inicio" name="boton-inicio" type="submit" value="Iniciar Sesion">
             <nav class="navegador">
-                <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=Registro">¿No tienes cuenta? Crea una ahora</a>
+                <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=Registro">¿No tienes cuenta? <span>Crea una ahora</span></a>
             </nav>
             <div>
-                <p> O ingresa con ...</p>
+                <p>Puedes ingresar con tus redes sociales:</p>
                 <div class="ingresoEnlazado">
                     <a href=#>
                         <img src="img/facebook-f-brands.svg" alt="">

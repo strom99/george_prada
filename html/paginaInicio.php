@@ -6,19 +6,9 @@
 
     ?>
     <section class="portada">
-        <header class="barra-menu">
-            <div class="menu-hamburguesa">
-                <button>
-                    <i class=" menu fas fa-bars"></i>
-                </button>
-            </div>
-            <nav>
-                <h3><?php echo $_SESSION['datosUsuario']['usuario'] ?></h3>
-                <form action="procesos/logout.php">
-                    <input class="boton_salir" type="submit" value="Cerrar sesion">
-                </form>
-            </nav>
-        </header>
+        <?php include './procesos/menu.php' ?>
+        <h3><?php echo $_SESSION['datosUsuario']['usuario']?></h3>
+        <!-- Session-User -->
         <main>
             <section class="banner-container">
                 <div class="carousel-container">

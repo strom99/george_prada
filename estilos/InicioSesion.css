@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-color: #c8ecd3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+h1{
+    color: black;
+}
+span{
+    font-weight: bold;
+}
 .centro{
     display: flex;
     justify-content: center;
@@ -32,12 +37,13 @@ body{
 button{
     width: 300px;
     height: 200px;
-    background-color: #33d475;
+    background-color: #008CB2;
 }
 
 .contenedorPagina{
     width: 90%;
-    height: 600px;
+    height: 534px;
+    min-width: 600px;
     background-color: white;
     padding: 20px;
     border-radius: 30px;
@@ -58,6 +64,7 @@ img{
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .datos{
@@ -71,17 +78,18 @@ img{
 } 
 
 .imagen-user{
-    width: 100px;
+    width: 135px;
     margin: 0 auto;
     position: relative;
     bottom: 50px;
-    height: 103px;
+    height: 135px;
     display: flex;
     padding: 10px;
     border-radius: 50%;
-    background-color: #c8ecd3;
-
+    background-color: white;
+    box-shadow: 1.5px 1.5px 0.5px gray;
 }
+
 
 .cajaDatos label{
     width: 25px;
@@ -93,7 +101,8 @@ img{
     width: 100%;
     height: 40px;
     border-radius: 10px;
-    background-color: #33d475;
+    background-color: #008CB2;
+    border: none;
 }
 
 .navegador{
@@ -101,10 +110,19 @@ img{
     flex-direction: column;
     gap: 5px;
 }
-
+input{
+  border:2px solid gray;
+  background-color: white;
+  height: 35px;
+  border-radius: 5px;
+}
+input::placeholder{
+    color: black;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .ingresoEnlazado a , .ingresoEnlazado a:visited{
-    border: 2px solid black;
-    background-color: #33d475;
+    background-color: #008CB2;
     width: 300px;
     height: 40px;
     border-radius: 10px;
@@ -119,9 +137,16 @@ a{
     display: block;
     margin-top: 10px;
     text-align: center;
-    text-decoration: underline;
+    font-weight: bold;
 }
-
+.cajaDatos img{
+    width: 110%;
+}
+input.boton-inicio[value]{
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+}
 @media only screen and (min-width:500px) {
     .contenedorPagina{
         width: 80%;

@@ -8,9 +8,11 @@ img{
     width: 100%;
     object-fit: cover;
 }
-
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .barra-menu{
-    background-color: #33d475;
+    background-color: black;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -35,10 +37,24 @@ nav{
 }
 
 nav a {
-    width: 30px;
+    width: 100%;
     color: black;
 }
-
+/* Menu */
+.menu-hamburguesa ul{
+    display: flex;
+}
+.menu-hamburguesa ul li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 19px;
+}
+.menu-hamburguesa ul li a:hover{
+    color: #008CB2;
+}
 .user, .bolsa {
     font-size: 30px;
 }

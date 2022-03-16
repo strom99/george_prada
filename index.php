@@ -2,7 +2,7 @@
 
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada';
+$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada/marcas-PTransversal';
 $page = $_GET['page'] ?? 'paginaInicio';
 
 ?>
@@ -16,11 +16,12 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
+    <link rel="stylesheet" href="estilos/global.css">
     <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <?php if ($page != 'Registro' && $page != 'InicioSesion') {
+    <?php if (isset($_SESSION['datosUsuario'])) {
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>

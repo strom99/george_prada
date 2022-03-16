@@ -17,10 +17,10 @@
 <!--Cerramos el main-->
 <footer class="carrusel">
     <!--Creamos un footer para los elementos que esten en la parte de aabajo de la pantalla-->
-    <img src="../img/plus-square-solid.svg" id="plus">
+    <img src="img/plus-square-solid.svg" id="plus">
     <div>
         <input type="text" id="p">
     </div>
-    <img src="../img/telegram-plane-brands.svg" id="telegram">
+    <img src="img/telegram-plane-brands.svg" id="telegram">
 </footer>
 <!--Cerramos el footer-->

@@ -17,40 +17,6 @@ body::-webkit-scrollbar {
     height: 100vh;
     width: 100%;
 }
-.barra-menu{
-    background-color: #33d475;
-    padding: 10px 0px;
-    height: 8%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-hamburguesa{
-    width: 20%;
-    margin: 0px 20px;
-}
-
-.menu-hamburguesa button{
-    background: none;
-    border: none;
-    font-size: 30px;
-}
-
-
-nav{
-    display: flex;
-    gap: 30px;
-    padding-right: 20px;
-}
-
-nav a {
-    width: 30px;
-    color: black;
-}
-
-.user , .bolsa{
-    font-size: 30px;
-}
 
 h2{
     flex-grow: 1;

@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c8ecd3;
+  }
+
+  i{
+    color: white;
+  }
+  
+.menu-hamburguesa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-hamburguesa button{
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    width: 100%;
+    color: white;
+}
+.menu-hamburguesa ul li a:hover{
+    color: #008CB2;
+}
+.user, .bolsa {
+    font-size: 30px;
+}

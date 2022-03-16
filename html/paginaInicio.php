@@ -6,8 +6,8 @@
 
     ?>
     <section class="portada">
-        <?php include './procesos/menu.php' ?>
-        <h3><?php echo $_SESSION['datosUsuario']['usuario']?></h3>
+
+        <h3><?php echo $_SESSION['datosUsuario']['usuario'] ?></h3>
         <!-- Session-User -->
         <main>
             <section class="banner-container">

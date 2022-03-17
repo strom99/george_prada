@@ -1,44 +1,108 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #c8ecd3;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-  i{
-    color: white;
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c8ecd3;
+}
+
+i {
+  color: white;
+}
+
+/* Menu */
+.barra-menu {
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+/** MENU **/
+.lista-menu,
+.lista-menu-acciones {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.lista-menu a {
+  width: 100%;
+  color: white;
+}
+
+.hamburguesa {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 60;
+}
+
+.hamburguesa:active {
+  transform: scale(1.1);
+}
+
+.menu-hamburguesa ul li a:hover {
+  color: #008cb2;
+}
+.user,
+.bolsa {
+  font-size: 30px;
+}
+
+.nav-desktop {
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  display: none;
+}
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 50;
+  width: 300px;
+  height: 100vh;
+  transition: left 0.3s ease-in-out;
+}
+
+.header-expanded .nav-mobile {
+  left: 0;
+}
+
+.nav-mobile ul,
+.nav-mobile {
+  flex-direction: column;
+  background-color: black;
+  align-items: flex-start;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+@media (min-width: 600px) {
+  .hamburguesa {
+    display: none;
   }
-  
-.menu-hamburguesa{
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
     display: flex;
-    justify-content: center;
-    align-items: center;
+  }
 }
-
-.menu-hamburguesa button{
-    background: none;
-    border: none;
-    font-size: 30px;
-}
-
-nav{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-nav a {
-    width: 100%;
-    color: white;
-}
-.menu-hamburguesa ul li a:hover{
-    color: #008CB2;
-}
-.user, .bolsa {
-    font-size: 30px;
-}
+/** MENU **/

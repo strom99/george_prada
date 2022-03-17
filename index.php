@@ -2,7 +2,7 @@
 
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada/marcas-PTransversal';
+$_SESSION['RUTA_BASE'] = 'http://george-prada.test';
 $page = $_GET['page'] ?? 'paginaInicio';
 
 ?>
@@ -25,7 +25,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,164 +1,142 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img{
-    width: 100%;
-    object-fit: cover;
-}
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.barra-menu{
-    background-color: black;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .portada {
-    display: flex;
-    flex-direction: column;
-    height: 100vh
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .portada main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 /** banner */
 .banner-container {
-    position: relative;
+  position: relative;
 }
 .banner-container,
 .carousel-container,
-.carousel-container-inner{
-    height: 100%;
+.carousel-container-inner {
+  height: 100%;
 }
 
 .carousel-image {
-    background: url(https://pbstudio.es/wp-content/uploads/2021/09/P-4-scaled.jpg) no-repeat center / cover;
-    height: 100%;
+  background: url(https://pbstudio.es/wp-content/uploads/2021/09/P-4-scaled.jpg)
+    no-repeat center / cover;
+  height: 100%;
 }
 
 .flecha {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 50px;
-    z-index: 10;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 50px;
+  z-index: 10;
+  cursor: pointer;
 }
 
-
 .flecha-anterior {
-    left: 5px;
+  left: 5px;
 }
 
 .flecha-siguiente {
-    right: 5px;
+  right: 5px;
 }
 
 .banner-container img {
-    height: 100%;
-    width: 100%;
-    display: block;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .productoDetalle {
-    position: absolute;
-    bottom: 200px;
-    left: 20px;
-    color: white;
-    font-size: 20px;
+  position: absolute;
+  bottom: 200px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 .productoDetalle p {
-    font-size: 25px;
-    margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
-.productoDetalle .boton{
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+.productoDetalle .boton {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
 }
 
 .servicios {
-    padding: 15px;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  padding: 15px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .servicios > div {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .servicios img {
-    width: 200px;
-    margin: 0 auto;
-    display: block;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
 }
 
 .servicios p {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
 }
 
-.boton_salir{
-    display: flex;
-    padding: 5px 8px;
-    border-radius: 10px;
-    background-color: black;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
+.boton_salir {
+  display: flex;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
 }
-
 
 @media (min-width: 600px) {
+  .productoDetalle {
+    bottom: initial;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+  }
 
-    .productoDetalle {
-        bottom: initial;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 150px;
-    }
+  .productoDetalle p {
+    font-size: 40px;
+  }
 
-    .productoDetalle p {
-        font-size: 40px;
-    }
+  .productoDetalle a {
+    font-size: 30px;
+  }
 
-    .productoDetalle a {
-        font-size: 30px;
-    }
+  .servicios {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
 
-    .servicios {
-        flex-direction: row;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .servicios > div {
-        margin: 0;
-        width: 200px;
-    }
+  .servicios > div {
+    margin: 0;
+    width: 200px;
+  }
 }
 
 footer {
-    background-color: black;
-    padding: 20px;
-    color: white;
-    text-align: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }

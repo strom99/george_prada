@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-
-body{
-  height: 100%; 
-  font-family: 'Noto Sans', sans-serif;
-  background-color: #c8ecd3; 
-}
-
 .animate__animated {
   text-align: center;
 }

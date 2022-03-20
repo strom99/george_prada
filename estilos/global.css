@@ -13,10 +13,13 @@ ul {
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
   height: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #c8ecd3;
 }
 
 i {
@@ -26,12 +29,13 @@ i {
 /* Menu */
 .barra-menu {
   background-color: black;
-  padding: 10px 20px;
+  padding: 8px 20px;
   display: flex;
   gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/** MENU **/
 .lista-menu,
 .lista-menu-acciones {
   display: flex;
@@ -44,10 +48,9 @@ i {
   color: white;
 }
 
-.hamburguesa {
+.hamburguesa,.lista-menu {
   background: none;
   border: none;
-  font-size: 30px;
   cursor: pointer;
   z-index: 60;
 }
@@ -56,12 +59,12 @@ i {
   transform: scale(1.1);
 }
 
-.menu-hamburguesa ul li a:hover {
+.lista-menu li a:hover {
   color: #008cb2;
 }
 .user,
-.bolsa {
-  font-size: 30px;
+.bolsa, .hamburguesa {
+  font-size: 27px;
 }
 
 .nav-desktop {
@@ -94,6 +97,21 @@ i {
   padding-top: 30px;
 }
 
+.logo{
+  width: 55px;
+}
+
+.user-div {
+  display: flex;
+  gap: 10px;
+}
+
+.user-div h3{
+  color: white;
+}
+
+
+/** mientras sea mayor a 600px no se mostraran estas opciones **/
 @media (min-width: 600px) {
   .hamburguesa {
     display: none;
@@ -104,5 +122,10 @@ i {
   .nav-desktop {
     display: flex;
   }
+  .btn-salir{
+    display: none;
+  }
+  .nombre-usuario{
+    display: none;
+  }
 }
-/** MENU **/

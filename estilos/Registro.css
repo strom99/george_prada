@@ -1,14 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1{
+    color: white;
+    margin-bottom: 20px;
 }
-
-body{
-    background-color: #c8ecd3;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 input {
     margin-top: 5px;
     padding: 5px 10px;
@@ -45,11 +38,6 @@ input, p, label {
     width: 100px;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-}
-
 .cajaDatos{
     width: 100%;
     margin-bottom: 5px;
@@ -65,15 +53,14 @@ img{
 
 .boton {
     background-color: #008CB2;
-    color: black;
-    padding: 5px 10px;
+    color: white;
+    padding: 8px 20px;
     display: block;
     border: none;
     font-size: 17px;
     margin: 10px auto;
     cursor: pointer;
     border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contenedorPagina{
@@ -89,3 +76,4 @@ input{
     height: 35px;
     border-radius: 5px;
 }
+

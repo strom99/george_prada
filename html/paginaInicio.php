@@ -6,8 +6,6 @@
 
     ?>
     <section class="portada">
-
-        <h3><?php echo $_SESSION['datosUsuario']['usuario'] ?></h3>
         <!-- Session-User -->
         <main>
             <section class="banner-container">
@@ -35,4 +33,3 @@
             <p>Apoyo directo por Chatbot 24/7</p>
         </div>
     </section>
-    <?php include "html/footer.php"; ?>

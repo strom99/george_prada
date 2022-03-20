@@ -4,7 +4,6 @@ CREATE DATABASE george_prada;
 
 USE george_prada;
 
-SELECT * FROM usuario;
 
 CREATE TABLE rol (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -33,16 +32,27 @@ CREATE TABLE usuario (
 );
 
 CREATE TABLE productos(
-	id INT PRIMARY KEY NOT NULL,
-    Nombre_Producto VARCHAR(50),
-    Marca VARCHAR(50) NOT NULL,
-    Precio DECIMAL(4, 2),
-    Talla INT NOT NULL,
-    Categoria VARCHAR(50),
-    Cantidad INT,
-    Genero ENUM ('Hombre', 'Mujer'),
-    Descripcion VARCHAR(250)
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(100),
+    imagen VARCHAR(255),
+    marca VARCHAR(100) NOT NULL,
+    precio DECIMAL(4, 2),
+    categoria VARCHAR(50),
+    cantidad INT,
+    genero ENUM ('Hombre', 'Mujer','Unisex'),
+    descripcion TEXT
 );
+
+INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nike', 34.99 ,'calzados',21,'Unisex','<p>Zapatillas europeras</p> <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+            </ul>');
 
 
 CREATE TABLE favoritos(

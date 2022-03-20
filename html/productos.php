@@ -1,9 +1,27 @@
+<?php
 
-    <main>
+include 'procesos/conexionBD.php';
+$producto_id = $_GET['producto'] ?? null;
+$producto = null;
+
+if ($producto_id) {
+    $id = $producto_id;
+
+    $result = $baseDatos->query("SELECT * FROM productos WHERE id = '$id'");
+
+    if ($result && $result->num_rows === 1) {
+        $producto = $result->fetch_assoc();
+    }
+}
+
+?>
+
+<main>
+    <?php if ($producto) : ?>
         <section class="presentacion-producto">
             <div>
                 <header class="header-presentacion-producto cambio">
-                    <h2>nombre Producto</h2>
+                    <h2><?php echo $producto['nombre'] ?></h2>
                     <button>
                         <i class="fas fa-share-alt"></i>
                     </button>
@@ -20,7 +38,7 @@
                         <div class="carousel-container">
                             <div class="flecha flecha-anterior fas fa-chevron-left"></div>
                             <div class="carousel-container-inner">
-                                <img src="img/girl.jpeg" alt="">
+                                <img src="img/productos/<?php echo $producto['imagen'] ?>" alt="<?php echo $producto['nombre'] ?>">
                             </div>
                             <div class="flecha flecha-siguiente fas fa-chevron-right"></div>
                         </div>
@@ -30,13 +48,13 @@
 
             <div class="detalles-container">
                 <header class="header-presentacion-producto cambio2">
-                    <h2>nombre Producto</h2>
+                    <h2><?php echo $producto['nombre'] ?></h2>
                     <button>
                         <i class="fas fa-share-alt"></i>
                     </button>
                 </header>
                 <div class="valoracion-principal-producto">
-                    <h3>titulo Producto</h3>
+                    <h3><?php echo $producto['nombre'] ?></h3>
                     <div class="estrellas-producto">
                         <i class="estrella fas fa-star"></i>
                         <i class="estrella fas fa-star"></i>
@@ -44,7 +62,7 @@
                         <i class="estrella fas fa-star"></i>
                         <i class="estrella fas fa-star"></i>
                     </div>
-                    <h3>43$</h3>
+                    <h3><?php echo $producto['precio'] ?>€</h3>
                 </div>
                 <div class="formularios">
                     <form action="" class="form-seleccionar-tallas">
@@ -69,22 +87,9 @@
 
         <section class="descripcion-producto">
             <h3>Detalles del producto</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus repudiandae ea quia maxime nihil,
-                harum non quibusdam aut in suscipit ipsam possimus minus laborum itaque aspernatur eum adipisci. Quod,
-                debitis?
-                Beatae fuga aliquid totam obcaecati, rem consequatur dicta consequuntur sequi ut eveniet laborum illo
-                cupiditate ipsam cum voluptatem tempore consectetur doloremque quidem qui dolorem quaerat impedit
-                numquam voluptatibus eos? Magni.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-            </ul>
+            <div>
+                <?php echo $producto['descripcion'] ?>
+            </div>
         </section>
 
         <section class="dejarComentario">
@@ -158,5 +163,9 @@
                 </article>
             </div>
         </section>
-    </main>
-
+    <?php else : ?>
+        <section>
+            El producto no ha sido encontrado
+        </section>
+    <?php endif; ?>
+</main>

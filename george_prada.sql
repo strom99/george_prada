@@ -31,6 +31,7 @@ CREATE TABLE usuario (
     CONSTRAINT fk_persona FOREIGN KEY(persona_id) REFERENCES persona(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
+
 CREATE TABLE productos(
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nombre VARCHAR(100),
@@ -53,7 +54,26 @@ INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nik
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
                     quasi delectus vero enim voluptatem asperiore.</li>
             </ul>');
-
+INSERT INTO productos VALUES(null, 'Top nike','top.jpeg', 'top', 35.99 ,'ropa',11,'Mujer','<p>Top corto</p> <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+            </ul>');
+INSERT INTO productos VALUES(null, 'camisera','polera.jpg', 'camiseta', 25.99 ,'ropa',11,'Hombre','<p>camiseta </p> <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
+                    quasi delectus vero enim voluptatem asperiore.</li>
+            </ul>');
 
 CREATE TABLE favoritos(
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,

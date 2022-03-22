@@ -8,9 +8,31 @@
     height: 100vh;
 }
 
-
 header img{
     width: 100%;
     display: block;
     margin: 0px auto;
+}
+.titulo{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    text-align: center;
+    color: white;
+}
+.titulo p{
+    font-weight: bolder;
+}
+main{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+}
+.card-1{
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }

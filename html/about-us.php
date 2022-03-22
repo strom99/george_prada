@@ -21,3 +21,15 @@
 <div>
     <h1>Marti</h1>
 </div>
+
+<div class="contenedor">
+    <header>
+        <div class="card">
+            <h2>CONÓCENOS</h2>
+            <p>Conoce al equipo que trabajará contigo día a día
+                para hacer que tus objetivos sean una realidad
+            </p>
+            <img src="img/fitness.jpg" alt="culturismo">
+        </div>
+    </header>
+</div>

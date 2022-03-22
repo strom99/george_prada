@@ -22,7 +22,8 @@
             </div>
             <input class="boton-inicio" name="boton-inicio" type="submit" value="Iniciar Sesion">
             <nav class="navegador">
-                <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=Registro">¿No tienes cuenta? <span>Crea una ahora</span></a>
+                <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=Registro">¿No tienes cuenta? <span>Crea una
+                        ahora</span></a>
             </nav>
             <div>
                 <p>Puedes ingresar con tus redes sociales:</p>
@@ -44,7 +45,6 @@
         }
 
         ?>
-
 
     </div>
 </div>

@@ -27,6 +27,13 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <?php include "html/$page.php"; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+
+    <!--Añadir mi Scrtipt-->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="js/Contacto.js"></script>
+
 </body>
 <?php 
 if (isset($_SESSION['datosUsuario'])) {

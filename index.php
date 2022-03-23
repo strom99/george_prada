@@ -28,7 +28,8 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </body>
-<?php if (isset($_SESSION['datosUsuario'])) {
+<?php 
+if (isset($_SESSION['datosUsuario'])) {
     include "html/footer.php";
 } ?>
 

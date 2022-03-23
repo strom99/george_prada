@@ -50,9 +50,9 @@
         </div>
         <div class="card">
             <div class="title">
-                <img style="width: 200px;" src="img/alison.jpg" alt="imagen-1">
+                <img style="width: 200px;" src="img/Marti.jpg" alt="imagen-1">
                 <h1>Martí</h1>
-                <span>Full Stack Developer</span>
+                <span>Designer</span>
             </div>
             <div>
                 <a href="#">
@@ -65,8 +65,7 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>hello, my name is laura,in charge of the functionality of the page and the database. Excited about
-                keeping this project going</p>
+            <p>My name is Marti, I am in charge of the functionality design apartment of the page. I am so excited to take part of this project</p>
         </div>
     </main>
 </div>

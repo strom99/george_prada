@@ -9,7 +9,7 @@
         </div>
     </header>
     <div>
-        <img src="" alt="">
+        <img style="width: 200px;" src="img/alison.jpg" alt="">
         <h1>Laura</h1>
         <span>Full Stack Developer</span>
         <div>

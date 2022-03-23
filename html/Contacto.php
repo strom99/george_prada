@@ -20,28 +20,28 @@
                     <label for="nombre" class="colocar_nombre">Nombre
                         <span class="obligatorio">*</span>
                     </label>
-                    <input type="text" name="introducir_nombre" id="nombre" maxlength="40" placeholder="Ingresa su nombre" required pattern="[A-Za-z0-9]+">
+                    <input class="prueba" type="text" name="introducir_nombre" id="nombre" maxlength="40" placeholder="Ingresa su nombre" required pattern="[A-Za-z0-9]+">
                 </p>
 
                 <p>
                     <label for="email" class="colocar_email">Correo
                         <span class="obligatorio">*</span>
                     </label>
-                    <input type="email" name="introducir_email" id="email" maxlength="50" placeholder="Ingresa su correo" required />
+                    <input class="prueba" type="email" name="introducir_email" id="email" maxlength="50" placeholder="Ingresa su correo" required />
                 </p>
 
                 <p>
                     <label for="product" class="colocar_idproducto">ID del Producto
                         <span class="obligatorio">*</span>
                     </label>
-                    <input type="prod" name="introducir_idproducto" id="producto" maxlength="15" placeholder="Ingresa el ID del producto" required>
+                    <input class="prueba" type="prod" name="introducir_idproducto" id="producto" maxlength="15" placeholder="Ingresa el ID del producto" required>
                 </p>
 
                 <p>
                     <label for="asunto" class="colocar_asunto">Asunto
                         <span class="obligatorio">*</span>
                     </label>
-                    <input type="text" name="introducir_asunto" id="assunto" maxlength="50" placeholder="Ingresa el asunto" required>
+                    <input class="prueba" type="text" name="introducir_asunto" id="assunto" maxlength="50" placeholder="Ingresa el asunto" required>
                 </p>
 
                 <p>

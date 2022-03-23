@@ -18,6 +18,7 @@ header img{
     top: 350px;
     left: 350px;
     text-align: center;
+<<<<<<< HEAD
     color: white;
 }
 .titulo p{
@@ -35,4 +36,10 @@ main{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+=======
+}
+.titulo p{
+    color: white;
+    font-weight: bold;
+>>>>>>> 45f453d2c92c8173a9f0dcf96959ee16677cffe3
 }

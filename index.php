@@ -2,7 +2,7 @@
 
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada';
+$_SESSION['RUTA_BASE'] = 'http://localhost/maquetacion-M09';
 $page = $_GET['page'] ?? 'paginaInicio';
 
 ?>
@@ -29,20 +29,13 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>
-<<<<<<< HEAD
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
 
-    <!--Añadir mi Scrtipt-->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="js/Contacto.js"></script>
 
-=======
     <script src="js/menu.js"></script>
     <script src="js/Registro.js"></script>
->>>>>>> 257e93980b1f3feb1d4197e3e3fd312ad4031bda
 </body>
 <?php
 if (isset($_SESSION['datosUsuario'])) {

@@ -7,39 +7,76 @@
     width: 100%;
     height: 100vh;
 }
-
-header img{
-    width: 100%;
-    display: block;
-    margin: 0px auto;
+.imagen { 
+     height: 90vh; 
+     width: 100%; 
+     background-image:   linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.6)
+      ),
+     url('../img/fitness.jpg'); 
+     background-position: center top;
+     background-size: cover;   
 }
 .titulo{
     position: absolute;
     top: 350px;
     left: 350px;
     text-align: center;
-<<<<<<< HEAD
-    color: white;
-}
-.titulo p{
-    font-weight: bolder;
-}
-main{
-    width: 100%;
-    margin-top: 40px;
-    display: flex;
-}
-.card-1{
-    width: 40%;
-    height: 300px;
-    border: 1px solid black;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-=======
 }
 .titulo p{
     color: white;
     font-weight: bold;
->>>>>>> 45f453d2c92c8173a9f0dcf96959ee16677cffe3
+}
+/* MAIN CONTENT */
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+.min-info img{
+    width: 180px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.card{
+    width: 100%;
+    margin-top: 45px;
+}
+.card>p{
+    width: 95%;
+    text-align: center;
+    color: black;
+}
+.min-info{
+    width:80%;
+    text-align: center;
+}
+.redes{
+    width: 80%;
+    text-align: center;
+}
+.redes a i{
+    font-size: 25px;
+}
+.redes a i:hover{
+    font-size: 15px;
+    transform: scale(2,2);
+}
+.min-info h2{
+    color: #008CB2;
+}
+span{
+    color: gray;
+}
+footer{
+    margin-top: 700px;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    color: white;
+    line-height: 5;
+    text-align: center;
 }

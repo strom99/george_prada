@@ -2,7 +2,7 @@
 
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada';
+$_SESSION['RUTA_BASE'] = 'http://localhost/maquetacion-M09';
 $page = $_GET['page'] ?? 'paginaInicio';
 
 ?>

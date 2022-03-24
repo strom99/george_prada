@@ -29,7 +29,6 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>
-    <script src="js/index.js"></script>
 
     <!--Añadir mi Scrtipt-->
     <script src="js/Contacto.js"></script>

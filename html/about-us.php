@@ -1,14 +1,13 @@
 <div class="contenedor">
     <header>
         <div class="imagen">
-
-        </div>
         <div class="titulo">
             <h1>CONÓCENOS</h1>
             <p>
                 Conoce al equipo que trabajará contigo día a día
-                para hacer que tus objetivos sean una realidad
+                para hacer que tus objetivos sean una realidad.
             </p>
+        </div>
         </div>
     </header>
     <main>
@@ -30,12 +29,12 @@
                 </a>
             </div>
             <p>hello, my name is laura,in charge of the functionality of the page and the database. Excited about
-                keeping this project going</p>
+                keeping this project going.</p>
         </div>
         <div class="card">
             <div class="min-info">
                 <img src="img/jordi.jpg" alt="imagen-2">
-                <h2>Jordi</h2>
+                <h2>Jordy</h2>
                 <span>DataBase Administrator</span>
             </div>
             <div class="redes">
@@ -70,8 +69,10 @@
                 </a>
             </div>
             <p>My name is Marti, I am in charge of the functionality design apartment of the page. I am so excited to
-                take part of this project</p>
+                take part of this project.</p>
         </div>
     </main>
-
+    <footer>
+            En George Prada queremos compartir contigo esta pasión y acompañarte paso a paso hasta conseguir tus objetivos &copy 2020.
+    </footer>
 </div>

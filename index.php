@@ -30,6 +30,8 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/additional-methods.min.js"></script>
     <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>
         <script src="js/<?php echo $page ?>.js"></script>
@@ -38,8 +40,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <?php
     if (isset($_SESSION['datosUsuario'])) { ?>
         <script src="js/menu.js"></script>
-    <?php include "html/footer.php";
-    } ?>
+    <?php } ?>
 </body>
 
 </html>

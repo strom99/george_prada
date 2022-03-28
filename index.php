@@ -35,8 +35,6 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>
-    <!--Añadir mi Scrtipt-->
-    
     
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>

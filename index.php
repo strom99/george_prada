@@ -2,7 +2,7 @@
 
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = 'http://localhost/maquetacion-M09';
+$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada';
 $page = $_GET['page'] ?? 'paginaInicio';
 
 ?>
@@ -18,10 +18,6 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
     <link rel="stylesheet" href="estilos/global.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/additional-methods.min.js"></script>
-    <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,14 +27,20 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <?php include "html/$page.php"; ?>
 
     <!--Añadir mi Scrtipt-->
-    <script src="js/Contacto.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
+    <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
+    <!-- verificar si existe el archivo js-->
+    <?php if (file_exists("js/$page.js")) { ?>
+        <script src="js/<?php echo $page ?>.js"></script>
+    <?php } ?>
 
-    <script src="js/menu.js"></script>
-    <script src="js/Registro.js"></script>
+    <?php
+    if (isset($_SESSION['datosUsuario'])) { ?>
+        <script src="js/menu.js"></script>
+    <?php include "html/footer.php";
+    } ?>
 </body>
-<?php
-if (isset($_SESSION['datosUsuario'])) {
-    include "html/footer.php";
-} ?>
 
 </html>

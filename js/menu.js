@@ -1,5 +1,4 @@
-const hamburguesa = document.querySelector(".hamburguesa");
+$(".hamburguesa").on('click', function(){
+  $(".barra-menu").toggleClass("header-expanded");
+})
 
-hamburguesa.addEventListener("click", function () {
-  document.querySelector(".barra-menu").classList.toggle("header-expanded");
-});

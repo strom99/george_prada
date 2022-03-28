@@ -1,4 +1,4 @@
-/* $(".formulario").validate({
+$(".formulario").validate({
     focusCleanup:true,
     rules:{
         usuario:{
@@ -13,4 +13,4 @@
             minlength:"<span class='alerta'></span>"
         }
     }
-}) */
+}) 

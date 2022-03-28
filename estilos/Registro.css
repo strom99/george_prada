@@ -41,6 +41,8 @@ input, p, label {
 .cajaDatos{
     width: 100%;
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cajaDatos input {
@@ -77,7 +79,11 @@ input{
     border-radius: 5px;
 }
 
-.alerta{
-    
+label.error{
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 3px;
+    color: #018cb2;
+    border-radius: 5px;
 }
 

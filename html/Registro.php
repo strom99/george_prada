@@ -4,7 +4,7 @@
     </div>
     <div class="contenedorPagina">
         <div class="primeraImg">
-        <img src="img/user5.webp" alt="icono usuario">
+            <img src="img/user5.webp" alt="icono usuario">
         </div>
         <form class="formulario" action="<?php echo $_SESSION['RUTA_BASE'] ?>/procesos/registrar.php" method="POST">
             <div class="cajaDatos usuario">
@@ -17,7 +17,7 @@
                 <p>
                     Contraseña
                 </p>
-                <input class="datos" type="password" name="contrasena" placeholder="Ingresa tu contraseña">
+                <input class="datos contrasena " type="password" name="contrasena" placeholder="Ingresa tu contraseña">
             </div>
             <div class="cajaDatos contrasena2">
                 <p>

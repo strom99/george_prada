@@ -14,7 +14,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>George Prada</title>
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
     <link rel="stylesheet" href="estilos/global.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -25,7 +25,6 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>
-
     <!--Añadir mi Scrtipt-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

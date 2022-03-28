@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+}
+.bx-wrapper{
+    width: 100%;
+    height: 85vh;
+}
+.slider .image-1 img{
+    width: 570px;
+    display: block;
+    float: center;
+}

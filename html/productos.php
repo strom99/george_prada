@@ -8,7 +8,7 @@
 
     <div class="galery">
         <?php
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 4; $i++) {
         ?>
             <article class="articulo">
                 <img src="img/girl.jpeg" alt="">

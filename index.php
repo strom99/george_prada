@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada';
+$_SESSION['RUTA_BASE'] = get_cfg_var('ruta_base');
 $page = $_GET['page'] ?? 'paginaInicio';
 ?>
 
@@ -15,8 +15,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <title>George Prada</title>
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
     <link rel="stylesheet" href="estilos/global.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/additional-methods.min.js"></script>
     <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
@@ -25,7 +24,6 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <!-- Libreria Jquery UI -->
     <!--Plugin BxSlider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!--Plugin BxSlider -->
 </head>
@@ -35,16 +33,15 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>
-    <!--Añadir mi Scrtipt-->
-
 
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>
-    <script src="js/<?php echo $page ?>.js"></script>
+        <script src="js/<?php echo $page ?>.js"></script>
     <?php } ?>
+
     <?php
     if (isset($_SESSION['datosUsuario'])) { ?>
-    <script src="js/menu.js"></script>
+        <script src="js/menu.js"></script>
     <?php } ?>
 </body>
 

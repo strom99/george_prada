@@ -39,4 +39,4 @@ $(".formulario").validate({
             email:"Esta direccion de correo es invalida"
         }
     }
-}) 
+}); 

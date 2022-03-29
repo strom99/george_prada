@@ -1,5 +1,3 @@
-<body>
-
   <div class="contact_form">
 
     <div class="formulario">
@@ -40,7 +38,3 @@
       </form>
     </div>
   </div>
-
-</body>
-
-</html>

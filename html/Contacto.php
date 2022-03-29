@@ -17,14 +17,11 @@
     <main>
         <div class="formulario">
             <form action="#">
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre*">
-                <label for="email">Correo Electronico</label>
-                <input type="email" name="correo" id="correo" placeholder="Correo*">
-                <label for="telefono">Teléfono Móvil</label>
-                <input type="number" name="Telefono" id="telefono" placeholder="Telefono">
-                <label for="comentario">Tú Mensaje</label>
-                <textarea name="comentario" id="comentario" cols="20" rows="6"></textarea>
+                <h3>ENVÍANOS TU CONSULTA</h3>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo*">
+                <input type="email" name="correo" id="correo" placeholder="Correo Electronico*">
+                <input type="number" name="Telefono" id="telefono" placeholder="Número Télefono">
+                <textarea name="comentario" id="comentario" cols="20" rows="6" placeholder="Tu mensaje*"></textarea>
                 <input type="submit" id="submit" value="Enviar">
             </form>
         </div>

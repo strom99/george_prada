@@ -19,13 +19,13 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/additional-methods.min.js"></script>
     <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
-    <!-- Libreria Jquery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-    <!-- Libreria Jquery UI -->
     <!--Plugin BxSlider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!--Plugin BxSlider -->
+    <!-- Libreria Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Libreria Jquery UI -->
 </head>
 
 <body>

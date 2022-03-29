@@ -1,13 +1,14 @@
+<!-- https://www.aguaycafe.es/sobre-nosotros/ -->
 <div class="contenedor">
     <header>
         <div class="imagen">
-        <div class="titulo">
-            <h1>CONÓCENOS</h1>
-            <p>
-                Conoce al equipo que trabajará contigo día a día
-                para hacer que tus objetivos sean una realidad.
-            </p>
-        </div>
+            <div class="titulo">
+                <h1>CONÓCENOS</h1>
+                <p>
+                    Conoce al equipo que trabajará contigo día a día
+                    para hacer que tus objetivos sean una realidad.
+                </p>
+            </div>
         </div>
     </header>
     <main>
@@ -73,6 +74,6 @@
         </div>
     </main>
     <footer>
-            En George Prada queremos compartir contigo esta pasión y acompañarte paso a paso hasta conseguir tus objetivos &copy 2020.
+        En George Prada queremos compartir contigo esta pasión y acompañarte paso a paso hasta conseguir tus objetivos &copy 2020.
     </footer>
 </div>

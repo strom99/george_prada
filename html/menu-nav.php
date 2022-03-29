@@ -10,7 +10,7 @@
 <ul class="lista-menu-acciones">
     <li>
         <div class="user-div">
-            <a href="">
+            <a href="" class="user-icon">
                 <i class="user fas fa-user-circle"></i>
             </a>
             <h3 class="nombre-usuario"><?php echo $_SESSION['datosUsuario']['usuario'] ?></h3>

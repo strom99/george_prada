@@ -2,10 +2,10 @@
     <header>
         <div class="imagen">
         <div class="titulo">
-            <h1>CONÓCENOS</h1>
+            <h1>ABOUT US</h1>
             <p>
-                Conoce al equipo que trabajará contigo día a día
-                para hacer que tus objetivos sean una realidad.
+                Meet the team that will work with you everyday
+                to make that your targets be make reality.
             </p>
         </div>
         </div>
@@ -28,8 +28,8 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>hello, my name is laura,in charge of the functionality of the page and the database. Excited about
-                keeping this project going.</p>
+            <p>Hello, my name is Laura and I'm in charge of both frontend and backend programming. And I'm superexcited about
+                keeping this project going! </p>
         </div>
         <div class="card">
             <div class="min-info">
@@ -48,7 +48,7 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>Let me introduce myself, I'm Jordy, I'm in charge of managing the entire database of this website and its
+            <p>Let me introduce myself: I'm Jordy and I'm in charge of managing the entire database of this website and its
                 optimization.</p>
         </div>
         <div class="card">
@@ -68,8 +68,8 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>My name is Marti, I am in charge of the functionality design apartment of the page. I am so excited to
-                take part of this project.</p>
+            <p>My name is Marti and I am the web designer. I am thrilled to
+                take part in this project!</p>
         </div>
     </main>
     <footer>

@@ -17,5 +17,11 @@ main{
 .slider .image-1 img{
     width: 570px;
     display: block;
-    float: center;
+    margin: 0px auto;
 }
+.slider .image-2 img{
+    width: 570px;
+    display: block;
+    margin: 0px auto;
+}
+

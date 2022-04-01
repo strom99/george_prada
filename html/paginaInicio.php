@@ -10,7 +10,7 @@
                 <img src="./img/ropa4.png" alt="asdasd">
             </div>
             <div class="image-2">
-                    asdasdas
+            <img src="./img/ropa-10.png" alt="asdasd">
             </div>
         </div>
     </main>

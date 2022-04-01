@@ -144,6 +144,14 @@ input.boton-inicio[value]{
 .ingresoEnlazado a img{
     width: 18px;
 }
+
+.nombreUsuario-error{
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 3px;
+    color: #018cb2;
+    border-radius: 5px;
+}
 @media only screen and (min-width:500px) {
     .contenedorPagina{
         width: 80%;

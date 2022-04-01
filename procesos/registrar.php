@@ -22,18 +22,23 @@ if (isset($_POST['registrar'])) {
         }
 
         /*Es para verificar que no haya un usuario con el mismo nombre*/
-        $verificar_usuario = $baseDatos->query("SELECT * FROM usuario WHERE usuario = '$usuario'");
-        $verificar_correo = $baseDatos->query("SELECT * FROM usuario WHERE email = '$email'");
+        $verificar_usuario = $baseDatos->prepare("SELECT * FROM usuario WHERE usuario = :usuario");
+        $verificar_usuario->bindParam(':usuario', $usuario);
+        $confirmacion_usuario = $verificar_usuario->execute();
+
+        $verificar_correo = $baseDatos->prepare("SELECT * FROM usuario WHERE email = :email");
+        $verificar_correo->bindParam(':email', $email);
+        $confirmacion_correo = $verificar_correo->execute();
 
         // Si existe un usuario en la base de datos salimos con error.
-        if ($verificar_usuario && $verificar_usuario->num_rows > 0) {
+        if ($confirmacion_usuario && $verificar_usuario->rowCount() > 0) {
             $_SESSION['error'] = "el usuario ya existe";
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
         // Si existe un email en la base de datos salimos con error.
-        if ($verificar_correo && $verificar_correo->num_rows > 0) {
+        if ($confirmacion_correo && $verificar_correo->rowCount() > 0) {
             $_SESSION['error'] = "el correo ya existe";
             header('Location:' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
@@ -43,12 +48,12 @@ if (isset($_POST['registrar'])) {
         $personaQuery = $baseDatos->query('INSERT INTO persona() VALUES ()');
 
         if (!$personaQuery) {
-            $_SESSION['error'] = "Error al crear la persona " . $baseDatos->error;
+            $_SESSION['error'] = "Error al crear la persona " . $baseDatos->errorInfo()[2];
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
-        $idPersonaCreada = $baseDatos->insert_id;
+        $idPersonaCreada = $baseDatos->lastInsertId();
 
         // Si el email tiene @stucom.com será admin, si no, será usuario;
         if (preg_match('/.*@stucom.com/', $email) === 1) {
@@ -57,19 +62,28 @@ if (isset($_POST['registrar'])) {
             $rol = 2;
         }
 
-        $usuarioQuery = $baseDatos->query("INSERT INTO usuario (usuario, contrasena, email, rol_id, persona_id) VALUES('$usuario' , '$contraseña_encriptada', '$email', '$rol', '$idPersonaCreada')");
+        $usuarioQuery = $baseDatos->prepare("INSERT INTO usuario (usuario, contrasena, email, rol_id, persona_id) VALUES(:usuario, :contrasenaEncrip, :email, :rol, :idPersonaCreada)");
+        $usuarioInserted = $usuarioQuery->execute([
+            ':usuario' => $usuario,
+            ':contrasenaEncrip' => $contraseña_encriptada,
+            ':email' => $email,
+            ':rol' => $rol,
+            ':idPersonaCreada' => $idPersonaCreada
+        ]);
 
         // Si la query del usuario no sale bien, salimos del flujo.
-        if (!$usuarioQuery) {
-            $_SESSION['error'] = "Error al crear el usuario " . $baseDatos->error;
+        if (!$usuarioInserted) {
+            $_SESSION['error'] = "Error al crear el usuario" . $usuarioQuery->errorInfo()[2];
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
         // recoleccion datos usuario registrado
-        $usuarioInsertadoConsultado = $baseDatos->query("SELECT * FROM usuario WHERE usuario = '$usuario'");
+        $usuarioInsertadoConsultado = $baseDatos->prepare("SELECT * FROM usuario WHERE usuario = :usuario");
+        $usuarioInsertadoConsultado->bindParam(':usuario', $usuario);
+        $usuarioInsertadoConsultado->execute();
         // guardamos los datos del usuario insertado en un array asociativo
-        $datosUsuario = $usuarioInsertadoConsultado->fetch_assoc();
+        $datosUsuario = $usuarioInsertadoConsultado->fetch();
         if (!isset($_SESSION['datosUsuario'])) {
             $_SESSION['datosUsuario'] = $datosUsuario;
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=paginaInicio');

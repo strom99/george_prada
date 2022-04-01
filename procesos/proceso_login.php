@@ -9,10 +9,14 @@ if (isset($_POST['boton-inicio'])) {
         $usuario = $_POST['usuario'];
         $contrasena = $_POST['contrasena'];
         //$usuario = $_POST['usuario'] ?? null;
-        $consultaLogin = $baseDatos->query("SELECT * FROM usuario WHERE usuario = '$usuario'");
-        $numResult = $consultaLogin->num_rows;
+        // Para evitar ataques conocidos como SQL INJECTION
+        $consultaLogin = $baseDatos->prepare("SELECT * FROM usuario WHERE usuario = :usuario");
+        $consultaLogin->bindParam(':usuario', $usuario);
+        $consultaLogin->execute();
 
-        $datosUsuario = $consultaLogin->fetch_assoc();
+        $numResult = $consultaLogin->rowCount(); // antes ->num_rows
+
+        $datosUsuario = $consultaLogin->fetch(); // antes -> fetch_assoc();
         $userContrasena = $datosUsuario['contrasena'];
 
         if ($numResult > 0 && password_verify($contrasena, $userContrasena)) {

@@ -34,6 +34,10 @@ $page = $_GET['page'] ?? 'paginaInicio';
     } ?>
     <?php include "html/$page.php"; ?>
 
+    <?php
+    var_dump($_SESSION['datosUsuario']);
+    ?>
+
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>
         <script src="js/<?php echo $page ?>.js"></script>

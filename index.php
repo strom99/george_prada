@@ -35,7 +35,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <?php include "html/$page.php"; ?>
 
     <?php
-    var_dump($_SESSION['datosUsuario']);
+    // var_dump($_SESSION['datosUsuario']);
     ?>
 
     <!-- verificar si existe el archivo js-->

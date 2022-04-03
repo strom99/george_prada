@@ -14,3 +14,4 @@ try {
 } catch (PDOException $e) {
     throw new Exception('La conexión a la base de datos a fallado: ' . $e->getMessage());
 }
+

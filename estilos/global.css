@@ -151,7 +151,7 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  margin-top: 450px;
+ position: absolute;
 }
 
 /** mientras sea mayor a 600px no se mostraran estas opciones **/

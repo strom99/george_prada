@@ -63,8 +63,4 @@
             <h2>Te dejamos unas FAQ's para ver si resolvemos tus dudas antes de enviar un mensaje.</h2>
         </div>
     </main>
-    <footer>
-        En George Prada queremos compartir contigo esta pasión y acompañarte paso a paso hasta conseguir tus
-        objetivos &copy 2020.
-    </footer>
 </div>

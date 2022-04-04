@@ -33,6 +33,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php";
     } ?>
     <?php include "html/$page.php"; ?>
+
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>
         <script src="js/<?php echo $page ?>.js"></script>

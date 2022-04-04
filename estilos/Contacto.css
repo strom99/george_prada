@@ -59,13 +59,13 @@ main {
   width: 60%;
   height: 408px;
   margin-top: 40px;
-  border-top: 1px solid gray;
+  border-top: 1px solid black;
 
 }
 
 #accordion h3 {
   width: 100%;
-  border-top: 1px solid gray;
+  border-top: 1px solid black;
   cursor: pointer;
   color: #475569;
 }

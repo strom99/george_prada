@@ -39,14 +39,15 @@ $page = $_GET['page'] ?? 'paginaInicio';
         <script src="js/<?php echo $page ?>.js"></script>
     <?php } ?>
 
+    <?php if (isset($_SESSION['datosUsuario'])) {
+        include "html/footer.php";
+    } ?>
+
     <?php
     if (isset($_SESSION['datosUsuario'])) { ?>
         <script src="js/menu.js"></script>
     <?php } ?>
 
-    <?php if (isset($_SESSION['datosUsuario'])) {
-        include "html/footer.php";
-    } ?>
 </body>
 
 </html>

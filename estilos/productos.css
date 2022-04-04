@@ -32,10 +32,6 @@
 
 }
 
-.contenedor{
-    display: flex;
-}
-
 .contenedor aside{
     padding: 10px 0px 0px 30px;
     display: flex;

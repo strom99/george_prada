@@ -3,16 +3,16 @@
 </div>
 <ul class="lista-opcion-user">
     <li>
-        <a href="">Mi perfil</a>
+        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=miPerfil">Mi perfil</a>
     </li>
     <li>
-        <a href="">Mis pedidos</a>
+        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=miPerfil">Mis pedidos</a>
     </li>
     <li>
-        <a href="">Mis notificaciones</a>
+        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=miPerfil">Mis notificaciones</a>
     </li>
     <li>
-        <a href="">Lista de deseo</a>
+        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=miPerfil">Lista de deseo</a>
     </li>
 </ul>
 <ul class="lista-menu-acciones">

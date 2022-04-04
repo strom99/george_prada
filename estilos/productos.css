@@ -35,7 +35,6 @@
 .contenedor{
     display: flex;
     width: 100%;
-    height: 100vh;
 }
 
 .contenedor aside{
@@ -44,4 +43,9 @@
     flex-direction: column;
     gap: 5px;
     width: 200px;
+}
+@media (min-width: 900px) {
+    .contenedor{
+        height: 100vh;
+    }
 }

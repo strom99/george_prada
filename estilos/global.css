@@ -16,6 +16,7 @@ ul {
 
 a{
   text-decoration: none;
+  color: white;
 }
 
 body {
@@ -37,11 +38,14 @@ i {
   justify-content: space-between;
 }
 
-.lista-menu,
-.lista-menu-acciones {
+.lista-menu {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.nav-mobile .lista-menu{
+      padding-top: 65px;
 }
 
 .lista-menu a {
@@ -54,13 +58,14 @@ i {
   border: none;
   cursor: pointer;
   z-index: 60;
+  text-align: center;
 }
 
 .hamburguesa:active {
   transform: scale(1.1);
 }
 
-.lista-menu li a:hover {
+.lista-menu li a:hover , .lista-opcion-user li a:hover{
   color: #008cb2;
 }
 .user,
@@ -95,14 +100,13 @@ i {
   background-color: black;
   align-items: flex-start;
   padding: 10px;
-  padding-top: 30px;
 }
 
 .logo{
   width: 55px;
 }
 
-.user-div {
+.user_btns , .user-div ,.mobile-menu_logo{
   display: flex;
   gap: 10px;
 }
@@ -110,10 +114,37 @@ i {
 .user-div h3{
   color: white;
 }
+.menu-user-general{
+  display: none;
+}
+.nav-user-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 10px;
+  }
 
+  .nav-user-desktop{
+    display: none;
+  }
+
+.header-expanded-mobile{
+    top: 70px;
+    height: 100%;
+    right: 0;
+    display: block;
+    position: absolute;
+    background-color: black;
+    position: absolute;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 20;
+    text-align: end;
+    }
 
 /** mientras sea mayor a 600px no se mostraran estas opciones **/
-@media (min-width: 600px) {
+@media (min-width: 680px) {
   .hamburguesa {
     display: none;
   }
@@ -123,10 +154,28 @@ i {
   .nav-desktop {
     display: flex;
   }
-  .btn-salir{
+  .nav-user-mobile{
     display: none;
   }
-  .nombre-usuario{
-    display: none;
+.nav-user-desktop{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 10px;
   }
+
+  .header-expanded-user{
+    height: auto;
+    top: 70px;
+    right: 10px;
+    display: block;
+    position: absolute;
+    background-color: black;
+    position: absolute;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+  }
+
 }

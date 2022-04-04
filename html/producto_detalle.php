@@ -7,10 +7,12 @@ $producto = null;
 if ($producto_id) {
     $id = $producto_id; // pdo
 
-    $result = $baseDatos->query("SELECT * FROM productos WHERE id = '$id'");
+    $result = $baseDatos->prepare("SELECT * FROM productos WHERE id = :id");
+    $result->bindParam(':id', $id);
+    $resultConsulta = $result->execute();
 
-    if ($result && $result->num_rows === 1) {
-        $producto = $result->fetch_assoc();
+    if ($resultConsulta && $result->rowCount() === 1) {
+        $producto = $result->fetch();
     }
 }
 

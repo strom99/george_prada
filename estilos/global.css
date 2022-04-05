@@ -145,6 +145,12 @@ i {
     text-align: end;
     }
 
+.salir-usuario{
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
 /* Footer */
 footer {
   width: 100%;

@@ -18,7 +18,7 @@
 <ul class="lista-menu-acciones">
     <li class="btn-salir">
         <form action="./procesos/logout.php" method="POST">
-            <input type="submit" value="salir">
+            <input class="salir-usuario" type="submit" value="salir">
         </form>
     </li>
 </ul>

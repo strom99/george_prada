@@ -95,7 +95,7 @@ main {
   font-weight: bolder;
   
 }
-form input {
+.formulario form input {
   width: 55%;
   height: 40px;
   border: 1px solid gray;
@@ -103,10 +103,6 @@ form input {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-form input:focus {
-  outline: none;
 }
 
 textarea {

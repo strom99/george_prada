@@ -44,3 +44,9 @@
     gap: 5px;
     width: 200px;
 }
+
+@media (min-width: 900px) {
+    .contenedor{
+        height: 100vh;
+    }
+}

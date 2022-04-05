@@ -31,4 +31,4 @@ db_username='root'
 db_pass=''
 db_name='george_prada'
 ```
-
+Meet the team that will work with you every day to make your goals come true.

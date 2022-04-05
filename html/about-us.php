@@ -29,7 +29,8 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>Hello, my name is Laura and I'm in charge of both frontend and backend programming. And I'm superexcited about
+            <p>Hello, my name is Laura and I'm in charge of both frontend and backend programming. And I'm superexcited
+                about
                 keeping this project going! </p>
         </div>
         <div class="card">
@@ -49,7 +50,8 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>Let me introduce myself: I'm Jordy and I'm in charge of managing the entire database of this website and its
+            <p>Let me introduce myself: I'm Jordy and I'm in charge of managing the entire database of this website and
+                its
                 optimization.</p>
         </div>
         <div class="card">
@@ -73,4 +75,20 @@
                 take part in this project!</p>
         </div>
     </main>
+    <div class="banner">
+        <div class="box-info">
+            <h3>Sobre Nosotros</h3>
+            <p>En George Prada somos amantes de los hierros desde que tenemos memoria. Vivimos por y para entrenar.
+            </p>
+        </div>
+        <div class="box-info2">
+            <h3>Últimas Novedades</h3>
+            <p>Conoces Nuestras ultimas novedades!</p>
+        </div>
+    </div>
+    <div class="bxslider">
+        <div><p>Con Las Mejores Personalizaciones</p></div>
+        <div><p>Con Las Mejores Personalizaciones</p></div>
+        <div><p>Con Las Mejores Personalizaciones</p></div>
+    </div>
 </div>

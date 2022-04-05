@@ -1,13 +1,3 @@
-<?php
-include 'procesos/conexionBD.php';
-
-$baseDatos->prepare("SELECT * FROM productos WHERE id = :id");
-$result->bindParam(':id', $id);
-$resultConsulta = $result->execute();
-
-
-?>
-
 <div class="contenedor">
     <aside>
         <a href="#">hola</a>

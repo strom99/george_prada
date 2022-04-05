@@ -4,15 +4,23 @@ $(".formulario").validate({
             required:true,
             minlength:4,
             maxlength:15
+        },
+        contrasena:{
+            required:true,
+            minlength:5,
+            maxlength:15
         }
     },
     messages:{
         usuario:{
-            required: ""
+            required:"Te falta rellenar los campos de usuario",
+            minlength:"Te faltan mas caracteres",
+            maxlength:"El numero maximo de caracteres es 15"
+        },
+        contrasena:{
+            required:"Ingresa la contraseña porfavor",
+            minlength:"Te faltan mas caracteres",
+            maxlength:"El numero maximo de caracteres es 15"
         }
     }
-
-
-})
-// al cargar la pagina , le aparesca las cookies , y si acepta y recarga que ya no le aparezca cokies
-// sesion cliente , localstorage.setItem("aceptado","si"):localstoreg.getItem(aceptado) para las cookies
+}); 

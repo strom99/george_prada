@@ -2,11 +2,6 @@ h1{
     color: white;
     margin-bottom: 20px;
 }
-input {
-    margin-top: 5px;
-    padding: 5px 10px;
-    font-family: inherit;
-}
 
 input, p, label {
     font-size: 16px;
@@ -32,6 +27,7 @@ input, p, label {
     flex-direction: column;
     gap: 40px;
     height: 100vh;
+    background-color: #191515;
 }
 
 .iconUser{
@@ -45,9 +41,6 @@ input, p, label {
     flex-direction: column;
 }
 
-.cajaDatos input {
-    width: 100%;
-}
 
 .formulario-footer {
     margin-top: 20px;
@@ -67,7 +60,7 @@ input, p, label {
 
 .contenedorPagina{
     width: 90%;
-    max-width: 600px;
+    height: auto;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
@@ -77,13 +70,17 @@ input{
     background-color: white;
     height: 35px;
     border-radius: 5px;
+     margin-top: 5px;
+    padding: 5px 10px;
+    font-family: inherit;
 }
 
-label.error{
+
+#usuario-error , #contrasena-error, #contrasena2-error, #email-error{
     background-color: #eeeeee;
     padding: 10px;
     margin: 3px;
-    color: #018cb2;
+    color: red;
     border-radius: 5px;
 }
 

@@ -7,18 +7,21 @@
             <img src="img/user5.webp" alt="icono usuario">
         </div>
         <form class="formulario" action="procesos/proceso_login.php" method="POST">
-
             <div class="cajaDatos">
-                <label for="nombreUsuario">
-                    <img src="img/user15.png" alt="icono usuario">
-                </label>
-                <input class="datos" name="usuario" type="text" id="nombreUsuario" placeholder="Usuario">
+                <div class="caja-datos-user">
+                    <label for="nombreUsuario">
+                        <img src="img/user15.png" alt="icono usuario">
+                    </label>
+                    <input class="datos datos-user" name="usuario" type="text" id="nombreUsuario" placeholder="Usuario">
+                </div>
             </div>
             <div class="cajaDatos">
-                <label for="contraUsuario">
-                    <img src="img/candado1.png" alt="icono candado">
-                </label>
-                <input class="datos" name="contrasena" type="password" id="contraUsuario" placeholder="Contraseña">
+                <div class="caja-datos-contra">
+                    <label for="contraUsuario">
+                        <img src="img/candado1.png" alt="icono candado">
+                    </label>
+                    <input class="datos" name="contrasena" type="password" id="contraUsuario" placeholder="Contraseña">
+                </div>
             </div>
             <input class="boton-inicio" name="boton-inicio" type="submit" value="Iniciar Sesion">
             <nav class="navegador">
@@ -28,10 +31,10 @@
             <div>
                 <p>Puedes ingresar con tus redes sociales:</p>
                 <div class="ingresoEnlazado">
-                    <a href=#>
+                    <a class="facebook-icono" href=#>
                         <img src="img/facebook-f-brands.svg" alt="">
                     </a>
-                    <a href=#>
+                    <a class="google-icono" href=#>
                         <img src="img/google-brands.svg" alt="">
                     </a>
                 </div>

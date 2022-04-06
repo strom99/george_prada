@@ -40,3 +40,6 @@ $(".formulario").validate({
         }
     }
 }); 
+$(".boton").on("click" , function(){
+    $(".error-php").css("display","flex");
+})

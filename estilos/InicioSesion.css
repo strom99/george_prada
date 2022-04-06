@@ -146,11 +146,11 @@ input.boton-inicio[value]{
     width: 16px;
 }
 
-#nombreUsuario-error , #contraUsuario-error{
+#nombreUsuario-error , #contraUsuario-error , .error-login{
     background-color: #eeeeee;
     padding: 10px;
     margin: 3px;
-    color: red;
+    color: #dc0000;
     border-radius: 5px;
     width: 100%;
     height: auto;
@@ -161,6 +161,10 @@ input.boton-inicio[value]{
     width: 100%;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.error-login{
+    display: none;
 }
 @media only screen and (min-width:500px) {
     .contenedorPagina{

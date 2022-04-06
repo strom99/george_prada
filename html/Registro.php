@@ -35,15 +35,9 @@
                 <p class="terminos">Una ves registrado aceptarás nuestros términos y condiciones.</p>
                 <button class="boton" type="submit" name="registrar">Registrar</button>
             </div>
-
-
             <?php
-
-            if (isset($_SESSION['error'])) {
-                echo $_SESSION['error'];
-            }
-
-            ?>
+            if (isset($_SESSION['error-registro'])) {
+            ?> <div class="error-php"><?php echo $_SESSION['error-registro'] ?></div><?php } ?>
         </form>
     </div>
 </div>

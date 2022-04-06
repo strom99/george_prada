@@ -1,7 +1,7 @@
 <?PHP
 session_start();
 include 'conexionBD.php';
-$_SESSION['error'] = '';
+$_SESSION['error-login'] = '';
 
 if (isset($_POST['boton-inicio'])) {
     if (!empty($_POST['usuario']) && !empty($_POST['contrasena'])) {
@@ -24,12 +24,12 @@ if (isset($_POST['boton-inicio'])) {
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=paginaInicio');
             exit;
         } else {
-            $_SESSION['error'] = "usuario o contraseña incorrectos";
+            $_SESSION['error-login'] = "Usuario o contraseña incorrectos";
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=InicioSesion');
             exit;
         }
     } else {
-        $_SESSION['error'] = "rellena todos los campos";
+        $_SESSION['error-login'] = "Rellena todos los campos";
         header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=paginaInicio');
         exit;
     }

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$_SESSION['error'] = '';
+$_SESSION['error-registro'] = '';
 //Incluimos la base de datos para traer toda la informacion
 
 include("conexionBD.php");
@@ -16,7 +16,7 @@ if (isset($_POST['registrar'])) {
 
         // Comprobamos contraseñas sean iguales, si no, salimos del flujo.
         if ($contrasena !== $contrasena2) {
-            $_SESSION['error'] = "las contraseñas no son iguales";
+            $_SESSION['error-registro'] = "Las contraseñas no coinciden";
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
@@ -32,14 +32,14 @@ if (isset($_POST['registrar'])) {
 
         // Si existe un usuario en la base de datos salimos con error.
         if ($confirmacion_usuario && $verificar_usuario->rowCount() > 0) {
-            $_SESSION['error'] = "el usuario ya existe";
+            $_SESSION['error-registro'] = "El usuario ya existe";
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
 
         // Si existe un email en la base de datos salimos con error.
         if ($confirmacion_correo && $verificar_correo->rowCount() > 0) {
-            $_SESSION['error'] = "el correo ya existe";
+            $_SESSION['error-registro'] = "El correo ya existe";
             header('Location:' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
@@ -48,7 +48,7 @@ if (isset($_POST['registrar'])) {
         $personaQuery = $baseDatos->query('INSERT INTO persona() VALUES ()');
 
         if (!$personaQuery) {
-            $_SESSION['error'] = "Error al crear la persona " . $baseDatos->errorInfo()[2];
+            $_SESSION['error-registro'] = "Error al crear la persona " . $baseDatos->errorInfo()[2];
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
@@ -73,7 +73,7 @@ if (isset($_POST['registrar'])) {
 
         // Si la query del usuario no sale bien, salimos del flujo.
         if (!$usuarioInserted) {
-            $_SESSION['error'] = "Error al crear el usuario" . $usuarioQuery->errorInfo()[2];
+            $_SESSION['error-registro'] = "Error al crear el usuario" . $usuarioQuery->errorInfo()[2];
             header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
             exit;
         }
@@ -90,7 +90,7 @@ if (isset($_POST['registrar'])) {
             exit;
         }
     } else {
-        $_SESSION['error'] = "falta rellenar";
+        $_SESSION['error-registro'] = "Falta rellenar";
         header('Location: ' . $_SESSION["RUTA_BASE"] . '/index.php?page=Registro');
         exit;
     }

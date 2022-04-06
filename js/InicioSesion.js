@@ -24,3 +24,7 @@ $(".formulario").validate({
         }
     }
 }); 
+$(".boton-inicio").on("click" , function(){
+    $(".error-login").css("display","flex");
+})
+

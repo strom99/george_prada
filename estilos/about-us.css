@@ -1,32 +1,3 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-ul {
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  margin: 0px 5px;
-}
-
-body {
-  height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-i {
-  color: white;
-}
 
 .contenedor{
     margin-bottom: 50px;
@@ -156,6 +127,10 @@ main {
     align-items: center;
 }
 
+.redes a{
+  text-decoration: none;
+  margin: 0px 3px;
+}
 .redes {
     width: 80%;
     text-align: center;
@@ -241,6 +216,9 @@ footer {
     }
     .nav-mobile {
         display: none;
+    }
+    .bx-wrapper{
+        width: 100%;
     }
 }
 

@@ -42,12 +42,8 @@
             </div>
         </form>
         <?php
-
-        if (isset($_SESSION['error'])) {
-            echo $_SESSION['error'];
-        }
-
-        ?>
+        if (isset($_SESSION['error-login'])) {
+        ?> <div class="error-login"><?php echo $_SESSION['error-login'] ?></div><?php } ?>
 
     </div>
 </div>

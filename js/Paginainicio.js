@@ -15,8 +15,3 @@ function cookies() {
         localStorage.setItem('test','si');
     })
 }
-
-let testing = localStorage.getItem('test');
-if (testing == 'si') {
-    $('.banner-cookie').hide();
-}

@@ -1,16 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  margin: 0px 5px;
+}
+
+body {
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+i {
+  color: white;
+}
+
+.contenedor{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.barra-menu {
+  background-color: black;
+  padding: 8px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lista-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.lista-menu a {
+  width: 100%;
+  color: white;
+}
+
+.us{
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+.hamburguesa,.lista-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 60;
+  text-align: center;
+  width: auto;
+}
+
+.hamburguesa:active {
+  transform: scale(1.1);
+}
+
+.lista-menu li a:hover , .lista-opcion-user li a:hover{
+  color: #008cb2;
+}
+.user,
+.bolsa, .hamburguesa {
+  font-size: 27px;
+}
+
+.logo{
+  width: 55px;
+}
+
+.user_btns , .user-div ,.mobile-menu_logo{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user-div h3{
+  color: white;
+}
 
 .imagen {
-    height: 90vh;
+    height: 93vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.6)),
         url('../img/fitness.jpg');
     background-position: center top;
     background-size: cover;
+    padding: 0px 170px;
 }
 
 .titulo {
-    color: black;
+    color: #008cb2;
     text-align: center;
     padding-top: 260px;
 }
@@ -19,6 +115,7 @@
     text-align: center;
     color: white;
     font-size: 17px;
+    line-height: 22px;
 }
 
 /* MAIN CONTENT */
@@ -26,35 +123,43 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0px auto;
-    margin-bottom: 50px;
+    margin: 50px auto;
+    height: 80vh;
+    flex: 1;
 }
 
 .min-info img {
-    width: 55%;
-    height: 270px;
+    width: 335px;
+    height: 240px;
     border-radius: 10px;
+    min-height: 400px;
 }
 
-.card {
-    width: 100%;
-    margin-top: 35px;
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
 }
 
 .card>p {
     width: 70%;
-    margin: 0px auto;
     color: #0f172a;
 }
 
 .min-info {
     width: 80%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .redes {
     width: 80%;
     text-align: center;
+    margin: 8px 0px;
 }
 
 .redes a i {
@@ -67,11 +172,28 @@ main {
 }
 
 .min-info h2 {
-    color: #475569;
+    color: black;
 }
 
 span {
-    color: #71717a;
+    color: #008cb2;
+}
+
+.two{
+    display: block;
+}
+footer {
+  width: 100%;
+  height: 85px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburguesa {
+    display: none;
 }
 /* Banner */
 .banner{
@@ -98,3 +220,28 @@ span {
 .bx-Slider img{
     height: 20px;
 }
+
+@media (max-width:1200px) {
+    main{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .card-width100{
+        width: 500px;
+        flex-wrap: wrap
+    }
+}
+
+@media (max-width:720px){
+    .lista-menu{
+        display: none;
+    }
+    .imagen{
+        padding: 0px 100px;
+    }
+    .nav-mobile {
+        display: none;
+    }
+}
+
+

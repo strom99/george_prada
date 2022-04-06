@@ -1,18 +1,26 @@
-<!-- https://www.aguaycafe.es/sobre-nosotros/ -->
 <div class="contenedor">
     <header>
         <div class="imagen">
             <div class="titulo">
                 <h1>ABOUT US</h1>
                 <p>
-                    Meet the team that will work with you everyday
-                    to make that your targets be make reality.
+                    Everything we do has its roots in the world of GYM. Sport/exercise plays an increasingly
+                    important role in the lives of
+                    more and more people, inside and outside the professional field. It is fundamental to every
+                    culture and society and is
+                    fundamental to our health and happiness.<br><br>
+
+                    We want to take care of being the best clothing company not only for our predefined designs, but
+                    for giving you that
+                    touch of personality for each one, not to mention the comfort of each of the fabrics.
+                    All this to help you in your sports processes, whatever the activity you do, offering you 100%
+                    comfort.
                 </p>
             </div>
         </div>
     </header>
     <main>
-        <div class="card">
+        <div class="card card-width100">
             <div class="min-info">
                 <img src="img/alison.jpg" alt="imagen-1">
                 <h2>Laura</h2>
@@ -29,7 +37,8 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>Hello, my name is Laura and I'm in charge of both frontend and backend programming. And I'm superexcited
+            <p>Hello, my name is Laura and I'm in charge of both frontend and backend programming. And I'm
+                superexcited
                 about
                 keeping this project going! </p>
         </div>
@@ -50,7 +59,8 @@
                     <i style="color:black" class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-            <p>Let me introduce myself: I'm Jordy and I'm in charge of managing the entire database of this website and
+            <p>Let me introduce myself: I'm Jordy and I'm in charge of managing the entire database of this website
+                and
                 its
                 optimization.</p>
         </div>
@@ -87,8 +97,14 @@
         </div>
     </div>
     <div class="bxslider">
-        <div><p>Con Las Mejores Personalizaciones</p></div>
-        <div><p>Con Las Mejores Personalizaciones</p></div>
-        <div><p>Con Las Mejores Personalizaciones</p></div>
+        <div>
+            <p>Con Las Mejores Personalizaciones</p>
+        </div>
+        <div>
+            <p>Con Las Mejores Personalizaciones</p>
+        </div>
+        <div>
+            <p>Con Las Mejores Personalizaciones</p>
+        </div>
     </div>
 </div>

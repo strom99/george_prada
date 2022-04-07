@@ -16,7 +16,7 @@
     </div>
     <main>
         <div class="formulario">
-            <form action="#">
+            <form action="#" id="form-consulta" method="POST">
                 <h3>ENVÍANOS TU CONSULTA</h3>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo*">
                 <input type="email" name="correo" id="correo" placeholder="Correo Electronico*">

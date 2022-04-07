@@ -16,6 +16,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
     <link rel="stylesheet" href="estilos/global.css">
     <script src="js/jquery.min.js"></script>
+    <script src="js/global.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/additional-methods.min.js"></script>
     <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
@@ -34,10 +35,17 @@ $page = $_GET['page'] ?? 'paginaInicio';
     } ?>
     <?php include "html/$page.php"; ?>
 
+    <div class="banner-cookie">
+        <div>
+        <p>¿Permitir el uso de cookies en este navegador?</p>
+            <button id="accept">Acceptar</button>
+        </div>
+    </div>
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>
         <script src="js/<?php echo $page ?>.js"></script>
     <?php } ?>
+
 
     <?php if (isset($_SESSION['datosUsuario'])) {
         include "html/footer.php";

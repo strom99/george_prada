@@ -1,6 +1,6 @@
 $(document).ready(function () {
  slider();
- cookies();
+
 });
 function slider() {
     $('.slider').bxSlider({
@@ -8,10 +8,4 @@ function slider() {
         captions: true,
     });
     
-}
-function cookies() {
-    $('#accept').click(function () {
-        $('.banner-cookie').hide();
-        localStorage.setItem('test','si');
-    })
 }

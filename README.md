@@ -24,7 +24,7 @@ en Window `Buscarse la vida`
 ```php
 [opciones george_prada]
 
-ruta_base='http://localhost/george_prada'
+ruta_base='http://localhost/george_prada/marcas-PTransversal'
 
 db_host='localhost'
 db_username='root'

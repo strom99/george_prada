@@ -73,10 +73,4 @@
                 </div>
             </div>
         </div>
-        <div class="banner-cookie">
-            <div>
-            <p>¿Permitir el uso de cookies en este navegador?</p>
-                <button id="accept">Acceptar</button>
-            </div>
-        </div>
     </main>

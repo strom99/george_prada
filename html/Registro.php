@@ -31,10 +31,10 @@
                 </p>
                 <input class="datos" type="email" name="email" placeholder="Ingresa tu correo">
             </div>
-            <div class="formulario-footer">
-                <p class="terminos">Una ves registrado aceptarás nuestros términos y condiciones.</p>
+            <div class="formulario-btn">
                 <button class="boton" type="submit" name="registrar">Registrar</button>
             </div>
+            <!-- Esta session trae el tipo de error al enviar los datos -->
             <?php
             if (isset($_SESSION['error-registro'])) {
             ?> <div class="error-php"><?php echo $_SESSION['error-registro'] ?></div><?php } ?>

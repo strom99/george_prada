@@ -31,16 +31,16 @@ $page = $_GET['page'] ?? 'paginaInicio';
 
 <body>
     <?php if (isset($_SESSION['datosUsuario'])) {
-        include "html/menu.php";
-    } ?>
+        include "html/menu.php"; ?>
+        <div class="banner-cookie">
+            <div>
+                <p>¿Permitir el uso de cookies en este navegador?</p>
+                <button id="accept">Acceptar</button>
+            </div>
+        </div>
+    <?php } ?>
     <?php include "html/$page.php"; ?>
 
-    <div class="banner-cookie">
-        <div>
-            <p>¿Permitir el uso de cookies en este navegador?</p>
-            <button id="accept">Acceptar</button>
-        </div>
-    </div>
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>
         <script src="js/<?php echo $page ?>.js"></script>

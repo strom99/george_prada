@@ -1,3 +1,6 @@
+aside a{
+    color: gray;
+}
 .estre i{
     color: #000;
 }
@@ -43,6 +46,10 @@
     flex-direction: column;
     gap: 5px;
     width: 200px;
+}
+
+.presentacion-producto a{
+    color: #008cb2;
 }
 
 @media (min-width: 900px) {

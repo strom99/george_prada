@@ -1,11 +1,11 @@
 <div class="contenedor">
     <aside>
-        <a href="#">hola</a>
-        <a href="#">hola</a>
-        <a href="#">hola</a>
-        <a href="#">hola</a>
+        <h3>Filtros Busqueda</h3>
+        <a href="#">Nombre</a>
+        <a href="#">Precio</a>
+        <a href="#">Tallas</a>
+        <a href="#">Tipo</a>
     </aside>
-
     <div class="galery">
         <?php
         for ($i = 1; $i <= 4; $i++) {

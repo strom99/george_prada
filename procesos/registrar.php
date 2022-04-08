@@ -57,6 +57,7 @@ if (isset($_POST['registrar'])) {
 
         // Si el email tiene @stucom.com será admin, si no, será usuario;
         if (preg_match('/.*@stucom.com/', $email) === 1) {
+            // admin
             $rol = 1;
         } else {
             $rol = 2;

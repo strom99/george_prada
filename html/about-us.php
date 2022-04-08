@@ -97,14 +97,6 @@
         </div>
     </div>
     <div class="bxslider">
-        <div>
-            <p>Con Las Mejores Personalizaciones</p>
-        </div>
-        <div>
-            <p>Con Las Mejores Personalizaciones</p>
-        </div>
-        <div>
-            <p>Con Las Mejores Personalizaciones</p>
-        </div>
+        <img src="img/card-imagen.webp" alt="hombre con camisa y cuerda">
     </div>
 </div>

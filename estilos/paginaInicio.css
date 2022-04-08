@@ -93,3 +93,20 @@ main{
     text-align: center;
     color: #0f172a;
 }
+@media (max-width:700px) {
+    .sections-products{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card .estrella{
+        height: 45px;
+    }
+
+    .card img{
+        height: auto;
+    }
+
+    .card{
+        margin: 20px 0px;
+    }
+}

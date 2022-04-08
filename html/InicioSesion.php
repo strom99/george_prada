@@ -41,7 +41,7 @@
                 <a class="contacto" href=#>Ponte en contacto con nosotros</a>
             </div>
         </form>
-        <!-- Esta session trae el tipo de error al enviar los datos -->
+        <!-- Mensaje de error php al enviar datos-->
         <?php
         if (isset($_SESSION['error-login'])) {
         ?> <div class="error-login"><?php echo $_SESSION['error-login'] ?></div><?php } ?>

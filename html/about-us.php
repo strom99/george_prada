@@ -97,6 +97,8 @@
         </div>
     </div>
     <div class="bxslider">
-        <img src="img/card-imagen.webp" alt="hombre con camisa y cuerda">
+       <div><img src="img/man-g2bfd223f9_640.jpg" alt="hombre con camisa y cuerda"></div>
+       <div><img src="img/fitness-g309c6cc3d_640.jpg" alt="hombre con camisa y cuerda"></div>
+       <div><img src="img/products1.jpg" alt="hombre con camisa y cuerda"></div>
     </div>
 </div>

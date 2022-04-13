@@ -1,30 +1,24 @@
 <div class="contenedor">
-    <aside>
-        <h3>Filtros Busqueda</h3>
-        <a href="#">Nombre</a>
-        <a href="#">Precio</a>
-        <a href="#">Tallas</a>
-        <a href="#">Tipo</a>
-    </aside>
-    <div class="galery">
-        <?php
-        for ($i = 1; $i <= 4; $i++) {
-        ?>
-            <article class="articulo">
-                <img src="img/girl.jpeg" alt="">
-                <div class="presentacion-producto">
-                    <span>Categoria</span>
-                    <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=producto_detalle&id=<?php echo $i ?>">Nombre producto</a>
-                    <div class=" estre">
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                    </div>
-                    <h4>34€</h4>
+    <header>
+        <div class="main-info">
+            <h1>Comprar camisetas de gimnasios Online de marcas de confianza</h1>
+            <p>Si estas buscando camisetas gym baratas, estas en lugar adecuado. Los mejores modelos y precios, solo de la mejor calidad. Comprueba nuestros modelos.</p>
+        </div>
+        <div class="content-cards">
+            <div class="card">
+                <img src="./img/girl.jpeg" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h3>CAMISETA CLASSIC GYM AESTHETIC</h3>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
                 </div>
-            </article>
-        <?php } ?>
-    </div>
+            </div>
+
+        </div>
+    </header>
+    <aside>
+        <h3>Filtrar por</h3>
+        
+    </aside>
 </div>

@@ -1,20 +1,104 @@
 <div class="contenedor">
     <header>
         <div class="main-info">
-            <h1>Comprar camisetas de gimnasios Online de marcas de confianza</h1>
+            <h2>Comprar camisetas de gimnasios Online de marcas de confianza</h2>
             <p>Si estas buscando camisetas gym baratas, estas en lugar adecuado. Los mejores modelos y precios, solo de la mejor calidad. Comprueba nuestros modelos.</p>
         </div>
         <div class="content-cards">
             <div class="card">
-                <img src="./img/girl.jpeg" alt="imagen-modelo-gym">
+                <img src="./img/card7.png" alt="imagen-modelo-gym">
                 <div class="min-info">
                     <span>Camisetas</span>
-                    <h3>CAMISETA CLASSIC GYM AESTHETIC</h3>
+                    <h4>Camiseta Aesthetic Girl 2.0</h4>
                     <img src="./img/clasi1.png" alt="estrellas" class="estrella">
                     <span class="precio">€24,99</span>
                 </div>
             </div>
+            <div class="card">
+                <img src="./img/card8.jpg" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Vital Pro Leggins 2.0</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card8.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex 8 Functions Shorts - Tshir</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card10.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card10.png" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+        </div>
 
+        <!-- CONTENT-CARDS 2 -->
+        <div class="content-cards">
+            <div class="card">
+                <img src="./img/card11.png" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Camiseta Aesthetic Girl 2.0</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card12.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Vital Pro Leggins 2.0</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card13.png" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex 8 Functions Shorts - Tshir</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card14.jpg" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card15.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
         </div>
     </header>
     <aside>

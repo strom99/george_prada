@@ -1,3 +1,9 @@
+<?php
+
+include 'procesos/conexionBD.php';
+$number = $baseDatos->query("SELECT * FROM productos");
+$array = $number->fetchAll();
+?>
 <div class="contenedor">
     <header>
         <div class="main-info">
@@ -5,6 +11,19 @@
             <p>Si estas buscando camisetas gym baratas, estas en lugar adecuado. Los mejores modelos y precios, solo de la mejor calidad. Comprueba nuestros modelos.</p>
         </div>
         <div class="content-cards">
+            <?php
+            for ($i = 0; $i < count($array); $i++) { ?>
+                <div class="card">
+                    <img src="./img/<?php $array[3] ?>" alt="imagen-modelo-gym">
+                    <div class="min-info">
+                        <span>Camisetas</span>
+                        <h4>Camiseta Aesthetic Girl 2.0</h4>
+                        <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                        <span class="precio">€24,99</span>
+                    </div>
+                </div>
+            <? } ?>
+            <!--
             <div class="card">
                 <img src="./img/card7.png" alt="imagen-modelo-gym">
                 <div class="min-info">
@@ -52,7 +71,6 @@
             </div>
         </div>
 
-        <!-- CONTENT-CARDS 2 -->
         <div class="content-cards">
             <div class="card">
                 <img src="./img/card11.png" alt="imagen-modelo-gym">
@@ -98,11 +116,11 @@
                     <img src="./img/clasi1.png" alt="estrellas" class="estrella">
                     <span class="precio">€24,99</span>
                 </div>
-            </div>
+            </div>-->
         </div>
     </header>
     <aside>
         <h3>Filtrar por</h3>
-        
+
     </aside>
 </div>

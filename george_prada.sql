@@ -4,6 +4,8 @@ CREATE DATABASE george_prada;
 
 USE george_prada;
 
+SELECT * FROM rol;
+SELECT * FROM usuario;
 
 CREATE TABLE rol (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -43,6 +45,8 @@ CREATE TABLE productos(
     genero ENUM ('Hombre', 'Mujer','Unisex'),
     descripcion TEXT
 );
+SELECT * FROM productos;
+SELECT COUNT(imagen) FROM productos;
 
 INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nike', 34.99 ,'calzados',21,'Unisex','<p>Zapatillas europeras</p> <ul>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
@@ -54,6 +58,9 @@ INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nik
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
                     quasi delectus vero enim voluptatem asperiore.</li>
             </ul>');
+INSERT INTO productos VALUES(NULL , 'ALEATORIO','card8.jpg','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
+INSERT INTO productos VALUES(NULL , 'ALEATORIO','card11.png','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
+
 INSERT INTO productos VALUES(null, 'Top nike','top.jpeg', 'top', 35.99 ,'ropa',11,'Mujer','<p>Top corto</p> <ul>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
                     quasi delectus vero enim voluptatem asperiore.</li>

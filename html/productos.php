@@ -1,8 +1,11 @@
 <?php
 
 include 'procesos/conexionBD.php';
-$number = $baseDatos->query("SELECT * FROM productos");
-$array = $number->fetchAll();
+$number = $baseDatos->prepare("SELECT * FROM productos");
+$number->execute();
+$array = $number->fetchAll(PDO::FETCH_ASSOC);
+$_SESSION['productos'] = $array;
+$cont = 0;
 ?>
 <div class="contenedor">
     <header>
@@ -11,18 +14,18 @@ $array = $number->fetchAll();
             <p>Si estas buscando camisetas gym baratas, estas en lugar adecuado. Los mejores modelos y precios, solo de la mejor calidad. Comprueba nuestros modelos.</p>
         </div>
         <div class="content-cards">
-            <?php
-            for ($i = 0; $i < count($array); $i++) { ?>
+            <?php foreach ($_SESSION['productos'] as $producto => $valor) {
+            ?>
                 <div class="card">
-                    <img src="./img/<?php $array[3] ?>" alt="imagen-modelo-gym">
+                    <img src="./img/<?php echo $valor['imagen'] ?>" alt="imagen-modelo-gym">
                     <div class="min-info">
-                        <span>Camisetas</span>
-                        <h4>Camiseta Aesthetic Girl 2.0</h4>
-                        <img src="./img/clasi1.png" alt="estrellas" class="estrella">
-                        <span class="precio">€24,99</span>
+                        <span><?php echo $valor['genero'] ?></span>
+                        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=producto_detalle&id=<?php echo $valor['id'] ?>"><?php echo $valor['nombre']  ?></a>
+                        <img src=" ./img/clasi1.png" alt="estrellas" class="estrella">
+                        <span class="precio"><?php echo $valor['precio']  ?>€</span>
                     </div>
                 </div>
-            <? } ?>
+            <? }  ?>
             <!--
             <div class="card">
                 <img src="./img/card7.png" alt="imagen-modelo-gym">

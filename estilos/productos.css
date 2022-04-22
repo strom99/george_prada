@@ -6,7 +6,6 @@
 }
 h4{
     font-size: 1rem;
-    color: #475569;
 }
 span{
     color: #475569;
@@ -38,6 +37,11 @@ header{
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
+
+.content-cards h4 {
+    color: gray;
+}
+
 .precio{
     color: #008CB2;
     font-weight: bolder;

@@ -17,6 +17,8 @@ ul {
 
 a{
   text-decoration: none;
+}
+.lista-opcion-user a{
   color: white;
 }
 

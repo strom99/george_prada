@@ -46,6 +46,7 @@ CREATE TABLE productos(
     descripcion TEXT
 );
 SELECT * FROM productos;
+DELETE FROM productos WHERE id = 3;
 SELECT COUNT(imagen) FROM productos;
 
 INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nike', 34.99 ,'calzados',21,'Unisex','<p>Zapatillas europeras</p> <ul>
@@ -60,6 +61,8 @@ INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nik
             </ul>');
 INSERT INTO productos VALUES(NULL , 'ALEATORIO','card8.jpg','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
 INSERT INTO productos VALUES(NULL , 'ALEATORIO','card11.png','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
+INSERT INTO productos VALUES(NULL , 'alfa','girl.jpeg','zara',50.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
+
 
 INSERT INTO productos VALUES(null, 'Top nike','top.jpeg', 'top', 35.99 ,'ropa',11,'Mujer','<p>Top corto</p> <ul>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,

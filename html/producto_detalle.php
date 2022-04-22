@@ -1,9 +1,8 @@
 <?php
-
 include 'procesos/conexionBD.php';
 $producto_id = $_GET['id'] ?? null;
 $producto = null;
-
+var_dump($_SESSION['productos'][$_GET['id']]);
 if ($producto_id) {
     $id = $producto_id; // pdo
 
@@ -15,6 +14,8 @@ if ($producto_id) {
         $producto = $result->fetch();
     }
 }
+var_dump($producto);
+
 
 ?>
 
@@ -50,13 +51,13 @@ if ($producto_id) {
 
             <div class="detalles-container">
                 <header class="header-presentacion-producto cambio2">
-                    <h2><?php echo $producto['nombre'] ?></h2>
+                    <h2></h2>
                     <button>
                         <i class="fas fa-share-alt"></i>
                     </button>
                 </header>
                 <div class="valoracion-principal-producto">
-                    <h3><?php echo $producto['nombre'] ?></h3>
+                    <h3></h3>
                     <div class="estrellas-producto">
                         <i class="estrella fas fa-star"></i>
                         <i class="estrella fas fa-star"></i>
@@ -64,7 +65,7 @@ if ($producto_id) {
                         <i class="estrella fas fa-star"></i>
                         <i class="estrella fas fa-star"></i>
                     </div>
-                    <h3><?php echo $producto['precio'] ?>€</h3>
+                    <h3>€</h3>
                 </div>
                 <div class="formularios">
                     <form action="" class="form-seleccionar-tallas">
@@ -90,10 +91,10 @@ if ($producto_id) {
         <section class="descripcion-producto">
             <h3>Detalles del producto</h3>
             <div>
-                <?php echo $producto['descripcion'] ?>
+
             </div>
         </section>
-
+        <!--
         <section class="dejarComentario">
             <form action="productos.html">
                 <label for="">Deja tu comentario</label>
@@ -163,7 +164,7 @@ if ($producto_id) {
                         vitae ex architecto quo reprehenderit sequi consectetur repellendus minus expedita fuga! Facilis
                         soluta totam consequatur consequuntur at? Nemo.</p>
                 </article>
-            </div>
+            </div>-->
         </section>
     <?php else : ?>
         <section>

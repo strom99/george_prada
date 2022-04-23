@@ -4,8 +4,6 @@ include 'procesos/conexionBD.php';
 $number = $baseDatos->prepare("SELECT * FROM productos");
 $number->execute();
 $array = $number->fetchAll(PDO::FETCH_ASSOC);
-$_SESSION['productos'] = $array;
-$cont = 0;
 ?>
 <div class="contenedor">
     <header>
@@ -14,7 +12,7 @@ $cont = 0;
             <p>Si estas buscando camisetas gym baratas, estas en lugar adecuado. Los mejores modelos y precios, solo de la mejor calidad. Comprueba nuestros modelos.</p>
         </div>
         <div class="content-cards">
-            <?php foreach ($_SESSION['productos'] as $producto => $valor) {
+            <?php foreach ($array as $producto => $valor) {
             ?>
                 <div class="card">
                     <img src="./img/<?php echo $valor['imagen'] ?>" alt="imagen-modelo-gym">

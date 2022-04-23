@@ -107,7 +107,8 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .descripcion-producto ul {
@@ -207,12 +208,7 @@ h2{
     main{
         padding: 32px 46px;
     }
-    .presentacion-producto {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-    }
-
+    
     .banner-container{
         height: 700px;
     }

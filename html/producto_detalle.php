@@ -2,98 +2,84 @@
 include 'procesos/conexionBD.php';
 $producto_id = $_GET['id'] ?? null;
 $producto = null;
-var_dump($_SESSION['productos'][$_GET['id']]);
-if ($producto_id) {
-    $id = $producto_id; // pdo
-
-    $result = $baseDatos->prepare("SELECT * FROM productos WHERE id = :id");
-    $result->bindParam(':id', $id);
-    $resultConsulta = $result->execute();
-
-    if ($resultConsulta && $result->rowCount() === 1) {
-        $producto = $result->fetch();
-    }
-}
-var_dump($producto);
-
-
 ?>
-
 <main>
-    <?php if ($producto) : ?>
-        <section class="presentacion-producto">
-            <div>
-                <header class="header-presentacion-producto cambio">
-                    <h2><?php echo $producto['nombre'] ?></h2>
-                    <button>
-                        <i class="fas fa-share-alt"></i>
-                    </button>
-                </header>
+    <?php if ($producto_id) : ?>
+        <?php foreach ($_SESSION['productos'] as $product) :
+            if ($product['id'] == $producto_id) {  ?>
+                <section class="presentacion-producto">
+                    <div>
+                        <header class="header-presentacion-producto cambio">
+                            <h2><?php echo $product['nombre'] ?></h2>
+                            <button>
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </header>
 
-                <div class="aside">
-                    <section class="banner-container">
-                        <div class="imagenes-secundarias">
-                            <img src="img/girl.jpeg" alt="">
-                            <img src="img/girl.jpeg" alt="">
-                            <img src="img/girl.jpeg" alt="">
-                            <img src="img/girl.jpeg" alt="">
+                        <div class="aside">
+                            <section class="banner-container">
+                                <div class="imagenes-secundarias">
+                                    <img src="img/girl.jpeg" alt="">
+                                    <img src="img/girl.jpeg" alt="">
+                                    <img src="img/girl.jpeg" alt="">
+                                    <img src="img/girl.jpeg" alt="">
+                                </div>
+                                <div class="carousel-container">
+                                    <div class="flecha flecha-anterior fas fa-chevron-left"></div>
+                                    <div class="carousel-container-inner">
+                                        <img src="img/<?php echo $product['imagen'] ?>" alt="<?php echo $product['nombre'] ?>">
+                                    </div>
+                                    <div class="flecha flecha-siguiente fas fa-chevron-right"></div>
+                                </div>
+                            </section>
                         </div>
-                        <div class="carousel-container">
-                            <div class="flecha flecha-anterior fas fa-chevron-left"></div>
-                            <div class="carousel-container-inner">
-                                <img src="img/productos/<?php echo $producto['imagen'] ?>" alt="<?php echo $producto['nombre'] ?>">
+                    </div>
+
+                    <div class="detalles-container">
+                        <header class="header-presentacion-producto cambio2">
+                            <h2><?php $product['nombre'] ?></h2>
+                            <button>
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </header>
+                        <div class="valoracion-principal-producto">
+                            <h3></h3>
+                            <div class="estrellas-producto">
+                                <i class="estrella fas fa-star"></i>
+                                <i class="estrella fas fa-star"></i>
+                                <i class="estrella fas fa-star"></i>
+                                <i class="estrella fas fa-star"></i>
+                                <i class="estrella fas fa-star"></i>
                             </div>
-                            <div class="flecha flecha-siguiente fas fa-chevron-right"></div>
+                            <h3>€</h3>
+                        </div>
+                        <div class="formularios">
+                            <form action="" class="form-seleccionar-tallas">
+                                <label for="talla">Talla</label>
+                                <select name="seleccionar-talla" class="button-seleccionar-talla">
+                                    <option value="Talla1">Talla 1</option>
+                                    <option value="Talla2" selected>Talla 2</option>
+                                    <option value="Talla3">Talla 3</option>
+                                    <option value="Talla4">Talla 4</option>
+                                    <option value="Talla5">Talla 5</option>
+                                </select>
+                            </form>
+                            <form action="" class="form-seleccion-botones">
+                                <input type="submit" value="Añadir a la cesta">
+                                <p> o </p>
+                                <input type="submit" value="Personalizar">
+                            </form>
+                        </div>
+                    </div>
+
+                    <section class="descripcion-producto">
+                        <h3>Detalles del producto</h3>
+                        <div>
                         </div>
                     </section>
-                </div>
-            </div>
-
-            <div class="detalles-container">
-                <header class="header-presentacion-producto cambio2">
-                    <h2></h2>
-                    <button>
-                        <i class="fas fa-share-alt"></i>
-                    </button>
-                </header>
-                <div class="valoracion-principal-producto">
-                    <h3></h3>
-                    <div class="estrellas-producto">
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                        <i class="estrella fas fa-star"></i>
-                    </div>
-                    <h3>€</h3>
-                </div>
-                <div class="formularios">
-                    <form action="" class="form-seleccionar-tallas">
-                        <label for="talla">Talla</label>
-                        <select name="seleccionar-talla" class="button-seleccionar-talla">
-                            <option value="Talla1">Talla 1</option>
-                            <option value="Talla2" selected>Talla 2</option>
-                            <option value="Talla3">Talla 3</option>
-                            <option value="Talla4">Talla 4</option>
-                            <option value="Talla5">Talla 5</option>
-                        </select>
-                    </form>
-                    <form action="" class="form-seleccion-botones">
-                        <input type="submit" value="Añadir a la cesta">
-                        <p> o </p>
-                        <input type="submit" value="Personalizar">
-                    </form>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="descripcion-producto">
-            <h3>Detalles del producto</h3>
-            <div>
-
-            </div>
-        </section>
+                </section>
+        <?php }
+        endforeach ?>
         <!--
         <section class="dejarComentario">
             <form action="productos.html">

@@ -7,7 +7,7 @@ $consulta_producto->execute();
 $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
 ?>
 <main>
-    <?php if ($producto_id) : ?>
+    <?php if ($producto) : ?>
         <section class="presentacion-producto">
             <div>
                 <header class="header-presentacion-producto cambio">

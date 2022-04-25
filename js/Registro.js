@@ -1,4 +1,4 @@
-$(".formulario").validate({
+/*$(".formulario").validate({
     rules:{
         usuario:{
             required:true,
@@ -39,5 +39,22 @@ $(".formulario").validate({
             email:"Esta direccion de correo es invalida"
         }
     }
-}); 
+}); */
 
+$(".formulario").on('submit' , function(e){
+    e.preventDefault();
+
+    $.ajax({
+        type:"POST",
+        url:"procesos/registrar.php",
+        dataType:"json",
+        data: $(this).serialize(),
+        success: function(respJSON){
+            if(respJSON.error){
+                $("#json").text(respJSON.error);
+            }else{
+                location.href= respJSON.url;
+            }
+        }
+    });
+})

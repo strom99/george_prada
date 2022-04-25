@@ -23,7 +23,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
                         <span class="precio"><?php echo $valor['precio']  ?>€</span>
                     </div>
                 </div>
-            <? }  ?>
+            <?php }  ?>
             <!--
             <div class="card">
                 <img src="./img/card7.png" alt="imagen-modelo-gym">

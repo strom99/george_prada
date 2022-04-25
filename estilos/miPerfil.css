@@ -1,3 +1,35 @@
 .contenedor{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.caja-presentacion-usuario{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacion-usuario{
+    display: flex;
+    height: 70px;
+}
+
+.seccion-usuario{
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caja-presentacion-usuario img{
+    height: 140px;
+}
+.presentacion-usuario img{
+    position: absolute;
+    top: 145px;
+    background: dimgray;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }

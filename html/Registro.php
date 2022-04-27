@@ -34,10 +34,11 @@
             <div class="formulario-btn">
                 <button class="boton" type="submit" name="registrar">Registrar</button>
             </div>
-            <!-- Esta session trae el tipo de error al enviar los datos -->
-            <?php
-            if (isset($_SESSION['error-registro'])) {
-            ?> <div class="error-php"><?php echo $_SESSION['error-registro'] ?></div><?php } ?>
+
+            <div id="json">
+
+            </div>
+            <!-- Esta session trae el tipo de error al enviar los datos, pero con ajax ya no hace falta -->
         </form>
     </div>
 </div>

@@ -24,6 +24,103 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </div>
             <?php }  ?>
+<<<<<<< HEAD
+=======
+            <!--
+            <div class="card">
+                <img src="./img/card7.png" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Camiseta Aesthetic Girl 2.0</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card8.jpg" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Vital Pro Leggins 2.0</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card8.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex 8 Functions Shorts - Tshir</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card10.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card10.png" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-cards">
+            <div class="card">
+                <img src="./img/card11.png" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Camiseta Aesthetic Girl 2.0</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card12.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Vital Pro Leggins 2.0</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card13.png" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex 8 Functions Shorts - Tshir</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card14.jpg" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card15.webp" alt="imagen-modelo-gym">
+                <div class="min-info">
+                    <span>Camisetas</span>
+                    <h4>Apex Technical Complement</h4>
+                    <img src="./img/clasi1.png" alt="estrellas" class="estrella">
+                    <span class="precio">€24,99</span>
+                </div>
+            </div>-->
+>>>>>>> d067576b12bac28c99b88681302af42870fcc7fe
         </div>
     </header>
     <aside>

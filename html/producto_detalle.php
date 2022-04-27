@@ -19,7 +19,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                 <div class="aside">
                     <section class="banner-container">
                         <div class="imagenes-secundarias">
-                            <img src="img/girl.jpeg"  >
+                            <img src="img/girl.jpeg">
                             <img src="img/girl.jpeg" alt="">
                             <img src="img/girl.jpeg" alt="">
                             <img src="img/girl.jpeg" alt="">
@@ -27,7 +27,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                         <div class="carousel-container">
                             <div class="flecha flecha-anterior fas fa-chevron-left"></div>
                             <div class="carousel-container-inner jzoom">
-                                <img   data-action="zoom" src="img/<?php echo $producto['imagen'] ?>" alt="<?php echo $producto['nombre'] ?>" >
+                                <img data-action="zoom" src="img/<?php echo $producto['imagen'] ?>" alt="<?php echo $producto['nombre'] ?>">
                             </div>
                             <div class="flecha flecha-siguiente fas fa-chevron-right"></div>
                         </div>
@@ -78,7 +78,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                 </div>
             </section>
         </section>
-        <!--
+
         <section class="dejarComentario">
             <form action="productos.html">
                 <label for="">Deja tu comentario</label>
@@ -148,7 +148,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                         vitae ex architecto quo reprehenderit sequi consectetur repellendus minus expedita fuga! Facilis
                         soluta totam consequatur consequuntur at? Nemo.</p>
                 </article>
-            </div>-->
+            </div>
         </section>
     <?php else : ?>
         <section>

@@ -35,7 +35,7 @@
                 <button class="boton" type="submit" name="registrar">Registrar</button>
             </div>
 
-            <div id="json">
+            <div id="mensaje-error">
 
             </div>
             <!-- Esta session trae el tipo de error al enviar los datos, pero con ajax ya no hace falta -->

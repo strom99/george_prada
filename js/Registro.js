@@ -1,4 +1,4 @@
-/*$(".formulario").validate({
+$(".formulario").validate({
     rules:{
         usuario:{
             required:true,
@@ -39,7 +39,7 @@
             email:"Esta direccion de correo es invalida"
         }
     }
-}); */
+});
 
 $(".formulario").on('submit' , function(e){
     e.preventDefault();
@@ -51,7 +51,7 @@ $(".formulario").on('submit' , function(e){
         data: $(this).serialize(),
         success: function(respJSON){
             if(respJSON.error){
-                $("#json").text(respJSON.error);
+                $("#mensaje-error").text(respJSON.error);
             }else{
                 location.href= respJSON.url;
             }

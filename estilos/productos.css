@@ -1,34 +1,44 @@
-.contenedor{
+.contenedor {
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: row-reverse;
 }
-h4{
+
+h4 {
     font-size: 1rem;
 }
-span{
+
+span {
     color: #475569;
 }
+
 /* Header */
-header{
+header {
     width: 100%;
 }
-.card img{
+
+.card img {
     width: 80%;
     height: 300px;
     object-fit: cover;
 }
-.min-info img{
+
+.min-info img {
     width: 30%;
     height: 35px;
     object-fit: cover;
 }
-.min-info{
+
+.min-info {
     display: flex;
     flex-direction: column;
 }
-.content-cards{
+.main-info{
+    margin-left: 20px;
+}
+
+.content-cards {
     width: 100%;
     gap: 20px;
     display: flex;
@@ -42,20 +52,135 @@ header{
     color: gray;
 }
 
-.precio{
+.precio {
     color: #008CB2;
     font-weight: bolder;
 }
-.estrella{
+
+.estrella {
     margin: 0px auto;
 }
-.main-info{
+
+.main-info {
     margin-bottom: 50px;
 }
-.card{
+
+.card {
     width: 300px;
 }
+
 /* Aside */
-aside{
-    width: 20%;
+aside {
+    width: 25%;
+    padding: 20px;
+    border: 2px solid #e4e4e4;
+}
+
+.ui-menu {
+    width: 200px;
+}
+
+.ui-widget-header {
+    padding: 0.2em;
+    background: #011635 !important;
+    font-weight: none;
+    border: none;
+    border-radius: 5.5px;
+    width: 80%;
+    margin-top: 15px;
+}
+.ui-widget-header div {
+    color: white;
+    font-weight: none;
+}
+a{
+    color: black;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+#search{
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #a8a3a3;
+}
+.content-info{
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid #ddd8d8;
+    text-align: center;
+    padding-top: 20px;
+}
+.content-info p{
+    padding-bottom: 10px;
+}
+.productos{
+    margin-top: 20px;
+}
+.products-features{
+    width: 100%;
+}
+.productos p{
+    padding: 0.2em;
+    background: #011635 !important;
+    font-weight: none;
+    border: none;
+    border-radius: 5.5px;
+    color: white;
+    width: 80%;
+    font-weight: bolder;
+}
+.productos label{
+    font-size: 17px;
+    padding-left: 5px;
+   
+}
+.container-imagenes div{
+    height: 250px;
+    border: 2px solid #ddd8d8;
+    margin-left: 25px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+.container-imagenes{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+.products-features h2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.ratings p{
+    padding: 0.2em;
+    background: #011635 !important;
+    font-weight: none;
+    border: none;
+    border-radius: 5.5px;
+    color: white;
+    width: 80%;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.ratings img{
+    width: 82%;
+}
+.precios p{
+    padding: 0.2em;
+    background: #011635 !important;
+    font-weight: none;
+    border: none;
+    border-radius: 5.5px;
+    color: white;
+    width: 80%;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.precios label{
+    font-size: 17.5px;
+    padding-left: 5px;
 }

@@ -67,16 +67,30 @@ h2{
 }
 
 .form-seleccionar-tallas{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:end;
 }
-
+.form-seleccionar-tallas label{
+    margin-right: 10px;
+    color: #0f172a;
+    font-weight: bold;
+}
 .form-seleccionar-tallas .button-seleccionar-talla{
     width: 200px;
     padding: 5px 10px;
-}
 
+}
+.button-seleccionar-talla{
+    padding: 8px 10px;
+    width: 250px;
+    background: #011635;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
 .formularios{
     display: flex;
     flex-direction: column;
@@ -85,14 +99,20 @@ h2{
 
 .form-seleccion-botones{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     gap: 6px;
 }
 
 .form-seleccion-botones input{
     padding: 8px 10px;
     width: 250px;
+    background: #011635;
+    font-weight: none;
+    border: none;
+    border-radius: 5.5px;
+    color: white;
+    height: 40px;
+    cursor: pointer;
 }
 
 .form-seleccion-botones p{
@@ -118,7 +138,9 @@ h2{
 .valoracion-principal-producto h3{
     padding: 10px 0px;
 }
-
+.valoracion-principal-producto{
+   font-size: 17px;
+}
 .valoracion-cliente-estrellas{
     display: flex;
 }
@@ -144,18 +166,35 @@ h2{
 }
 
 .caja-comentario{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.dejarComentario h4{
+    font-size: 17.7px;
+    color: #0f172a;
+    margin-bottom: 10px;
 }
 
 .caja-comentario textarea{
-    width: 300px;
-    height: 50px;
+    width: 75%;
+    height: 110px;
+    font-size:18px;
+    color: gray;
+    border: 1px solid #a8a3a3;
 }
 
 .caja-comentario input{
-    height: 35px;
-    padding: 10px;
+    padding: 8px 10px;
+    width: 250px;
+    background: #011635;
+    font-weight: none;
+    border: none;
+    border-radius: 5.5px;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .comentarios{

@@ -15,10 +15,11 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <title>George Prada</title>
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
     <link rel="stylesheet" href="estilos/global.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <!-- Style Jquery Zoom -->
     <link rel="stylesheet" href="estilos/zoom.css">
      <!-- Style Jquery Zoom -->
-    <script src="js/jquery.min.js"></script>
     <script src="js/global.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/additional-methods.min.js"></script>

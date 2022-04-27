@@ -15,10 +15,16 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <title>George Prada</title>
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
     <link rel="stylesheet" href="estilos/global.css">
+    <!-- Style Jquery Zoom -->
+    <link rel="stylesheet" href="estilos/zoom.css">
+     <!-- Style Jquery Zoom -->
     <script src="js/jquery.min.js"></script>
     <script src="js/global.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/additional-methods.min.js"></script>
+    <!-- Plugin Jquery Zoom -->
+    <script src="js/zoom.min.js"></script>
+    <!-- Plugin Jquery Zoom -->
     <script src="https://kit.fontawesome.com/6f213ce53f.js" crossorigin="anonymous"></script>
     <!--Plugin BxSlider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">

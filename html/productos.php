@@ -24,6 +24,8 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </div>
             <?php }  ?>
+<<<<<<< HEAD
+=======
             <!--
             <div class="card">
                 <img src="./img/card7.png" alt="imagen-modelo-gym">
@@ -118,6 +120,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
                     <span class="precio">€24,99</span>
                 </div>
             </div>-->
+>>>>>>> d067576b12bac28c99b88681302af42870fcc7fe
         </div>
     </header>
     <aside>

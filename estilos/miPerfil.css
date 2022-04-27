@@ -33,3 +33,23 @@
     height: 150px;
     border-radius: 50%;
 }
+
+.caja-info-contacto{
+    background-color: aliceblue;
+}
+
+.updateName{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameInput{
+    display: none;
+}
+
+@media (max-width:700px) {
+    .presentacion-usuario img{
+        width: 120px;
+        height: 120px;
+    }
+}

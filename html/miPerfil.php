@@ -1,3 +1,6 @@
+<?php
+$respuesta = ["data" => $_POST, "error" => null];
+?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
         <img class="portada-usuario" src="img/moon.jpeg" alt="fondo perfil">
@@ -10,13 +13,20 @@
         </div>
     </div>
     <div class="caja-info-contacto">
-        <form action="">
-            <label for="nombre">Nombre:</label>
-            <input type="text" value="Martin Anselmo">
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" value="Hernandez ">
-            <label for="email">Email:</label>
-            <input type="text" value="Laura Alison">
-        </form>
+        <ul>
+            <li>
+                <h3>Nombre :</h3>
+                <div class="updateName">
+                    <span>Laura</span>
+                    <form class="formUpdateName" action="POST">
+                        <input class="nameInput" type="text">
+                        <input type="submit" value="Actualizar" name="update">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="error">
+        <?php echo json_encode($respuesta); ?>
     </div>
 </div>

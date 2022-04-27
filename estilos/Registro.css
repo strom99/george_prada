@@ -87,6 +87,13 @@ div .error-php{
     border-radius: 5px;
 }
 
+#mensaje-error{
+    background-color: rgb(242, 162, 162);
+    background: antiquewhite;
+    padding: 10px;
+    border-radius: 8px;
+}
+
 @media (min-width:700px) {
     .contenedorPagina{
         max-width: 45%;

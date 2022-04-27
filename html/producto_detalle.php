@@ -8,6 +8,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
 ?>
 <main>
     <?php if ($producto) : ?>
+<<<<<<< HEAD
     <section class="presentacion-producto">
         <div>
             <header class="header-presentacion-producto cambio">
@@ -23,6 +24,50 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                         <img src="img/girl.jpeg" alt="modelo-chica-gimnasio">
                         <img src="img/girl.jpeg" alt="modelo-chica-gimnasio">
                         <img src="img/girl.jpeg" alt="modelo-chica-gimnasio">
+=======
+        <section class="presentacion-producto">
+            <div>
+                <header class="header-presentacion-producto cambio">
+                    <h2><?php echo $producto['nombre'] ?></h2>
+                    <button>
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                </header>
+                <div class="aside">
+                    <section class="banner-container">
+                        <div class="imagenes-secundarias">
+                            <img src="img/girl.jpeg">
+                            <img src="img/girl.jpeg" alt="">
+                            <img src="img/girl.jpeg" alt="">
+                            <img src="img/girl.jpeg" alt="">
+                        </div>
+                        <div class="carousel-container">
+                            <div class="flecha flecha-anterior fas fa-chevron-left"></div>
+                            <div class="carousel-container-inner jzoom">
+                                <img data-action="zoom" src="img/<?php echo $producto['imagen'] ?>" alt="<?php echo $producto['nombre'] ?>">
+                            </div>
+                            <div class="flecha flecha-siguiente fas fa-chevron-right"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="detalles-container">
+                <header class="header-presentacion-producto cambio2">
+                    <h2><?php $product['nombre'] ?></h2>
+                    <button>
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                </header>
+                <div class="valoracion-principal-producto">
+                    <h3></h3>
+                    <div class="estrellas-producto">
+                        <i class="estrella fas fa-star"></i>
+                        <i class="estrella fas fa-star"></i>
+                        <i class="estrella fas fa-star"></i>
+                        <i class="estrella fas fa-star"></i>
+                        <i class="estrella fas fa-star"></i>
+>>>>>>> a1c015977c6a97137dbaaa4610a5e336d218f2d1
                     </div>
                     <div class="carousel-container">
                         <div class="flecha flecha-anterior fas fa-chevron-left"></div>
@@ -73,7 +118,11 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, adipisci mollitia ducimus quisquam repellat soluta nulla consequatur fugiat, nostrum saepe, praesentium nihil ullam omnis vitae animi fugit libero. Id, cum?
             </p>
         </section>
+<<<<<<< HEAD
     </section>
+=======
+
+>>>>>>> a1c015977c6a97137dbaaa4610a5e336d218f2d1
         <section class="dejarComentario">
             <form action="productos.html">
                 <h4>Deja tu Comentario</h4>
@@ -147,7 +196,11 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                     </p>
                 </article>
             </div>
+<<<<<<< HEAD
     </section>
+=======
+        </section>
+>>>>>>> a1c015977c6a97137dbaaa4610a5e336d218f2d1
     <?php else : ?>
     <section>
         El producto no ha sido encontrado

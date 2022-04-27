@@ -16,7 +16,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['contrasena']) && !empty($_POST['
 
     // Comprobamos contraseñas sean iguales, si no, salimos del flujo.
     if ($contrasena !== $contrasena2) {
-        $respuesta['error'] = "chupame las patas";
+        $respuesta['error'] = "Las contraseñas no son iguales";
         echo json_encode($respuesta);
         exit;
     }

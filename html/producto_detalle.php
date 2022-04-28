@@ -19,10 +19,10 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                 <div class="aside">
                     <section class="banner-container">
                         <div class="imagenes-secundarias">
-                            <img src="img/girl.jpeg">
-                            <img src="img/girl.jpeg" alt="">
-                            <img src="img/girl.jpeg" alt="">
-                            <img src="img/girl.jpeg" alt="">
+                            <img src="img/girl.jpeg" alt="modelo-fitness">
+                            <img src="img/girl.jpeg" alt="modelo-fitness">
+                            <img src="img/girl.jpeg" alt="modelo-fitness">
+                            <img src="img/girl.jpeg" alt="modelo-fitness">
                         </div>
                         <div class="carousel-container">
                             <div class="flecha flecha-anterior fas fa-chevron-left"></div>
@@ -59,13 +59,6 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
             
             <div class="valoracion-principal-producto">
                 <h3>Custom</h3>
-                <div class="estrellas-producto">
-                    <i class="estrella fas fa-star"></i>
-                    <i class="estrella fas fa-star"></i>
-                    <i class="estrella fas fa-star"></i>
-                    <i class="estrella fas fa-star"></i>
-                    <i class="estrella fas fa-star"></i>
-                </div>
                 <h3><?php echo $producto['precio'] ?>€</h3>
             </div>
             <div class="formularios">

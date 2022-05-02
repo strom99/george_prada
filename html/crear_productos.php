@@ -28,6 +28,9 @@
             </select>
             </div>
         </form>
+        <div class="side-imagen">
+            <img src="img/54402.png" alt="modelo_producto">
+        </div>
     </div>
 
 </div>  

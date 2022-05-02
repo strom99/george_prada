@@ -1,5 +1,5 @@
 <?php
-$respuesta = ["data" => $_POST, "error" => null];
+
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
@@ -14,19 +14,22 @@ $respuesta = ["data" => $_POST, "error" => null];
     </div>
     <div class="caja-info-contacto">
         <ul>
-            <li>
+            <li class="caja-nombre">
                 <h3>Nombre :</h3>
                 <div class="updateName">
-                    <span>Laura</span>
-                    <form class="formUpdateName" action="POST">
-                        <input class="nameInput" type="text">
-                        <input type="submit" value="Actualizar" name="update">
+                    <span class="nombre">Laura</span>
+                    <form class="formUpdateName">
+                        <input class=" nameInput" type="text">
+                        <div class="btns-editar">
+                            <input class="cancelar" type="submit" value="Cancelar" name="cancel">
+                            <input class="enviar" type="submit" value="Editar" name="update">
+                        </div>
                     </form>
                 </div>
             </li>
+
         </ul>
     </div>
     <div id="error">
-        <?php echo json_encode($respuesta); ?>
     </div>
 </div>

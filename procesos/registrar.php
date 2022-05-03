@@ -2,7 +2,6 @@
 $respuesta = ["data" => $_POST, "error" => null];
 
 session_start();
-$_SESSION['error-registro'] = '';
 //Incluimos la base de datos para traer toda la informacion
 
 include("conexionBD.php");

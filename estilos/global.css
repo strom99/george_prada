@@ -192,6 +192,13 @@ button{
   cursor: pointer;
   margin-top: 4px;
 }
+
+#mensaje-error, #mensaje{
+    display: none;
+    background: antiquewhite;
+    padding: 10px;
+    border-radius: 8px;
+}
 /** mientras sea mayor a 600px no se mostraran estas opciones **/
 @media (min-width: 680px) {
   .hamburguesa {

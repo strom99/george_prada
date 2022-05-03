@@ -43,7 +43,8 @@ $(".formulario").validate({
 
 $(".formulario").on('submit' , function(e){
     e.preventDefault();
-
+    $("#mensaje-error").show();
+    
     $.ajax({
         type:"POST",
         url:"procesos/registrar.php",

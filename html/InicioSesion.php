@@ -6,7 +6,7 @@
         <div class="imagen-user">
             <img src="img/user5.webp" alt="icono usuario">
         </div>
-        <form class="formulario" action="procesos/proceso_login.php" method="POST">
+        <form class="formulario" action="<?php echo $_SESSION['RUTA_BASE'] ?>/procesos/proceso_login.php" method="POST">
             <div class="cajaDatos">
                 <div class="caja-datos-user">
                     <label for="nombreUsuario">
@@ -41,10 +41,7 @@
                 <a class="contacto" href=#>Ponte en contacto con nosotros</a>
             </div>
         </form>
-        <!-- Mensaje de error php al enviar datos-->
-        <?php
-        if (isset($_SESSION['error-login'])) {
-        ?> <div class="error-login"><?php echo $_SESSION['error-login'] ?></div><?php } ?>
-
+        <div id="mensaje">
+        </div>
     </div>
 </div>

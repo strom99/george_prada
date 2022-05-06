@@ -39,6 +39,7 @@ $(".formulario").on('submit' , function(e){
             if (respJSON.error) {
                 $("#mensaje").text(respJSON.error);
             }else{
+                $("#mensaje").hide();
                 location.href= respJSON.url;
             }
         }

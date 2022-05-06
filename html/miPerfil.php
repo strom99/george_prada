@@ -12,22 +12,75 @@
             </section>
         </div>
     </div>
-    <div class="caja-info-contacto">
-        <ul>
-            <li class="caja-nombre">
-                <h3>Nombre :</h3>
-                <div class="updateName">
-                    <span class="nombre">Laura</span>
-                    <form class="formUpdateName">
-                        <input class=" nameInput" type="text">
-                        <div class="btns-editar">
-                            <input class="cancelar" type="submit" value="Cancelar" name="cancel">
-                            <input class="enviar" type="submit" value="Editar" name="update">
-                        </div>
-                    </form>
-                </div>
+    <div class="caja-info-contacto caja">
+        <ul class="caja-nombre">
+            <li>
+                <h2>Informacion de contacto</h2>
             </li>
+            <li class="boxNombre">
+                <h3>Nombre :</h3>
+                <span class="nombre">Laura</span>
+            </li>
+            <li class="boxPriApell">
+                <h3>Primer apellido :</h3>
+                <span class="priApellido">Esperanita</span>
+            </li>
+            <li class="boxSeApell">
+                <h3>Segundo apellido :</h3>
+                <span class="seApellido">mentiscola</span>
+            </li>
+            <li class="boxEmail">
+                <h3>Email :</h3>
+                <span class="email">alissoncc19@fgmail.com</span>
+            </li>
+            <li class="boxTelefono">
+                <h3>Telefono :</h3>
+                <span class="telefono">3232323232</span>
+            </li>
+            <div class="updateInfoContacto">
+                <form class="formUpdateContact">
+                    <input class="nameInput" type="text">
+                    <input class="priApellInput" type="text">
+                    <input class="seApellInput" type="text">
+                    <input class="emailInput" type="text">
+                    <input class="telefonoInput" type="text">
+                    <div class="btns-editar">
+                        <input class="cancelarformUpdateContact" type="submit" value="Cancelar" name="cancel">
+                        <input class="enviarformUpdateContact" type="submit" value="Editar" name="update">
+                    </div>
+                </form>
+            </div>
+        </ul>
+    </div>
 
+    <div class="cajaDatosComplemetarios caja">
+        <ul class="caja-nombre">
+            <li>
+                <h2>Datos Complementarios</h2>
+            </li>
+            <li>
+                <h3>Fecha de nacimiento:</h3>
+                <span class="telefono">22/01/1999</span>
+            </li>
+            <li>
+                <h3>Pais</h3>
+                <span class="telefono">España</span>
+            </li>
+            <li>
+                <h3>Ciudad</h3>
+                <span class="telefono">Barcelona</span>
+            </li>
+            <div class="updateFormDatsComplementarios">
+                <form class="formUpdateName">
+                    <input class="fechaNacimientoInput" type="text">
+                    <input class="paisInput" type="text">
+                    <input class="ciudadInput" type="text">
+                    <div class="btns-editar">
+                        <input class="cancelar" type="submit" value="Cancelar" name="cancel">
+                        <input class="enviar" type="submit" value="Editar" name="update">
+                    </div>
+                </form>
+            </div>
         </ul>
     </div>
     <div id="error">

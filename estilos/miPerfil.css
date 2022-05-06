@@ -21,6 +21,10 @@
     justify-content: center;
 }
 
+.caja{
+    margin-bottom: 15px;
+}
+
 .caja-presentacion-usuario img{
     height: 140px;
 }
@@ -35,24 +39,30 @@
 }
 
 .caja-nombre{
+    margin: 0px 10px;
     background-color: #f0f8ff9c;
     border-radius: 10px;
     padding: 15px;
     border: 1px solid gray;
 }
 
-.updateName {
+.caja-nombre li{
+    border-bottom: 1px solid gray;
+    padding-bottom: 4px;
+}
+
+.updateInfoContacto {
     display: flex;
     justify-content: space-between;
 }
 
-.nameInput , .cancelar{
+.nameInput , .priApellInput , .seApellInput, .emailInput,.telefonoInput , .cancelar{
     display: none;
 }
 
-.formUpdateName{
+.formUpdateContact , .updateFormDatsComplementarios{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .btns-editar{

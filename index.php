@@ -16,6 +16,13 @@ $page = $_GET['page'] ?? 'paginaInicio';
     <link rel="stylesheet" href="estilos/<?php echo $page ?>.css">
     <link rel="stylesheet" href="estilos/global.css">
     <script src="js/jquery.min.js"></script>
+    
+    <!-- Fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Fuente Roboto -->
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <!-- Style Jquery Zoom -->
     <link rel="stylesheet" href="estilos/zoom.css">

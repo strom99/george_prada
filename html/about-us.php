@@ -64,26 +64,6 @@
                 its
                 optimization.</p>
         </div>
-        <div class="card">
-            <div class="min-info">
-                <img src="img/Marti.jpg" alt="imagen-3">
-                <h2>Martí</h2>
-                <span>Designer</span>
-            </div>
-            <div class="redes">
-                <a href="#">
-                    <i style="color:black" class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i style="color:black" class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="#">
-                    <i style="color:black" class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-            <p>My name is Marti and I am the web designer. I am thrilled to
-                take part in this project!</p>
-        </div>
     </main>
     <div class="banner">
         <div class="box-info">
@@ -96,4 +76,51 @@
             <p>Conoces Nuestras ultimas novedades!</p>
         </div>
     </div>
+
+    <div class="seccion-custom-contenedor">
+        <div class="seccion-custom">
+            <div class="seccion-1-custom">
+                <img src="img/ajuste.png" alt="imagen-2">
+                <p>24/7 Protection</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium, nam debitis libero
+                </p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        <div class="seccion-custom">
+            <div class="seccion-1-custom">
+                <img src="img/cohete.png" alt="imagen-2">
+                <p>Fast Shipping</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium, nam debitis libero
+                </p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        <div class="seccion-custom">
+            <div class="seccion-1-custom">
+                <img src="img/apreton-de-manos.png" alt="imagen-2">
+                <p>Satisfaction Guaranteed</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium, nam debitis libero
+                </p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="video-seccion">
+        <h3>Our products</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y5mEnTDaUxo?controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+
 </div>

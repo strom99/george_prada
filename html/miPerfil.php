@@ -58,26 +58,26 @@
             <li>
                 <h2>Datos Complementarios</h2>
             </li>
-            <li>
+            <li class="boxFechaNacimiento">
                 <h3>Fecha de nacimiento:</h3>
-                <span class="telefono">22/01/1999</span>
+                <span class="fechaNacimiento">22/01/1999</span>
             </li>
-            <li>
+            <li class="boxPais">
                 <h3>Pais</h3>
-                <span class="telefono">España</span>
+                <span class="pais">España</span>
             </li>
-            <li>
+            <li class="boxCiudad">
                 <h3>Ciudad</h3>
-                <span class="telefono">Barcelona</span>
+                <span class="ciudad">Barcelona</span>
             </li>
-            <div class="updateFormDatsComplementarios">
-                <form class="formUpdateName">
+            <div class="boxUpdateFormDatsComplementarios">
+                <form class="formUpdateDatsComplementarios">
                     <input class="fechaNacimientoInput" type="text">
                     <input class="paisInput" type="text">
                     <input class="ciudadInput" type="text">
-                    <div class="btns-editar">
-                        <input class="cancelar" type="submit" value="Cancelar" name="cancel">
-                        <input class="enviar" type="submit" value="Editar" name="update">
+                    <div class="btns-editar-datsComplementarios">
+                        <input class="cancelarUpdateInput" type="submit" value="Cancelar" name="cancel">
+                        <input class="enviarInputDatsComplementarios" type="submit" value="Editar" name="update">
                     </div>
                 </form>
             </div>

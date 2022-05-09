@@ -53,10 +53,11 @@
 
 .updateInfoContacto {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
-.nameInput , .priApellInput , .seApellInput, .emailInput,.telefonoInput , .cancelar{
+/* inputs informacion contacto*/
+.nameInput , .priApellInput , .seApellInput, .emailInput,.telefonoInput , .cancelarformUpdateContact{
     display: none;
 }
 
@@ -68,6 +69,18 @@
 .btns-editar{
     display: flex;
     gap: 20px;
+}
+
+/* inputs datos complementarios*/
+.fechaNacimientoInput , .paisInput , .ciudadInput , .cancelarUpdateInput{
+    display: none;
+}
+
+.btns-editar-datsComplementarios{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
 }
 
 @media (max-width:700px) {

@@ -51,3 +51,15 @@ form input{
     height: 29px;
     border: 1px solid #011635;
 }
+.input-file{
+    width: 100%;
+    margin-top: 20px;
+}
+.input-file input{
+    border: none;
+}
+input[type="submit"]{
+   border: none; 
+   cursor: pointer;
+   border: 1px solid #011635;
+}

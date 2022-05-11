@@ -1,6 +1,5 @@
 ### Integrantes:
 
-- Marti Baulenas Perez
 - Laura Alison Choque Copajira
 - Jordi Mejia
 

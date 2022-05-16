@@ -1,6 +1,7 @@
 // formulario informacion de contacto
 $(".enviarformUpdateContact").on('click' , function(e){
     e.preventDefault();
+
     // cambiar valor de actualizar
     $(".enviarformUpdateContact").val("Actualizar");
     $(".formUpdateName").css("width" , "100%");
@@ -41,7 +42,7 @@ $(".enviarformUpdateContact").on('click' , function(e){
     $(".emailInput").val(email);
     $(".telefonoInput").val(telefono);
 
-})
+});
 
 $(".cancelarformUpdateContact").on("click", function(e){
     e.preventDefault();
@@ -106,6 +107,85 @@ $(".cancelarUpdateInput").on("click",function(e){
     $(".fechaNacimientoInput").css("display","none");
     $(".paisInput").css("display","none");
     $(".ciudadInput").css("display","none");
+
+});
+
+$(".enviarInputDatsDireccion1").on("click",function(e){
+    e.preventDefault();
+
+    // cambiar valor de actualizar
+    $(".enviarInputDatsDireccion1").val("Actualizar");
+
+    // visualizar los inputs
+    $(".inputNombreCompleto1").css("display","block");
+    $(".inputTelefono1").css("display","block");
+    $(".inputLineaDireccion1").css("display","block");
+    $(".inputPiso1").css("display","block");
+    $(".inputCodPostal1").css("display","block");
+    $(".inputCiudad1").css("display","block");
+    $(".inputProvincia1").css("display","block");
+    $(".cancelarDireccionInput1").css("display", "block");
+
+
+    // ocultar el texto de span
+    $(".boxNombre1").css("display", "none");
+    $(".boxTelefono1").css("display", "none");
+    $(".boxCalle1").css("display", "none");
+    $(".boxPiso1").css("display", "none");
+    $(".boxCodPostal1").css("display", "none");
+    $(".boxCiudad1").css("display", "none");
+    $(".boxProvincia1").css("display", "none");
+
+    // coger los input y añadirlos en la lista para que no aparezcan abajo
+    $(".inputNombreCompleto1").appendTo(".boxLiNombre1");
+    $(".inputTelefono1").appendTo(".boxLiTelefono");
+    $(".inputLineaDireccion1").appendTo(".boxLiDireccion");
+    $(".inputPiso1").appendTo(".boxLiPiso");
+    $(".inputCodPostal1").appendTo(".boxLiCodPostal");
+    $(".inputCiudad1").appendTo(".boxLiCiudad");
+    $(".inputProvincia1").appendTo(".boxLiProvincia");
+
+    // texto del span guardado en variables
+    let nombre = $(".boxNombre1").text();
+    let telefono = $(".boxTelefono1").text();
+    let direccion = $(".boxCalle1").text();
+    let piso = $(".boxPiso1").text();
+    let codPostal = $(".boxCodPostal1").text();
+    let ciudad = $(".boxCiudad1").text();
+    let provincia = $(".boxProvincia1").text();
+
+    // añadimos en los inputs el valor de las variables 
+    $(".inputNombreCompleto1").val(nombre);
+    $(".inputTelefono1").val(telefono);
+    $(".inputLineaDireccion1").val(direccion);
+    $(".inputPiso1").val(piso);
+    $(".inputCodPostal1").val(codPostal);
+    $(".inputCiudad1").val(ciudad);
+    $(".inputProvincia1").val(provincia);
+});
+
+$(".cancelarDireccionInput1").on("click",function(e){
+    e.preventDefault();
+    $(".enviarInputDatsDireccion1").val("Editar");
+    $(".cancelarDireccionInput1").css("display","none");
+    
+    $(".inputNombreCompleto1").css("display", "none");
+    $(".inputTelefono1").css("display", "none");
+    $(".inputLineaDireccion1").css("display", "none");
+    $(".inputPiso1").css("display", "none");
+    $(".inputCodPostal1").css("display", "none");
+    $(".inputCiudad1").css("display", "none");
+    $(".inputProvincia1").css("display", "none");
+
+    $(".boxNombre1").css("display", "block");
+    $(".boxTelefono1").css("display","block");
+    $(".boxCalle1").css("display","block");
+    $(".boxPiso1").css("display","block");
+    $(".boxCodPostal1").css("display","block");
+    $(".boxCiudad1").css("display","block");
+    $(".boxProvincia1").css("display","block");
+
+    
 
 });
 

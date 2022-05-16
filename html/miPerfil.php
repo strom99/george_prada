@@ -83,6 +83,61 @@
             </div>
         </ul>
     </div>
+    <div class="cajaDireccionesRegistradas caja caja-nombre">
+        <h2>Direcciones registradas</h2>
+        <ul class="border">
+            <li>
+                <h3>Direccion 1</h3>
+            </li>
+            <li class="boxLiNombre1">
+                <h3>Nombre Completo </h3>
+                <span class="boxNombre1">Anselmo estocolmo</span>
+            </li>
+            <li class="boxLiTelefono">
+                <h3>Numero de telefono </h3>
+                <span class="boxTelefono1">631594977</span>
+            </li>
+            <li class="boxLiDireccion">
+                <h3>Linea direccion </h3>
+                <span class="boxCalle1">Calle Eduardo marquina 3</span>
+            </li>
+            <li class="boxLiPiso">
+                <span class="boxPiso1">3ra 2da</span>
+            </li>
+            <li class="boxLiCodPostal">
+                <h3>Codigo Postal</h3>
+                <span class="boxCodPostal1">08225</span>
+            </li>
+            <li class="boxLiCiudad">
+                <h3>Ciudad</h3>
+                <span class="boxCiudad1">barcelona</span>
+            </li>
+            <li class="boxLiProvincia">
+                <h3>Provincia</h3>
+                <span class="boxProvincia1">terrassa</span>
+            </li>
+            <li>
+                <div class="boxUpdateFormDirection1">
+                    <form class="formUpdateDirection1">
+                        <input class="inputNombreCompleto1" type="text">
+                        <input class="inputTelefono1" type="text">
+                        <input class="inputLineaDireccion1" type="text">
+                        <input class="inputPiso1" type="text">
+                        <input class="inputCodPostal1" type="text">
+                        <input class="inputCiudad1" type="text">
+                        <input class="inputProvincia1" type="text">
+                        <div class="btns-editar-direcciones1">
+                            <input class="cancelarDireccionInput1" type="submit" value="Cancelar" name="cancel">
+                            <input class="enviarInputDatsDireccion1" type="submit" value="Editar" name="update">
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+        <form action="" class="formAñadirDireccion">
+            <input type="submit" value="Añadir otra direccion">
+        </form>
+    </div>
     <div id="error">
     </div>
 </div>

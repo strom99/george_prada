@@ -1,5 +1,4 @@
 .contenedor{
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -46,9 +45,13 @@
     border: 1px solid gray;
 }
 
-.caja-nombre li{
+.caja-nombre li:first-child{
     border-bottom: 1px solid gray;
     padding-bottom: 4px;
+}
+
+.caja-nombre li{
+    margin-bottom: 10px;
 }
 
 .updateInfoContacto {
@@ -76,6 +79,9 @@
     display: none;
 }
 
+.displayBlock{
+    display: block;
+}
 .btns-editar-datsComplementarios{
     width: 100%;
     display: flex;
@@ -83,6 +89,29 @@
     justify-content: end;
 }
 
+.border{
+    border-bottom: 2px solid #3ebfec;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+/*Inputs direcciones registradas*/
+.inputNombreCompleto1 , .inputTelefono1, .inputLineaDireccion1, .inputPiso1 , .inputCodPostal1,.inputProvincia1, .inputCiudad1,.cancelarDireccionInput1{
+    display: none;
+}
+
+.btns-editar-direcciones1{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.formAñadirDireccion{
+    display: flex;
+    justify-content: end;
+}
 @media (max-width:700px) {
     .presentacion-usuario img{
         width: 120px;

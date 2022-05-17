@@ -1,13 +1,15 @@
-h1{
+h1 {
     color: white;
     margin-bottom: 20px;
 }
 
-input, p, label {
+input,
+p,
+label {
     font-size: 16px;
 }
 
-.primeraImg{
+.primeraImg {
     width: 135px;
     margin: auto;
     height: 135px;
@@ -20,7 +22,7 @@ input, p, label {
     box-shadow: 1.5px 1.5px 0.5px gray;
 }
 
-.centro{
+.centro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,17 +32,16 @@ input, p, label {
     background-color: #191515;
 }
 
-.iconUser{
+.iconUser {
     width: 100px;
 }
 
-.cajaDatos{
+.cajaDatos {
     width: 100%;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
 }
-
 
 .formulario-btn {
     margin-top: 40px;
@@ -58,28 +59,34 @@ input, p, label {
     border-radius: 5px;
 }
 
-.contenedorPagina{
+.contenedorPagina {
     width: 90%;
     height: auto;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
 }
-input{
-    border:1.5px solid gray;
+
+
+input {
+    border: 1.5px solid gray;
     background-color: white;
     height: 35px;
     border-radius: 5px;
-     margin-top: 5px;
+    margin-top: 5px;
     padding: 5px 10px;
     font-family: inherit;
 }
 
-div .error-php{
+div .error-php {
     display: none;
 }
 
-#usuario-error , #contrasena-error, #contrasena2-error, #email-error, .error-php{
+#usuario-error,
+#contrasena-error,
+#contrasena2-error,
+#email-error,
+.error-php {
     background-color: #eeeeee;
     padding: 10px;
     margin: 3px;
@@ -88,8 +95,7 @@ div .error-php{
 }
 
 @media (min-width:700px) {
-    .contenedorPagina{
+    .contenedorPagina {
         max-width: 45%;
     }
 }
-

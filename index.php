@@ -60,7 +60,7 @@ $page = $_GET['page'] ?? 'paginaInicio';
 
     <!-- verificar si existe el archivo js-->
     <?php if (file_exists("js/$page.js")) { ?>
-        <script src="js/<?php echo $page ?>.js"></script>
+        <script src="js/<?php echo $page?>.js"></script>
     <?php } ?>
 
 

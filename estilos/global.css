@@ -84,7 +84,11 @@ i {
   flex: 1;
   display: none;
 }
-
+.bolsa span{
+  color: white;
+ font-size: 20px;
+ margin-left: 4px;
+}
 .nav-mobile {
   position: fixed;
   top: 0;

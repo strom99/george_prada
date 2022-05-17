@@ -14,6 +14,13 @@
     <li>
         <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=miPerfil">Lista de deseo</a>
     </li>
+    <li>
+        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=mostrarCarrito">Carrito(
+            <?php 
+                echo (empty($_SESSION['CARRITO']))? 0 : count($_SESSION['CARRITO']);
+            ?>
+        )</a>
+    </li>
 </ul>
 <ul class="lista-menu-acciones">
     <li class="btn-salir">

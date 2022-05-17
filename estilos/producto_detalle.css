@@ -1,4 +1,4 @@
-main{
+main {
     padding: 10px 20px;
 }
 
@@ -8,32 +8,31 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-h2{
+h2 {
     flex-grow: 1;
 }
 
-.header-presentacion-producto{
+.header-presentacion-producto {
     display: flex;
 }
 
-.header-presentacion-producto button{
+.header-presentacion-producto button {
     font-size: 30px;
     background: none;
     border: none;
 }
 
-.carousel-container-inner{
+.carousel-container-inner {
     margin-top: 100px;
 }
 
-.carousel-container{
+.carousel-container {
     position: relative;
 }
 
-.imagenes-secundarias{
+.imagenes-secundarias {
     display: none;
 }
-
 
 .flecha {
     position: absolute;
@@ -43,7 +42,6 @@ h2{
     font-size: 50px;
     z-index: 10;
 }
-
 
 .flecha-anterior {
     left: 5px;
@@ -58,52 +56,54 @@ h2{
     width: 30%;
     display: block;
     object-fit: cover;
-    margin:0px auto;
+    margin: 0px auto;
 }
 
-.estrella{
+.estrella {
     color: #1b1b1b;
     font-size: 20px;
 }
 
-.form-seleccionar-tallas{
+.form-seleccionar-tallas {
     width: 100%;
     display: flex;
-    justify-content:end;
+    justify-content: end;
 }
-.form-seleccionar-tallas label{
+
+.form-seleccionar-tallas label {
     margin-right: 10px;
     color: #0f172a;
     font-weight: bold;
 }
-.form-seleccionar-tallas .button-seleccionar-talla{
+
+.form-seleccionar-tallas .button-seleccionar-talla {
     width: 200px;
     padding: 5px 10px;
-
 }
-.button-seleccionar-talla{
+
+.button-seleccionar-talla {
     padding: 8px 10px;
     width: 250px;
-    background: #011635;
-    font-weight: bold;
     border: none;
-    border-radius: 5px;
+    background-color: #008CB2;
+    border-radius: 20px;
     color: white;
     cursor: pointer;
 }
-.formularios{
+
+.formularios {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.form-seleccion-botones{
+.form-seleccion-botones {
     display: flex;
     justify-content: space-between;
     gap: 6px;
 }
 
-.form-seleccion-botones input{
+.form-seleccion-botones input {
     padding: 8px 10px;
     width: 250px;
     background: #011635;
@@ -115,11 +115,11 @@ h2{
     cursor: pointer;
 }
 
-.form-seleccion-botones p{
+.form-seleccion-botones p {
     text-align: center;
 }
 
-.descripcion-producto{
+.descripcion-producto {
     margin: 30px 0px;
     display: flex;
     flex-direction: column;
@@ -135,121 +135,119 @@ h2{
     list-style-position: inside;
 }
 
-.valoracion-principal-producto h3{
+.valoracion-principal-producto h3 {
     padding: 10px 0px;
 }
-.valoracion-principal-producto{
-   font-size: 17px;
+
+.valoracion-principal-producto {
+    font-size: 17px;
 }
-.valoracion-cliente-estrellas{
+
+.valoracion-cliente-estrellas {
     display: flex;
 }
 
-.valoracion-cliente-estrellas img{
+.valoracion-cliente-estrellas img {
     width: 20px;
     gap: 10px;
 }
 
-.informacion-valoracion{
+.informacion-valoracion {
     display: flex;
     justify-content: space-between;
     color: gray;
 }
 
-.dejarComentario label{
+.dejarComentario label {
     display: block;
     margin: 10px 0px;
 }
 
-.valoraciones-producto h3{
+.valoraciones-producto h3 {
     margin: 20px 0px;
 }
 
-.caja-comentario{
+.caja-comentario {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.dejarComentario h4{
+
+.dejarComentario h4 {
     font-size: 17.7px;
     color: #0f172a;
     margin-bottom: 10px;
 }
 
-.caja-comentario textarea{
+.caja-comentario textarea {
     width: 75%;
     height: 110px;
-    font-size:18px;
+    font-size: 18px;
     color: gray;
     border: 1px solid #a8a3a3;
 }
 
-.caja-comentario input{
+.caja-comentario input {
     padding: 8px 10px;
     width: 250px;
-    background: #011635;
-    font-weight: none;
     border: none;
-    border-radius: 5.5px;
+    background-color: #008CB2;
+    border-radius: 20px;
     color: white;
-    height: 40px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
-.comentarios{
+.comentarios {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.usuario-comentario{
+.usuario-comentario {
     gap: 5px;
     display: flex;
     flex-direction: column;
 }
 
-.cambio2{
+.cambio2 {
     display: none;
 }
 
-@media screen and (min-width:600px){
-
-    .banner-container{
+@media screen and (min-width:600px) {
+    .banner-container {
         display: flex;
         gap: 10px;
         height: 800px;
     }
-
-    .imagenes-secundarias{
+    .imagenes-secundarias {
         display: flex;
         flex-direction: column;
         overflow-y: auto;
         gap: 10px;
     }
-
-    .imagenes-secundarias img{
+    .imagenes-secundarias img {
         width: 200px;
     }
-
-    .carousel-container{
+    .carousel-container {
         flex-grow: 1;
         position: relative;
     }
 }
 
-@media screen and (min-width:850px){
-
-    main{
+@media screen and (min-width:850px) {
+    main {
         padding: 32px 46px;
     }
-    
-    .banner-container{
+    .banner-container {
         height: 700px;
     }
-
-    .cambio{
+    .cambio {
         display: none;
     }
+}
 
+#btnProducto {
+   display: block;
+    margin-left: -0px;
 }

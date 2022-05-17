@@ -23,8 +23,11 @@
                 <i class="user fas fa-user-circle"></i>
             </nav>
         </div>
-        <a href="">
-            <i class="bolsa fas fa-shopping-bag"></i>
+        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=mostrarCarrito">
+            <i class="bolsa fas fa-shopping-bag"><span> <?php 
+                echo (empty($_SESSION['CARRITO']))? : count($_SESSION['CARRITO']);
+              
+            ?></span></i>
         </a>
     </div>
     <div class="menu-user-general">

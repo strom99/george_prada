@@ -1,5 +1,11 @@
 <?php
-
+include 'procesos/conexionBD.php';
+$id_rol = $_SESSION['datosUsuario']['rol_id'];
+$consulta_id = $baseDatos->prepare("SELECT * FROM rol WHERE id = :rol");
+$consulta_id->bindParam(':rol', $id_rol);
+$consulta_id->execute();
+$rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
+var_dump($_SESSION['datosUsuario']);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
@@ -7,13 +13,70 @@
         <div class="presentacion-usuario">
             <img src="img/zorro.png" alt="perfil usuario">
             <section class="seccion-usuario">
-                <h4>Laura Alison</h4>
+                <h2><?php echo $_SESSION['datosUsuario']['usuario']?></h2>
                 <span>Barcelona</span>
             </section>
         </div>
     </div>
-    <div class="caja-info-contacto caja">
-        <ul class="caja-nombre">
+    <div class="cajaInformacionCuenta caja caja-nombre">
+        <ul class="border">
+            <li>
+                <h2>Informacion cuenta</h2>
+            </li>
+            <li class="boxNombreUser">
+                <h3>Nombre Usuario </h3>
+                <span class="nombreUser"><?php echo $_SESSION['datosUsuario']['usuario'] ?></span>
+            </li>
+            <li class="boxCorreo">
+                <h3>Correo </h3>
+                <span class="correo"><?php echo $_SESSION['datosUsuario']['email'] ?></span>
+            </li>
+            <li class="boxRol">
+                <h3>Rol</h3>
+                <span class="rol"><?php echo $_SESSION['datosUsuario']['rol_id'] ?></span>
+            </li>
+            <li>
+                <div class="">
+                    <form class="formInfoCuenta">
+                        <input class="nombreUserInput" type="text">
+                        <input class="correoInput" type="text">
+                        <input class="rolInput" type="text">
+                        <div class="divFormInfoCuenta">
+                            <input class="cancelarInfoCuenta" type="submit" value="Cancelar" name="cancel">
+                            <input class="enviarInfoCuenta" type="submit" value="Editar" name="update">
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="caja-nombre caja">
+        <ul class="listActContraseña">
+            <li>
+                <h2>Actualizar Contraseña </h2>
+            </li>
+            <li class="">
+                <h3>Contraseña </h3>
+                <span class="">********</span>
+            </li>
+            <li>
+                <form action="" class="formActualizarContraseñas">
+                    <div class="boxContraseñas">
+                        <label for="contraseñaActual">Contraseña Actual</label>
+                        <input type="passwd" placeholder="*****">
+                        <label for="contraseñaNueva">Contraseña Nueva</label>
+                        <input type="passwd" placeholder="*****">
+                    </div>
+                    <div class="btns-form-contraseña">
+                        <input class="cancelarActContraseña" type="submit" value="Cancelar">
+                        <input class="enviarActContraseña" type="submit" value="Actualizar contraseñas">
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="caja-info-contacto caja caja-nombre">
+        <ul class="">
             <li>
                 <h2>Informacion de contacto</h2>
             </li>
@@ -29,23 +92,18 @@
                 <h3>Segundo apellido :</h3>
                 <span class="seApellido">mentiscola</span>
             </li>
-            <li class="boxEmail">
-                <h3>Email :</h3>
-                <span class="email">alissoncc19@fgmail.com</span>
-            </li>
             <li class="boxTelefono">
                 <h3>Telefono :</h3>
                 <span class="telefono">3232323232</span>
             </li>
             <div class="updateInfoContacto">
                 <form class="formUpdateContact">
-                    <input class="nameInput" type="text">
-                    <input class="priApellInput" type="text">
-                    <input class="seApellInput" type="text">
-                    <input class="emailInput" type="text">
-                    <input class="telefonoInput" type="text">
+                    <input class="nameInput mostrar" type="text">
+                    <input class="priApellInput mostrar" type="text">
+                    <input class="seApellInput mostrar" type="text">
+                    <input class="telefonoInput mostrar" type="text">
                     <div class="btns-editar">
-                        <input class="cancelarformUpdateContact" type="submit" value="Cancelar" name="cancel">
+                        <input class="cancelarformUpdateContact mostrar" type="submit" value="Cancelar" name="cancel">
                         <input class="enviarformUpdateContact" type="submit" value="Editar" name="update">
                     </div>
                 </form>
@@ -53,8 +111,8 @@
         </ul>
     </div>
 
-    <div class="cajaDatosComplemetarios caja">
-        <ul class="caja-nombre">
+    <div class="cajaDatosComplemetarios caja caja-nombre">
+        <ul class="">
             <li>
                 <h2>Datos Complementarios</h2>
             </li>

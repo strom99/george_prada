@@ -1,8 +1,11 @@
 .contenedor{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .caja-presentacion-usuario{
+    width: 100%;
     height: 260px;
     display: flex;
     flex-direction: column;
@@ -21,7 +24,7 @@
 }
 
 .caja{
-    margin-bottom: 15px;
+    margin: 10px 15px;
 }
 
 .caja-presentacion-usuario img{
@@ -38,7 +41,6 @@
 }
 
 .caja-nombre{
-    margin: 0px 10px;
     background-color: #f0f8ff9c;
     border-radius: 10px;
     padding: 15px;
@@ -50,7 +52,7 @@
     padding-bottom: 4px;
 }
 
-.caja-nombre li{
+.caja-nombre li , .boxContraseñas {
     margin-bottom: 10px;
 }
 
@@ -82,12 +84,6 @@
 .displayBlock{
     display: block;
 }
-.btns-editar-datsComplementarios{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-}
 
 .border{
     border-bottom: 2px solid #3ebfec;
@@ -101,7 +97,7 @@
     display: none;
 }
 
-.btns-editar-direcciones1{
+.btns-editar-direcciones1, .divFormInfoCuenta,.datsComplementarios ,.btns-editar-datsComplementarios, .divFormInfoCuenta, .btns-form-contraseña{
     width: 100%;
     display: flex;
     gap: 20px;
@@ -112,9 +108,31 @@
     display: flex;
     justify-content: end;
 }
-@media (max-width:700px) {
+/* inputs informacion cuenta*/
+.nombreUserInput, .correoInput , .rolInput, .cancelarInfoCuenta{
+    display: none;
+}
+/* Actualizar contraseñas */
+.boxContraseñas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.boxContraseñas , .cancelarActContraseña{
+    display: none;
+}
+
+@media (min-width:700px) {
     .presentacion-usuario img{
         width: 120px;
         height: 120px;
+    }
+
+    .contenedor{
+        flex-direction: row;
+    }
+    .caja-nombre{
+        width: 45%;
     }
 }

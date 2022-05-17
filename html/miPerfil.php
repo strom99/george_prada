@@ -1,11 +1,12 @@
 <?php
 include 'procesos/conexionBD.php';
-$id_rol = $_SESSION['datosUsuario']['rol_id'];
-$consulta_id = $baseDatos->prepare("SELECT * FROM rol WHERE id = :rol");
+$id_rol = $_SESSION['datosUsuario']['id'];
+$consulta_id = $baseDatos->prepare("SELECT * FROM usuario INNER JOIN persona ON usuario.persona_id = persona.id INNER JOIN rol ON persona.id = rol.id WHERE usuario.id = :rol");
 $consulta_id->bindParam(':rol', $id_rol);
 $consulta_id->execute();
 $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
-var_dump($_SESSION['datosUsuario']);
+
+var_dump($rol_tabla['nombre']);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
@@ -13,7 +14,7 @@ var_dump($_SESSION['datosUsuario']);
         <div class="presentacion-usuario">
             <img src="img/zorro.png" alt="perfil usuario">
             <section class="seccion-usuario">
-                <h2><?php echo $_SESSION['datosUsuario']['usuario']?></h2>
+                <h2><?php echo $rol_tabla['usuario'] ?></h2>
                 <span>Barcelona</span>
             </section>
         </div>
@@ -25,15 +26,15 @@ var_dump($_SESSION['datosUsuario']);
             </li>
             <li class="boxNombreUser">
                 <h3>Nombre Usuario </h3>
-                <span class="nombreUser"><?php echo $_SESSION['datosUsuario']['usuario'] ?></span>
+                <span class="nombreUser"><?php echo $rol_tabla['usuario'] ?></span>
             </li>
             <li class="boxCorreo">
                 <h3>Correo </h3>
-                <span class="correo"><?php echo $_SESSION['datosUsuario']['email'] ?></span>
+                <span class="correo"><?php echo $rol_tabla['email'] ?></span>
             </li>
             <li class="boxRol">
                 <h3>Rol</h3>
-                <span class="rol"><?php echo $_SESSION['datosUsuario']['rol_id'] ?></span>
+                <span class="rol"><?php echo $rol_tabla['nombre'] ?></span>
             </li>
             <li>
                 <div class="">

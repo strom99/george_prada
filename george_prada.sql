@@ -4,12 +4,9 @@ CREATE DATABASE george_prada;
 
 USE george_prada;
 
-SELECT * FROM rol;
-SELECT * FROM usuario;
-
 CREATE TABLE rol (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    nombre VARCHAR(100) NOT NULL
+    etiqueta VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE persona (
@@ -45,7 +42,8 @@ CREATE TABLE productos(
     genero ENUM ('Hombre', 'Mujer','Unisex'),
     descripcion TEXT
 );
-SELECT * FROM productos;
+
+/*
 DELETE FROM productos WHERE id = 3;
 SELECT COUNT(imagen) FROM productos;
 
@@ -84,7 +82,7 @@ INSERT INTO productos VALUES(null, 'camisera','polera.jpg', 'camiseta', 25.99 ,'
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
                     quasi delectus vero enim voluptatem asperiore.</li>
             </ul>');
-
+*/
 CREATE TABLE favoritos(
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     usuario_id INT NOT NULL,
@@ -110,5 +108,5 @@ CREATE TABLE carrito(
     CONSTRAINT fk_carrito_producto FOREIGN KEY(producto_id) REFERENCES productos(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-INSERT INTO rol (nombre) VALUES('Admin');
-INSERT INTO rol (nombre) VALUES('Usuario');
+INSERT INTO rol (etiqueta) VALUES('Admin');
+INSERT INTO rol (etiqueta) VALUES('Usuario');

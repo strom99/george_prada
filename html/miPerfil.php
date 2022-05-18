@@ -1,12 +1,11 @@
 <?php
 include 'procesos/conexionBD.php';
 $id_rol = $_SESSION['datosUsuario']['id'];
-$consulta_id = $baseDatos->prepare("SELECT * FROM usuario INNER JOIN persona ON usuario.persona_id = persona.id INNER JOIN rol ON persona.id = rol.id WHERE usuario.id = :rol");
+$consulta_id = $baseDatos->prepare("SELECT * FROM usuario INNER JOIN persona ON usuario.persona_id = persona.id INNER JOIN rol ON usuario.rol_id = rol.id  WHERE usuario.id =:rol");
 $consulta_id->bindParam(':rol', $id_rol);
 $consulta_id->execute();
 $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
 
-var_dump($rol_tabla['nombre']);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
@@ -34,7 +33,7 @@ var_dump($rol_tabla['nombre']);
             </li>
             <li class="boxRol">
                 <h3>Rol</h3>
-                <span class="rol"><?php echo $rol_tabla['nombre'] ?></span>
+                <span class="rol"><?php echo $rol_tabla['etiqueta'] ?></span>
             </li>
             <li>
                 <div class="">
@@ -58,7 +57,7 @@ var_dump($rol_tabla['nombre']);
             </li>
             <li class="">
                 <h3>Contraseña </h3>
-                <span class="">********</span>
+                <span class=""><?php echo $rol_tabla['contrasena']?></span>
             </li>
             <li>
                 <form action="" class="formActualizarContraseñas">
@@ -83,19 +82,19 @@ var_dump($rol_tabla['nombre']);
             </li>
             <li class="boxNombre">
                 <h3>Nombre :</h3>
-                <span class="nombre">Laura</span>
+                <span class="nombre"><?php echo ($rol_tabla['nombre'] == null) ? 'vacio' : $rol_tabla['nombre']; ?></span>
             </li>
             <li class="boxPriApell">
                 <h3>Primer apellido :</h3>
-                <span class="priApellido">Esperanita</span>
+                <span class="priApellido"><?php echo ($rol_tabla['apellido_1'] == null) ? 'vacio' : $rol_tabla['apellido1']; ?></span>
             </li>
             <li class="boxSeApell">
                 <h3>Segundo apellido :</h3>
-                <span class="seApellido">mentiscola</span>
+                <span class="seApellido"><?php echo ($rol_tabla['apellido_2'] == null) ? 'vacio' : $rol_tabla['apellido2']; ?></span>
             </li>
             <li class="boxTelefono">
                 <h3>Telefono :</h3>
-                <span class="telefono">3232323232</span>
+                <span class="telefono"><?php echo ($rol_tabla['telefono'] == null) ? 'vacio' : $rol_tabla['telefono']; ?></span>
             </li>
             <div class="updateInfoContacto">
                 <form class="formUpdateContact">
@@ -119,7 +118,7 @@ var_dump($rol_tabla['nombre']);
             </li>
             <li class="boxFechaNacimiento">
                 <h3>Fecha de nacimiento:</h3>
-                <span class="fechaNacimiento">22/01/1999</span>
+                <span class="fechaNacimiento"><?php echo ($rol_tabla['fecha_nacimiento'] == null) ? 'vacio' : $rol_tabla['fecha_nacimiento']; ?></span>
             </li>
             <li class="boxPais">
                 <h3>Pais</h3>

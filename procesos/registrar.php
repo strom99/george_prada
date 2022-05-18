@@ -53,7 +53,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['contrasena']) && !empty($_POST['
     }
 
     $idPersonaCreada = $baseDatos->lastInsertId();
-
+    var_dump($idPersonaCreada);
     // Si el email tiene @stucom.com será admin, si no, será usuario;
     if (preg_match('/.*@stucom.com/', $email) === 1) {
         // admin
@@ -70,6 +70,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['contrasena']) && !empty($_POST['
         ':rol' => $rol,
         ':idPersonaCreada' => $idPersonaCreada
     ]);
+
 
     // Si la query del usuario no sale bien, salimos del flujo.
     if (!$usuarioInserted) {

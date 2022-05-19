@@ -5,7 +5,7 @@ $consulta_id = $baseDatos->prepare("SELECT * FROM usuario INNER JOIN persona ON 
 $consulta_id->bindParam(':rol', $id_rol);
 $consulta_id->execute();
 $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
-
+var_dump($rol_tabla);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
@@ -14,7 +14,7 @@ $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
             <img src="img/zorro.png" alt="perfil usuario">
             <section class="seccion-usuario">
                 <h2><?php echo $rol_tabla['usuario'] ?></h2>
-                <span>Barcelona</span>
+                <span><?php echo ($rol_tabla['ciudad'] == null) ? 'vacio' : $rol_tabla['ciudad']; ?></span>
             </section>
         </div>
     </div>
@@ -122,11 +122,11 @@ $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
             </li>
             <li class="boxPais">
                 <h3>Pais</h3>
-                <span class="pais">España</span>
+                <span class="pais"><?php echo ($rol_tabla['pais'] == null) ? 'vacio' : $rol_tabla['pais']; ?></span>
             </li>
             <li class="boxCiudad">
                 <h3>Ciudad</h3>
-                <span class="ciudad">Barcelona</span>
+                <span class="ciudad"><?php echo ($rol_tabla['ciudad'] == null) ? 'vacio' : $rol_tabla['ciudad']; ?></span>
             </li>
             <div class="boxUpdateFormDatsComplementarios">
                 <form class="formUpdateDatsComplementarios">

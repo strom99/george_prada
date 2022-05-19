@@ -53,7 +53,6 @@ if (!empty($_POST['usuario']) && !empty($_POST['contrasena']) && !empty($_POST['
     }
 
     $idPersonaCreada = $baseDatos->lastInsertId();
-    var_dump($idPersonaCreada);
     // Si el email tiene @stucom.com será admin, si no, será usuario;
     if (preg_match('/.*@stucom.com/', $email) === 1) {
         // admin

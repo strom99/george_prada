@@ -41,8 +41,7 @@ $(".formulario").validate({
     }
 });
 
-$(".formulario").on('submit' , function(e){
-    e.preventDefault();
+$(".formulario").on('submit' , function(){
     $("#mensaje-error").show();
     
     $.ajax({

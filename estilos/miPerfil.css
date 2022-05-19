@@ -42,9 +42,7 @@
 
 .caja-nombre{
     background-color: #f0f8ff9c;
-    border-radius: 10px;
     padding: 15px;
-    border: 1px solid gray;
 }
 
 .caja-nombre li:first-child{
@@ -129,10 +127,4 @@
         height: 120px;
     }
 
-    .contenedor{
-        flex-direction: row;
-    }
-    .caja-nombre{
-        width: 45%;
-    }
 }

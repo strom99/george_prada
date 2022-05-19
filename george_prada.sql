@@ -4,6 +4,7 @@ CREATE DATABASE george_prada;
 
 USE george_prada;
 
+
 CREATE TABLE rol (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     etiqueta VARCHAR(100) NOT NULL
@@ -15,8 +16,7 @@ CREATE TABLE persona (
     fecha_nacimiento DATE NULL,
     apellido_1 VARCHAR(100) NULL,
     apellido_2 VARCHAR(100) NULL,
-    telefono VARCHAR(100) NULL,
-    direccion VARCHAR(100) NULL
+    telefono VARCHAR(100) NULL
 );
 
 CREATE TABLE usuario (
@@ -43,9 +43,6 @@ CREATE TABLE productos(
     descripcion TEXT
 );
 
-/*
-DELETE FROM productos WHERE id = 3;
-SELECT COUNT(imagen) FROM productos;
 
 INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nike', 34.99 ,'calzados',21,'Unisex','<p>Zapatillas europeras</p> <ul>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
@@ -82,7 +79,7 @@ INSERT INTO productos VALUES(null, 'camisera','polera.jpg', 'camiseta', 25.99 ,'
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
                     quasi delectus vero enim voluptatem asperiore.</li>
             </ul>');
-*/
+
 CREATE TABLE favoritos(
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     usuario_id INT NOT NULL,
@@ -110,3 +107,4 @@ CREATE TABLE carrito(
 
 INSERT INTO rol (etiqueta) VALUES('Admin');
 INSERT INTO rol (etiqueta) VALUES('Usuario');
+

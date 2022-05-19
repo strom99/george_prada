@@ -173,4 +173,10 @@ $(".cancelarDireccionInput1").on("click",function(e){
     $(".boxNombre1, .boxTelefono1, .boxCalle1, .boxPiso1, .boxCodPostal1, .boxCiudad1, .boxProvincia1").css("display", "block");
 });
 
+if($("input[value = Actualizar]")){
+    console.log("click");
+    
+}else{
+    console.log("hola");
+}
 

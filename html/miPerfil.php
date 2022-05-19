@@ -37,7 +37,7 @@ var_dump($rol_tabla);
             </li>
             <li>
                 <div class="">
-                    <form class="formInfoCuenta">
+                    <form class="formInfoCuenta" method='POST' >
                         <input class="nombreUserInput" type="text">
                         <input class="correoInput" type="text">
                         <input class="rolInput" type="text">

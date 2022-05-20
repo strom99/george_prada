@@ -21,7 +21,7 @@ var_dump($rol_tabla);
     <div class="cajaInformacionCuenta caja caja-nombre">
         <ul class="border">
             <li>
-                <h2>Informacion cuenta</h2>
+                <h2 class="h2">Informacion cuenta</h2>
             </li>
             <li class="boxNombreUser">
                 <h3>Nombre Usuario </h3>
@@ -37,13 +37,14 @@ var_dump($rol_tabla);
             </li>
             <li>
                 <div class="">
-                    <form class="formInfoCuenta" method='POST' >
+                    <form class="formInfoCuenta" method='POST'>
                         <input class="nombreUserInput" type="text">
                         <input class="correoInput" type="text">
                         <input class="rolInput" type="text">
                         <div class="divFormInfoCuenta">
                             <input class="cancelarInfoCuenta" type="submit" value="Cancelar" name="cancel">
-                            <input class="enviarInfoCuenta" type="submit" value="Editar" name="update">
+                            <input class="actualizarCuenta" type="submit" value="Actualizar">
+                            <input class="editatInfoCuenta" type="submit" value="Editar" name="update">
                         </div>
                     </form>
                 </div>
@@ -57,7 +58,7 @@ var_dump($rol_tabla);
             </li>
             <li class="">
                 <h3>Contraseña </h3>
-                <span class=""><?php echo $rol_tabla['contrasena']?></span>
+                <span class=""><?php echo $rol_tabla['contrasena'] ?></span>
             </li>
             <li>
                 <form action="" class="formActualizarContraseñas">
@@ -69,7 +70,8 @@ var_dump($rol_tabla);
                     </div>
                     <div class="btns-form-contraseña">
                         <input class="cancelarActContraseña" type="submit" value="Cancelar">
-                        <input class="enviarActContraseña" type="submit" value="Actualizar contraseñas">
+                        <input class="actualizarContra" type="submit" value="Actualizar">
+                        <input class="editarContra" type="submit" value="Actualizar contraseñas">
                     </div>
                 </form>
             </li>
@@ -104,6 +106,7 @@ var_dump($rol_tabla);
                     <input class="telefonoInput mostrar" type="text">
                     <div class="btns-editar">
                         <input class="cancelarformUpdateContact mostrar" type="submit" value="Cancelar" name="cancel">
+                        <input class="actualizarInfoContact" type="submit" value="Actualizar">
                         <input class="enviarformUpdateContact" type="submit" value="Editar" name="update">
                     </div>
                 </form>
@@ -135,6 +138,7 @@ var_dump($rol_tabla);
                     <input class="ciudadInput" type="text">
                     <div class="btns-editar-datsComplementarios">
                         <input class="cancelarUpdateInput" type="submit" value="Cancelar" name="cancel">
+                        <input class="actualizarDatsComplement" type="submit" value="Actualizar">
                         <input class="enviarInputDatsComplementarios" type="submit" value="Editar" name="update">
                     </div>
                 </form>
@@ -186,6 +190,7 @@ var_dump($rol_tabla);
                         <input class="inputProvincia1" type="text">
                         <div class="btns-editar-direcciones1">
                             <input class="cancelarDireccionInput1" type="submit" value="Cancelar" name="cancel">
+                            <input class="actualizarDirecciones" type="submit" value="Actualizar">
                             <input class="enviarInputDatsDireccion1" type="submit" value="Editar" name="update">
                         </div>
                     </form>

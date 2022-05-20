@@ -60,7 +60,7 @@
 }
 
 /* inputs informacion contacto*/
-.nameInput , .priApellInput , .seApellInput, .emailInput,.telefonoInput , .cancelarformUpdateContact{
+.nameInput , .priApellInput , .seApellInput, .emailInput,.telefonoInput , .cancelarformUpdateContact, .actualizarInfoContact{
     display: none;
 }
 
@@ -75,7 +75,7 @@
 }
 
 /* inputs datos complementarios*/
-.fechaNacimientoInput , .paisInput , .ciudadInput , .cancelarUpdateInput{
+.fechaNacimientoInput , .paisInput , .ciudadInput , .cancelarUpdateInput, .actualizarDatsComplement{
     display: none;
 }
 
@@ -91,7 +91,7 @@
 }
 
 /*Inputs direcciones registradas*/
-.inputNombreCompleto1 , .inputTelefono1, .inputLineaDireccion1, .inputPiso1 , .inputCodPostal1,.inputProvincia1, .inputCiudad1,.cancelarDireccionInput1{
+.inputNombreCompleto1 , .inputTelefono1, .inputLineaDireccion1, .inputPiso1 , .inputCodPostal1,.inputProvincia1, .inputCiudad1,.cancelarDireccionInput1 ,.actualizarDirecciones{
     display: none;
 }
 
@@ -107,10 +107,13 @@
     justify-content: end;
 }
 /* inputs informacion cuenta*/
-.nombreUserInput, .correoInput , .rolInput, .cancelarInfoCuenta{
+.nombreUserInput, .correoInput , .rolInput, .cancelarInfoCuenta, .actualizarCuenta{
     display: none;
 }
 /* Actualizar contraseñas */
+.actualizarContra{
+    display: none;
+}
 .boxContraseñas{
     display: flex;
     flex-direction: column;

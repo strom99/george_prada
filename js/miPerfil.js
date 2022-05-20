@@ -1,15 +1,12 @@
 // formulario informacion cuenta
-$(".enviarInfoCuenta").on('click' , function(e){
+$(".editatInfoCuenta").on('click' , function(e){
     e.preventDefault();
 
-    // cambiar valor de actualizar
-    $(".enviarInfoCuenta").val("Actualizar");
-
     // visualizar los inputs
-    $(".nombreUserInput, .correoInput, .rolInput, .cancelarInfoCuenta").css("display","block");
+    $(".nombreUserInput, .correoInput, .rolInput, .cancelarInfoCuenta , .actualizarCuenta").css("display","block");
 
     // ocultar el texto de span
-    $(".nombreUser , .correo , .rol").css("display", "none");
+    $(".nombreUser , .correo , .rol , .editatInfoCuenta").css("display", "none");
 
     // coger los input y añadirlos en la lista para que no aparezcan abajo
     $(".nombreUserInput").appendTo(".boxNombreUser");
@@ -28,37 +25,35 @@ $(".enviarInfoCuenta").on('click' , function(e){
 });
 $(".cancelarInfoCuenta").on("click", function(e){
     e.preventDefault();
-    $(".enviarInfoCuenta").val("Editar");
 
-    $(".nombreUser, .correo , .rol").css("display", "block");
-    $(".nombreUserInput, .correoInput, .rolInput , .cancelarInfoCuenta").css("display","none");
+    $(".nombreUser, .correo , .rol ,.editatInfoCuenta").css("display", "block");
+    $(".nombreUserInput, .correoInput, .rolInput , .cancelarInfoCuenta, .actualizarCuenta").css("display","none");
 })
 
 // actualizar contraseñas
-$(".enviarActContraseña").on("click", function(e){
+$(".editarContra").on("click", function(e){
     e.preventDefault();
 
-    $(".boxContraseñas , .cancelarActContraseña").css("display","flex");
+    $(".boxContraseñas , .cancelarActContraseña , .actualizarContra").css("display","flex");
+    $(".editarContra").css("display","none");
 })
 $(".cancelarActContraseña").on("click",function(e){
     e.preventDefault();
 
-    $(".boxContraseñas , .cancelarActContraseña").hide();
+    $(".boxContraseñas , .cancelarActContraseña, .actualizarContra").hide();
+    $(".editarContra").css("display","flex");
 })
 
 // formulario informacion de contacto
 $(".enviarformUpdateContact").on('click' , function(e){
     e.preventDefault();
-
-    // cambiar valor de actualizar
-    $(".enviarformUpdateContact").val("Actualizar");
     $(".formUpdateName").css("width" , "100%");
 
     // visualizar los inputs
-    $(".mostrar").css("display","block");
+    $(".mostrar, .actualizarInfoContact").css("display","block");
 
     // ocultar el texto de span
-    $(".nombre , .priApellido , .seApellido, .telefono").css("display", "none");
+    $(".nombre , .priApellido , .seApellido, .telefono, .enviarformUpdateContact").css("display", "none");
 
     // coger los input y añadirlos en la lista para que no aparezcan abajo
     $(".nameInput").appendTo(".boxNombre");
@@ -81,23 +76,21 @@ $(".enviarformUpdateContact").on('click' , function(e){
 });
 $(".cancelarformUpdateContact").on("click", function(e){
     e.preventDefault();
-    $(".enviarformUpdateContact").val("Editar");
 
-    $(".nombre, .priApellido , .seApellido , .telefono").css("display", "block");
+    $(".nombre, .priApellido , .seApellido , .telefono, .enviarformUpdateContact").css("display", "block");
     $(".formUpdateContact").css("width" , "auto");
-    $(".nameInput, .priApellInput, .seApellInput , .telefonoInput, .cancelarformUpdateContact").css("display","none");
+    $(".nameInput, .priApellInput, .seApellInput , .telefonoInput, .cancelarformUpdateContact ,.actualizarInfoContact").css("display","none");
 })
 
 // formulario datos complementarios
 $(".enviarInputDatsComplementarios").on("click", function(e){
     e.preventDefault();
-    $(".enviarInputDatsComplementarios").val("Actualizar");
 
     //mostramos los inputs
-    $(".fechaNacimientoInput , .cancelarUpdateInput, .paisInput, .ciudadInput").css("display","block");
+    $(".fechaNacimientoInput , .cancelarUpdateInput, .paisInput, .ciudadInput,.actualizarDatsComplement").css("display","block");
 
     // ocultar el texto de span
-    $(".fechaNacimiento, .ciudad, .pais").css("display", "none");
+    $(".fechaNacimiento, .ciudad, .pais ,.enviarInputDatsComplementarios").css("display", "none");
 
     // coger los input y añadirlos en la lista para que no aparezcan abajo
     $(".fechaNacimientoInput").appendTo(".boxFechaNacimiento");
@@ -117,11 +110,10 @@ $(".enviarInputDatsComplementarios").on("click", function(e){
 })
 $(".cancelarUpdateInput").on("click",function(e){
     e.preventDefault();
-    $(".enviarInputDatsComplementarios").val("Editar");
 
-    $(".fechaNacimiento, .pais, .ciudad").css("display", "block");
+    $(".fechaNacimiento, .pais, .ciudad, .enviarInputDatsComplementarios").css("display", "block");
 
-    $(".fechaNacimientoInput, .cancelarUpdateInput, .paisInput, .ciudadInput").css("display","none");
+    $(".fechaNacimientoInput, .cancelarUpdateInput, .paisInput, .ciudadInput ,.actualizarDatsComplement").css("display","none");
 
 });
 
@@ -129,14 +121,11 @@ $(".cancelarUpdateInput").on("click",function(e){
 $(".enviarInputDatsDireccion1").on("click",function(e){
     e.preventDefault();
 
-    // cambiar valor de actualizar
-    $(".enviarInputDatsDireccion1").val("Actualizar");
-
     // visualizar los inputs
-    $(".inputNombreCompleto1, .inputTelefono1, .inputLineaDireccion1, .inputPiso1, .inputCodPostal1, .inputCiudad1, .inputProvincia1, .cancelarDireccionInput1").css("display","block");
+    $(".inputNombreCompleto1, .inputTelefono1, .inputLineaDireccion1, .inputPiso1, .inputCodPostal1, .inputCiudad1, .inputProvincia1, .cancelarDireccionInput1 ,.actualizarDirecciones").css("display","block");
 
     // ocultar el texto de span
-    $(".boxNombre1, .boxTelefono1, .boxCalle1, .boxPiso1, .boxCodPostal1, .boxCiudad1, .boxProvincia1").css("display", "none");
+    $(".boxNombre1, .boxTelefono1, .boxCalle1, .boxPiso1, .boxCodPostal1, .boxCiudad1, .boxProvincia1 ,.enviarInputDatsDireccion1").css("display", "none");
 
     // coger los input y añadirlos en la lista para que no aparezcan abajo
     $(".inputNombreCompleto1").appendTo(".boxLiNombre1");
@@ -167,16 +156,27 @@ $(".enviarInputDatsDireccion1").on("click",function(e){
 });
 $(".cancelarDireccionInput1").on("click",function(e){
     e.preventDefault();
-    $(".enviarInputDatsDireccion1").val("Editar");
-    $(".cancelarDireccionInput1, .inputNombreCompleto1, .inputTelefono1, .inputLineaDireccion1, .inputPiso1, .inputCodPostal1, .inputCiudad1, .inputProvincia1").css("display","none");
+    $(".cancelarDireccionInput1, .inputNombreCompleto1, .inputTelefono1, .inputLineaDireccion1, .inputPiso1, .inputCodPostal1, .inputCiudad1, .inputProvincia1 ,.actualizarDirecciones").css("display","none");
 
-    $(".boxNombre1, .boxTelefono1, .boxCalle1, .boxPiso1, .boxCodPostal1, .boxCiudad1, .boxProvincia1").css("display", "block");
+    $(".boxNombre1, .boxTelefono1, .boxCalle1, .boxPiso1, .boxCodPostal1, .boxCiudad1, .boxProvincia1,.enviarInputDatsDireccion1").css("display", "block");
 });
 
-if($("input[value = Actualizar]")){
-    console.log("click");
-    
-}else{
-    console.log("hola");
-}
+$(".actualizarCuenta").on("click", function(e){
+    e.preventDefault();
+    let usuario = $(".nombreUserInput").val();
+    let correo = $(".correoInput").val();
+    let rol = $(".rolInput").val();
+    let datos = "usuario="+usuario+"&correo="+correo+"&rol="+rol;
+
+    $.ajax({
+         url: 'procesos/modificarUsuario.php',
+         type: 'POST',
+         dataType: "json",
+         data: usuario,
+         success: function(respJSON){
+            $(".nombreUserInput").text(respJSON);
+        }
+    })
+
+})
 

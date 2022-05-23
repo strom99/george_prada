@@ -1,45 +1,60 @@
+<?php 
+    include 'procesos/conexionBD.php';
+    $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
+
+?>
+
 <div class="contenedor">
     <div>
-        <h1>Información del producto</h1>
+        <h1>Panel de productos</h1>
     </div>
-    <div class="seccion-form-product">
-        <form action="<?php echo $_SESSION['RUTA_BASE']?>/procesos/subir_producto.php" method="POST">
-            <label for="nombre-producto">Nombre Producto</label>
-            <input type="text" name="nombre_producto">
-            <label for="descp-producto">Descripción del producto</label>
-            <input type="text" name="desc_producto">
-            <label for="valor-producto">Valor Producto</label>
-            <input type="number" name="valor_producto">
-            <label for="cantidad-producto">Cantidad</label>
-            <input type="number" name="cantidad_producto">
 
+    <div>
+        <button class="crear-producto-button">Crear producto</button>
 
-            <div class="categories">
-                <label for="select-categories">Categories</label>
-                <select name="categorias">
-                    <option value="calzado">Calzado</option>
-                    <option value="ropa" selected>Ropa</option>
-                    <option value="leggins">Pantalones</option>
-                </select>
-
-                <label for="select-genero">Genero</label>
-                <select name="genero">
-                    <option value="value1" selected>Masculíno</option>
-                    <option value="value2">Femenino</option>
-                </select>
-            </div>
-
-            <div class="input-file">
-                <label for="imagen">Subir Imagen</label>
-                <input type="file">
-            </div>
-
-            <input type="submit" value="Subir-Producto" class="botom-submit">
+        <form class="hide crear-producto-form">
+            <input type="text" name="nombre">
+            <input type="text" name="marca">
+            <input type="text" name="precio">
+            <input type="text" name="categoria">
+            <input type="text" name="cantidad">
+            <input type="text" name="genero">
+            <input type="text" name="descripcion">
         </form>
 
-        <div class="side-imagen">
-            <img src="img/54402.png" alt="modelo_producto">
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                    <th>Genero</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <?php foreach($productos as $producto): ?>
+                    <tr>
+                        <td><?php echo $producto['nombre']; ?></td>
+                        <td><?php echo $producto['marca']; ?></td>
+                        <td><?php echo $producto['precio']; ?></td>
+                        <td><?php echo $producto['categoria']; ?></td>
+                        <td><?php echo $producto['cantidad']; ?></td>
+                        <td><?php echo $producto['genero']; ?></td>
+                        <td><?php echo $producto['descripcion']; ?></td>
+                        <td>
+                            <form class="formProductos">
+                                <button class="producto-button" data-id="<?php echo $producto['id'] ?>" data-action="update">Editar</button>
+                                <button class="producto-button" data-id="<?php echo $producto['id'] ?>" data-action="delete">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+        </table>
     </div>
 
 </div>

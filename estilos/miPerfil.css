@@ -1,133 +1,88 @@
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.caja-presentacion-usuario{
-    width: 100%;
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-}
-
-.presentacion-usuario{
-    display: flex;
-    height: 70px;
+.caja-presentacion-usuario {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
 }
 
-.seccion-usuario{
-    margin-left: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.presentacion-usuario {
+  display: flex;
+  height: 70px;
 }
 
-.caja{
-    margin: 10px 15px;
+.seccion-usuario {
+  margin-left: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.caja-presentacion-usuario img{
-    height: 140px;
-}
-.presentacion-usuario img{
-    position: absolute;
-    top: 145px;
-    background: dimgray;
-    margin-left: 15px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.caja {
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.caja-nombre{
-    background-color: #f0f8ff9c;
-    padding: 15px;
+.caja-presentacion-usuario img {
+  height: 140px;
+}
+.presentacion-usuario img {
+  position: absolute;
+  top: 145px;
+  background: dimgray;
+  margin-left: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
-.caja-nombre li:first-child{
-    border-bottom: 1px solid gray;
-    padding-bottom: 4px;
+.caja-nombre {
+  background-color: #f0f8ff9c;
+  padding: 15px;
 }
 
-.caja-nombre li , .boxContraseñas {
-    margin-bottom: 10px;
+.btns-editar {
+  display: flex;
+  gap: 20px;
 }
 
-.updateInfoContacto {
-    display: flex;
-    justify-content: end;
+.actualizarCuenta,
+.cancelarInfoCuenta {
+  display: none;
+}
+form > div,
+.btns-formContra2 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
-/* inputs informacion contacto*/
-.nameInput , .priApellInput , .seApellInput, .emailInput,.telefonoInput , .cancelarformUpdateContact, .actualizarInfoContact{
-    display: none;
+.formInfoCuenta input[type="text"] {
+  border: none;
+}
+/* Form actualizar contraseñas */
+.formContraseña1 {
+  justify-content: space-between;
+}
+.formContraseña2 {
+  display: none;
+}
+.showFormContra2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.formUpdateContact , .updateFormDatsComplementarios{
-    display: flex;
-    justify-content: end;
-}
-
-.btns-editar{
-    display: flex;
-    gap: 20px;
-}
-
-/* inputs datos complementarios*/
-.fechaNacimientoInput , .paisInput , .ciudadInput , .cancelarUpdateInput, .actualizarDatsComplement{
-    display: none;
-}
-
-.displayBlock{
-    display: block;
-}
-
-.border{
-    border-bottom: 2px solid #3ebfec;
-    padding: 5px;
-    margin-bottom: 10px;
-
-}
-
-/*Inputs direcciones registradas*/
-.inputNombreCompleto1 , .inputTelefono1, .inputLineaDireccion1, .inputPiso1 , .inputCodPostal1,.inputProvincia1, .inputCiudad1,.cancelarDireccionInput1 ,.actualizarDirecciones{
-    display: none;
-}
-
-.btns-editar-direcciones1, .divFormInfoCuenta,.datsComplementarios ,.btns-editar-datsComplementarios, .divFormInfoCuenta, .btns-form-contraseña{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-}
-
-.formAñadirDireccion{
-    display: flex;
-    justify-content: end;
-}
-/* inputs informacion cuenta*/
-.nombreUserInput, .correoInput , .rolInput, .cancelarInfoCuenta, .actualizarCuenta{
-    display: none;
-}
-/* Actualizar contraseñas */
-.actualizarContra{
-    display: none;
-}
-.boxContraseñas{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.boxContraseñas , .cancelarActContraseña{
-    display: none;
-}
-
-@media (min-width:700px) {
-    .presentacion-usuario img{
-        width: 120px;
-        height: 120px;
-    }
-
+@media (min-width: 700px) {
+  .presentacion-usuario img {
+    width: 120px;
+    height: 120px;
+  }
 }

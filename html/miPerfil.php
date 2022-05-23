@@ -63,7 +63,7 @@ var_dump($rol_tabla);
             <label for="">Nombre: </label>
             <input type="text" value="<?php echo ($rol_tabla['nombre'] == null) ? 'vacio' : $rol_tabla['nombre']; ?>">
             <label for="">Primer Apellido: </label>
-            <input type="text" value="<?php echo ($rol_tabla['apellido1'] == null) ? 'vacio' : $rol_tabla['apellido1']; ?>">
+            <input type="text" value="<?php echo ($rol_tabla['apellido_1'] == null) ? 'vacio' : $rol_tabla['apellido1']; ?>">
             <label for="">Segundo Apellido: </label>
             <input type="text" value="<?php echo ($rol_tabla['apellido_2'] == null) ? 'vacio' : $rol_tabla['apellido2']; ?>">
             <label for="">Telefono: </label>
@@ -88,8 +88,8 @@ var_dump($rol_tabla);
             <div>
                 <input class="cancelarUpdateInput" type="submit" value="Cancelar" name="cancel">
                 <input class="actualizarDatsComplement" type="submit" value="Actualizar">
-                <input class="enviarInputDatsComplementarios" type="submit" value="Editar" name="update"> 
-            </div>       
+                <input class="enviarInputDatsComplementarios" type="submit" value="Editar" name="update">
+            </div>
         </form>
     </div>
     <div class="cajaDireccionesRegistradas caja caja-nombre">

@@ -1,17 +1,16 @@
-<?php 
-    include 'procesos/conexionBD.php';
-    $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
+<?php
+include 'procesos/conexionBD.php';
+$productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
 
 ?>
 
 <div class="contenedor">
-    <div>
+    <div class="title-header">
         <h1>Panel de productos</h1>
+        <button class="crear-producto-button">Crear producto</button>
     </div>
 
     <div>
-        <button class="crear-producto-button">Crear producto</button>
-
         <form class="hide crear-producto-form">
             <input type="text" name="nombre">
             <input type="text" name="marca">
@@ -22,21 +21,23 @@
             <input type="text" name="descripcion">
         </form>
 
-        <table>
+        <table class="head-table">
             <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Marca</th>
-                    <th>Precio</th>
-                    <th>Categoría</th>
-                    <th>Cantidad</th>
-                    <th>Genero</th>
-                    <th>Descripción</th>
-                    <th>Acciones</th>
-                </tr>
+                <?php foreach ($productos as $producto) { ?>
+                    <tr colspan="1">
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Precio</th>
+                        <th>Categoría</th>
+                        <th>Cantidad</th>
+                        <th>Genero</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                <?php } ?>
             </thead>
-                <tbody>
-                    <?php foreach($productos as $producto): ?>
+            <tbody class="body-table">
+                <?php foreach ($productos as $producto) : ?>
                     <tr>
                         <td><?php echo $producto['nombre']; ?></td>
                         <td><?php echo $producto['marca']; ?></td>
@@ -53,7 +54,7 @@
                         </td>
                     </tr>
                 <?php endforeach; ?>
-                </tbody>
+            </tbody>
         </table>
     </div>
 

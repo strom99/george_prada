@@ -13,10 +13,12 @@ CREATE TABLE rol (
 CREATE TABLE persona (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nombre VARCHAR(100) NULL,
-    fecha_nacimiento DATE NULL,
     apellido_1 VARCHAR(100) NULL,
     apellido_2 VARCHAR(100) NULL,
-    telefono VARCHAR(100) NULL
+    telefono VARCHAR(100) NULL,
+	fecha_nacimiento DATE NULL,
+	ciudad VARCHAR(100) NULL,
+    pais VARCHAR(100) NULL
 );
 
 CREATE TABLE usuario (
@@ -107,4 +109,5 @@ CREATE TABLE carrito(
 
 INSERT INTO rol (etiqueta) VALUES('Admin');
 INSERT INTO rol (etiqueta) VALUES('Usuario');
+SELECT * FROM usuario;
 

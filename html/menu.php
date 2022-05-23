@@ -25,8 +25,11 @@
         </div>
         <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=mostrarCarrito">
             <i class="bolsa fas fa-shopping-bag"><span> <?php 
-                echo (empty($_SESSION['CARRITO']))? : count($_SESSION['CARRITO']);
-              
+                if(empty($_SESSION['CARRITO'])){
+                    echo 0;
+                }else{
+                    echo count($_SESSION['CARRITO']);
+                }                
             ?></span></i>
         </a>
     </div>

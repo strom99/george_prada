@@ -1,4 +1,7 @@
 <?php
+  $ActualizarDespuesDe = 2;
+  
+
 define("KEY1","DEVELOTECA");
 define("COD1","AES-128-ECB");
 $mensaje = "";

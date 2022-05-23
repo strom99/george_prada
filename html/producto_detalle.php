@@ -78,7 +78,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                 </select>
             </form>     
             <form action="" method="post" class="form-seleccion-botones">
-                <?php echo $mensaje; ?>
+                <?php  ?>
                     <input type="hidden" name="id" id="id" value="<?php echo openssl_encrypt($producto['id'],COD,KEY);?>">
                     <input type="hidden" name="nombre" id="nombre" value="<?php echo openssl_encrypt($producto['nombre'],COD,KEY);?>">
                     <input type="hidden" name="marca" id="marca" value="<?php echo openssl_encrypt($producto['marca'],COD,KEY);?>">

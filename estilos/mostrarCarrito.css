@@ -9,20 +9,24 @@
 }
 .table{
     width: 100%;
-
 }
 .table tbody{
     width: 100%;
-}
-.table tbody tr td{
     text-align: center;
-    font-size: 25px;
-}
-.table tbody tr:nth-child(4) td{
-    text-align: right;
-    width: 10%;
-}
-.table tbody tr:nth-child(4) td h3{
-    text-align: right;
 }
 
+.table tbody tr td{
+    text-align: center;
+    font-size: 20px;
+}
+
+.table tbody tr:nth-child(1) th{
+    font-size: 20px;
+}
+h3{
+    text-align: right;
+}
+.title h3{
+    text-align: left;
+    padding-left: 35px;
+}

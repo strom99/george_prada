@@ -79,7 +79,7 @@ if (isset($_POST['btnProducto'])) {
             }else {
                 $idProductos = array_column($_SESSION['CARRITO'],"ID");
                 if(in_array($ID, $idProductos)){
-                        echo "El producto ya ha sido seleccionado";
+                        echo "<script>alert('El producto ya ha sido seleccionado')</script>";
                         $mensaje = "";
                 }else {
                     $numeroProductos = count($_SESSION['CARRITO']);

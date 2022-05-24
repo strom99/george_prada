@@ -34,9 +34,9 @@
             </tr>
             <?php $total = $total + ($producto['PRECIO'] * $producto['CANTIDAD']);?>
             <?php } ?>
-            <tr>
-                <td colspan="3" align="right"><h3>Total</h3></td>
-                <td align="right" colspan="2"><h3>$<?php echo number_format($total,2)?></h3></td>
+            <tr class="title-info">
+                <td colspan="3"><h3>Total</h3></td>
+                <td  colspan="2" class="title"><h3>$<?php echo number_format($total,2)?></h3></td>
             </tr>
         </tbody>
     </table>

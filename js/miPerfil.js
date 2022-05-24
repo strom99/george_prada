@@ -23,6 +23,37 @@ $(".cancelarInfoCuenta , .actualizarCuenta, .editatInfoCuenta").on(
     }
   }
 );
+// funciones formulario de info cuenta
+function cancelarInfoCuenta(e) {
+    e.preventDefault();
+    $(".formInfoCuenta > input[type='Text']").css("border", "0");
+    $(".cancelarInfoCuenta , .actualizarCuenta").hide();
+    $(".editatInfoCuenta").show();
+  };
+
+function actualizar(e) {
+    e.preventDefault();
+    const data = $(".formInfoCuenta").serialize();
+  
+    $.ajax({
+      url: "procesos/modificarUsuario.php",
+      type: "POST",
+      dataType: "json",
+      data,
+      success: function (respJSON) {
+        if (respJSON.status === "ok") {
+          $(".nombre-usuario").text(respJSON.usuario);
+          cancelarInfoCuenta(e);
+          alert("Actualizado correctamente");
+        } else if(respJSON.status == "errorContra"){
+          alert("no son iguales");
+        }else {
+          alert("Ha habido un error.");
+        }
+      },
+    });
+    console.log(data);
+  }
 
 $(".actualizarContraseña , .cancelarActContraseña, .guardarContraseña").on(
   "click",
@@ -44,35 +75,7 @@ $(".actualizarContraseña , .cancelarActContraseña, .guardarContraseña").on(
   }
 );
 
-// funciones formulario de info cuenta
-function cancelarInfoCuenta(e) {
-  e.preventDefault();
-  $(".formInfoCuenta > input[type='Text']").css("border", "0");
-  $(".cancelarInfoCuenta , .actualizarCuenta").hide();
-  $(".editatInfoCuenta").show();
-}
 
-function actualizar(e) {
-  e.preventDefault();
-  const data = $(".formInfoCuenta").serialize();
-
-  $.ajax({
-    url: "procesos/modificarUsuario.php",
-    type: "POST",
-    dataType: "json",
-    data,
-    success: function (respJSON) {
-      if (respJSON.status === "ok") {
-        $(".nombre-usuario").text(respJSON.usuario);
-        cancelarInfoCuenta(e);
-        alert("Actualizado correctamente");
-      } else {
-        alert("Ha habido un error.");
-      }
-    },
-  });
-  console.log(data);
-}
 // funciones formulario de contraseña
 function actualizarContraseña(e) {
   e.preventDefault();

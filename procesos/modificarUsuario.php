@@ -57,6 +57,7 @@ switch ($_POST['form']) {
             break;
         }
         
+        $response['dats'] = $resultado;
         try{
             $contraEncript = password_hash($contraNueva, PASSWORD_BCRYPT);
             $update = $baseDatos->prepare("UPDATE usuario SET contrasena = :contraNueva  WHERE id = :id");
@@ -75,5 +76,3 @@ switch ($_POST['form']) {
 };
 
 echo json_encode($response);
-
-?>

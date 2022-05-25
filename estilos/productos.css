@@ -185,3 +185,59 @@ a:hover{
     font-size: 17.5px;
     padding-left: 5px;
 }
+@media screen and (max-width:900px){
+    aside{
+        width: 44%;
+    }
+    .container-imagenes div {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .container-imqagenes div {
+        width: 100%;
+    }
+}
+@media screen and (max-width:566px){
+    aside{
+        width: 100%;
+    }
+}
+@media screen and (max-width:482px){
+    aside{
+        width: 100%;
+    }
+    .content-info{
+        height: 123px;
+    }
+    
+    .container-imagenes div{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:360px) and (max-width:480px){
+    .contenedor {
+        flex-direction: column;
+    }
+    img {
+        height: 82%;
+        object-fit: contain;
+    }
+    .ratings img {
+        width: 67%;
+    }
+    .container-imagenes {
+        height: auto;
+        flex-direction: column;
+    }
+    .container-imagenes div {
+        max-width: 52%;
+        height: auto;
+    }
+    .container-imagenes div {
+        margin: 0px auto;
+        margin-top:20px;
+    }
+}

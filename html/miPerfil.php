@@ -59,7 +59,7 @@ var_dump($rol_tabla);
     </div>
     <div class="caja-info-contacto caja caja-nombre">
         <h2>Informacion de contacto</h2>
-        <form class="caja " action="">
+        <form class="caja formContacto " action="">
             <label for="">Nombre: </label>
             <input type="text" value="<?php echo ($rol_tabla['nombre'] == null) ? 'vacio' : $rol_tabla['nombre']; ?>">
             <label for="">Primer Apellido: </label>
@@ -67,11 +67,11 @@ var_dump($rol_tabla);
             <label for="">Segundo Apellido: </label>
             <input type="text" value="<?php echo ($rol_tabla['apellido_2'] == null) ? 'vacio' : $rol_tabla['apellido2']; ?>">
             <label for="">Telefono: </label>
-            <input type="text" value="<?php echo ($rol_tabla['telefono'] == null) ? 'vacio' : $rol_tabla['telefono']; ?>">
+            <input type="number" value="<?php echo ($rol_tabla['telefono'] == null) ? 'vacio' : $rol_tabla['telefono']; ?>">
             <div>
-                <input class="cancelarformUpdateContact mostrar" type="submit" value="Cancelar" name="cancel">
+                <input class="cancelarformUpdateContact mostrar" type="button" value="Cancelar" name="cancel">
                 <input class="actualizarInfoContact" type="submit" value="Actualizar">
-                <input class="enviarformUpdateContact" type="submit" value="Editar" name="update">
+                <input class="enviarformUpdateContact" type="button" value="Editar" name="update">
             </div>
         </form>
     </div>
@@ -116,6 +116,6 @@ var_dump($rol_tabla);
             </div>
         </form>
     </div>
-    <div id="error">
+    <div id="error" class="error">
     </div>
 </div>

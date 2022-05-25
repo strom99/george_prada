@@ -64,7 +64,7 @@ form > div,
   gap: 10px;
 }
 
-.formInfoCuenta input[type="text"] {
+.formInfoCuenta input[type="text"] , .formContacto input[type="text"],.formContacto input[type="number"] {
   border: none;
 }
 /* Form actualizar contraseñas */
@@ -78,6 +78,11 @@ form > div,
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* form info contacto*/
+.actualizarInfoContact ,.cancelarformUpdateContact{
+  display: none;
 }
 
 @media (min-width: 700px) {

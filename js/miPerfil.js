@@ -42,7 +42,7 @@ function actualizar(e) {
       data,
       success: function (respJSON) {
         if (respJSON.status === "ok") {
-          $(".nombre-usuario").text(respJSON.usuario);
+
           cancelarInfoCuenta(e);
           alert("Actualizado correctamente");
         } else if(respJSON.status == "errorContra"){
@@ -108,7 +108,42 @@ function guardarCambiosContraseña(e) {
       } else {
         alert("Ha habido un error.");
       }
-      console.log(respJSON.dats.contrasena)
+      let contra = respJSON.dats.contrasena;
+      $(".error").text(contra);
     },
   });
 }
+
+// formulario informacion de contacto
+$(".cancelarformUpdateContact , .actualizarInfoContact, .enviarformUpdateContact").on(
+  "click",
+  function (e) {
+    let kkk = e.target.value;
+    switch (kkk) {
+      case "Cancelar":
+        cancelarInfoContacto(e);
+        break;
+      case "Actualizar":
+        actualizarContacto(e);
+        break;
+      case "Editar":
+        $(".formContacto > input[type='Text']").css(
+          "border",
+          "1px solid #ccc"
+        );
+        $(".cancelarInfoCuenta , .actualizarCuenta").css("display", "block");
+        $(".editatInfoCuenta").hide();
+        $("input[type='Text']").prop("disabled", false);
+        break;
+      default:
+        alert("Opcion incorrecta");
+    }
+  }
+);
+
+function cancelarInfoContacto(e){
+  e.preventDefault();
+
+
+}
+

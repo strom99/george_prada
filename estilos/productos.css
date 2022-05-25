@@ -219,7 +219,7 @@ a:hover{
 }
 @media screen and (max-width:360px) and (max-width:480px){
     .contenedor {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     img {
         height: 82%;

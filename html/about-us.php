@@ -71,10 +71,6 @@
             <p>En George Prada somos amantes de los hierros desde que tenemos memoria. Vivimos por y para entrenar.
             </p>
         </div>
-        <div class="box-info2">
-            <h3>Últimas Novedades</h3>
-            <p>Conoces Nuestras ultimas novedades!</p>
-        </div>
     </div>
 
     <div class="seccion-custom-contenedor">

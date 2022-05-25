@@ -43,7 +43,7 @@ main{
     color: gray;
 }
 .card .estrella{
-    width: 36%;
+    width: 28%;
     height: 30px;
 }
 .min-info{
@@ -55,6 +55,12 @@ main{
     color: #0f172a;
     font-size: 18px;
 
+}
+button a{
+    color: white;
+}
+button{
+    margin: 0px auto;
 }
 
 /* Banner */
@@ -109,4 +115,23 @@ main{
     .card{
         margin: 20px 0px;
     }
+}
+@media screen and (max-width:500px) {
+    .banner p{
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .image-6 {
+        width: 54%;
+        height: 460px;
+        padding-right: 10px;
+    }
+    .image-7 {
+        width: 44%;
+        height: 460px;
+    }
+    .card1-imagen img:first-child:hover{
+        transform: scale(1,1);
+    }
+   
 }

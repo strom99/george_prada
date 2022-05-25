@@ -87,7 +87,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['contrasena']) && !empty($_POST['
     if (!isset($_SESSION['datosUsuario'])) {
         $_SESSION['datosUsuario'] = $datosUsuario;
         $respuesta['error'] = null;
-        $respuesta['url'] = $_SESSION["RUTA_BASE"] . '/index.php?page=paginaInicio';
+        $respuesta['url'] = $_SESSION["RUTA_BASE"] . '/index.p ?page=paginaInicio';
         echo json_encode($respuesta);
         exit;
     }

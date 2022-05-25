@@ -22,7 +22,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button>Ver Más</button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
                 </div>
             </div>
             <div class="card">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button>Ver Más</button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
                 </div>
             </div>
             <div class="card">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button>Ver Más</button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
                 </div>
             </div>
             <div class="card">
@@ -55,7 +55,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button>Ver Más</button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
                 </div>
             </div>
         </div>

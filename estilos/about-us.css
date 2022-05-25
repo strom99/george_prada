@@ -86,7 +86,7 @@
 .titulo {
     color: black;
     text-align: center;
-    padding-top: 260px;
+    padding-top: 191px;
 }
 
 .titulo p {
@@ -275,5 +275,45 @@ iframe {
 
     .bx-wrapper {
         width: 100%;
+    }
+    .seccion-custom-contenedor{
+        flex-direction: column;
+    }
+    .seccion-custom{
+        margin-top: 20px;
+    }
+   
+}
+@media screen and (max-width:849px){
+    .titulo{
+        padding-top: 126px;
+    }
+}
+@media screen and (max-width:600px){
+   iframe{
+       width: 85%;
+   }
+   .banner{
+        height: 161px;
+        padding-top: 25px;
+        margin-bottom: 0px;
+    }
+    .imagen{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:480px){
+    .banner{
+        height: 177px;
+        padding-top: 10px;
+    }
+    .titulo{
+        padding-top: 32px;
+    }
+    .imagen{
+        height: 100vh;
+    }
+    .titulo p{
+        line-height: 20px;
     }
 }

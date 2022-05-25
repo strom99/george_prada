@@ -106,22 +106,22 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <div class="container-imagenes">
         <div>
-            <img src="./img/card29.jpg" alt="">
+            <img src="./img/image1.jpg" alt="">
             <p>Custom OverSize</p>
             <span class="precio"><?php echo $valor['precio']  ?>€</span>
         </div>
         <div>
-            <img src="./img/card21.jpg" alt="">
+            <img src="./img/image2.jpg" alt="">
             <p>Custom OverSize</p>
             <span class="precio"><?php echo $valor['precio']  ?>€</span>
         </div>
         <div>
-            <img src="./img/card20.jpg" alt="">
+            <img src="./img/image3.jpg" alt="">
             <p>Custom OverSize</p>
             <span class="precio"><?php echo $valor['precio']  ?>€</span>
         </div>
         <div>
-            <img src="./img/card23.jpg" alt="">
+            <img src="./img/image4.webp" alt="">
             <p>Custom OverSize</p>
             <span class="precio"><?php echo $valor['precio']  ?>€</span>
         </div>

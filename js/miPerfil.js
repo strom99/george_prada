@@ -108,8 +108,7 @@ function guardarCambiosContraseña(e) {
       } else {
         alert("Ha habido un error.");
       }
+      console.log(respJSON.dats.contrasena)
     },
   });
-  console.log(data);
-  console.log(respJSON.contra);
 }

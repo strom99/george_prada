@@ -4,7 +4,7 @@ session_start();
 include_once '../procesos/conexionBD.php';
 
 $response = [];
-
+// formularios de actualizacion perfil
 switch ($_POST['form']) {
     case 'formInfoCuenta':
         $usuario = $_POST['usuario'];
@@ -19,6 +19,7 @@ switch ($_POST['form']) {
         $smt->bindParam(':id', $_SESSION['datosUsuario']['id']);
         $result = $smt->execute();
 
+        // actualizamos session del menu nav , para que se cambie el nombre del usuario en la sesion
         $_SESSION['datosUsuario']['usuario'] = $usuario;
         $_SESSION['datosUsuario']['email'] = $email;
 
@@ -34,20 +35,42 @@ switch ($_POST['form']) {
         $contraNueva = $_POST['contraNueva'];
         $confirmContra = $_POST['confirmContra'];
 
-        $smt = $baseDatos->prepare("SELECT contrasena FROM usuario WHERE id = :id");
-        $smt->bindParam(':id', $_SESSION['datosUsuario']['id']);
-        $result = $smt->execute();
-        $resultado = $smt->fetch();
-
+        try{
+            $smt = $baseDatos->prepare("SELECT contrasena FROM usuario WHERE id = :id");
+            $smt->bindParam(':id', $_SESSION['datosUsuario']['id']);
+            $result = $smt->execute();
+            $resultado = $smt->fetch();
+        }catch(PDOException $e){
+            throw new Exception('Hubo un error' . $e->getMessage());
+        }
+        
         $iguales = password_verify($contraActual, $resultado['contrasena']);
-
-        if ($result) {
-            $response['status'] = 'ok';
-            
-        } else {
-            $response['status'] = 'error';
+        
+        // comprobacion si las contraseña que inserta en actual coincide con la de su cuenta
+        if (!$iguales) {
+            $response['actual'] = 'error';
+            break;
         }
 
+        if($contraNueva != $confirmContra){
+            $response['status'] = 'error';
+            break;
+        }
+        
+        try{
+            $contraEncript = password_hash($contraNueva, PASSWORD_BCRYPT);
+            $update = $baseDatos->prepare("UPDATE usuario SET contrasena = :contraNueva  WHERE id = :id");
+            $update->execute(
+                [
+                    ':contraNueva' => $contraEncript,
+                    ':id' => $_SESSION['datosUsuario']['id']
+                ]
+            );
+            $resultUpdate = $update->execute();
+            $response['status'] = "ok";
+        }catch(PDOException $e){
+            throw new Exception('Hubo un error al actualizar los datos' . $e->getMessage());
+        }
     break;
 };
 

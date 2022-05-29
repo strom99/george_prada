@@ -217,7 +217,7 @@ a:hover{
     }
 
 }
-@media screen and (max-width:360px) and (max-width:480px){
+@media screen and (max-width:430px){
     .contenedor {
         flex-direction: column-reverse;
     }

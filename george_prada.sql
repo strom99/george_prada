@@ -5,6 +5,10 @@ CREATE DATABASE george_prada;
 USE george_prada;
 
 
+SELECT * FROM direcciones;
+
+#UPDATE persona SET nombre = "alison", apellido_1 = "choque", apellido_2 = "copajira", telefono = "33232" WHERE id = 6;
+
 CREATE TABLE rol (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     etiqueta VARCHAR(100) NOT NULL
@@ -31,6 +35,22 @@ CREATE TABLE usuario (
     CONSTRAINT fk_rol FOREIGN KEY(rol_id) REFERENCES rol(id) ON UPDATE CASCADE ON DELETE SET NULL,
     CONSTRAINT fk_persona FOREIGN KEY(persona_id) REFERENCES persona(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+
+CREATE TABLE direcciones(
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	nombre_completo VARCHAR(250) NULL,
+    telefono INT NULL,
+    calle VARCHAR(255) NULL,
+    numero VARCHAR(255) NULL,
+    codigo_postal INT(255) NULL,
+    ciudad VARCHAR(255) NULL,
+    provincia VARCHAR(255) NULL,
+	user_id INT NULL,
+	CONSTRAINT fk_usuario FOREIGN KEY (user_id) REFERENCES usuario(id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+INSERT INTO direcciones (user_id) VALUES (1);
+
 
 
 CREATE TABLE productos(
@@ -109,5 +129,5 @@ CREATE TABLE carrito(
 
 INSERT INTO rol (etiqueta) VALUES('Admin');
 INSERT INTO rol (etiqueta) VALUES('Usuario');
-SELECT * FROM usuario;
+
 

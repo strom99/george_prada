@@ -86,6 +86,7 @@ function actualizarContraseña(e) {
 
 function cancelarActContraseña(e) {
   e.preventDefault();
+  $(".error").hide();
   $(".showFormContra2").hide();
   $(".formContraseña2").attr("class", "formContraseña2");
   $(".formContraseña2").removeAttr("class", "showFormContra2");
@@ -102,10 +103,12 @@ function guardarCambiosContraseña(e) {
     dataType: "json",
     data,
     success: function (respJSON) {
-      if (respJSON.status === "ok") {
+      if (respJSON.status) {
         cancelarActContraseña(e);
         alert("Actualizado correctamente");
+        $(".error").hide();
       } else {
+        $(".error").show();
         $(".error").text(respJSON.error);
         $(".divContraseñas").after($(".error"));
       }

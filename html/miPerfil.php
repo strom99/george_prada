@@ -122,6 +122,10 @@ var_dump($_SESSION['datosUsuario']);
             <input type="hidden" name="formDireccionesRegistro">
         </form>
     </div>
+    <div class="caja-nombre caja">
+        <h2>Eliminar Cuenta</h2>
+        <form action=""></form>
+    </div>
     <div id="error" class="error">
     </div>
 </div>

@@ -70,12 +70,12 @@ switch ($_POST['form']) {
                     ]
                 );
                 $resultUpdate = $update->execute();
-                $response['status'] = "ok";
+                $response['status'] = "Actualizado correctamente";
             } catch (PDOException $e) {
                 throw new Exception('Hubo un error al actualizar los datos' . $e->getMessage());
             }
         }else{
-            $response['error'] = "No pueden haber cambios vacios";
+            $response['error'] = "No pueden haber campos vacios";
         }
         
 

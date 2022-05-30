@@ -96,7 +96,11 @@ form > div,
 
 
 #error{
+  display: none;
   background-color: rgba(250, 187, 187, 0.55);
+  margin: 5px 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 @media (min-width: 700px) {

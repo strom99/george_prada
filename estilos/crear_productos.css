@@ -70,7 +70,7 @@ tr td{
 
 .inputsContainer input{
   width: 50%;
-  height: 40px;
+  height: 35px;
   border: 1px solid gray;
   border-radius: 20px;
   margin-top: 10px;
@@ -78,5 +78,5 @@ tr td{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .inputsContainer label{
-  padding-right: 40px;
+  margin-left: 40px;
 }

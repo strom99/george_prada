@@ -41,9 +41,9 @@ $(".formulario").validate({
     }
 });
 
-$(".formulario").on('submit' , function(){
-    $("#mensaje-error").show();
-    
+$(".formulario").on('submit' , function(e){
+    e.preventDefault();
+
     $.ajax({
         type:"POST",
         url:"procesos/registrar.php",
@@ -52,6 +52,7 @@ $(".formulario").on('submit' , function(){
         success: function(respJSON){
             if(respJSON.error){
                 $("#mensaje-error").text(respJSON.error);
+                $("#mensaje-error").show();
             }else{
                 location.href= respJSON.url;
             }

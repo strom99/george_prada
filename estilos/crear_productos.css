@@ -1,5 +1,6 @@
 .contenedor {
   display: flex;
+  height: 100%;
   flex-direction: column;
   margin: 10px 20px;
 }
@@ -56,4 +57,26 @@ tr td{
     content: attr(data-label);
   
   }
+}
+
+.inputsContainer{
+  width: 40%;
+  padding: 30px 0px;
+}
+.btnProducto{
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+.inputsContainer input{
+  width: 50%;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputsContainer label{
+  padding-right: 40px;
 }

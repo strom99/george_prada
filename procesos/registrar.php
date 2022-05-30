@@ -91,8 +91,11 @@ if (!empty($_POST['usuario']) && !empty($_POST['contrasena']) && !empty($_POST['
         echo json_encode($respuesta);
         exit;
     }
-} else {
+}else {
     $respuesta['error'] = "Falta rellenar";
     echo json_encode($respuesta);
+    print_r($respuesta);
     exit;
 }
+
+?>

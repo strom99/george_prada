@@ -7,10 +7,10 @@ $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
 <div class="contenedor">
     <div class="title-header">
         <h1>Panel de productos</h1>
-        <button type="button" class="producto-button" data-action="insert">Crear producto</button>
+        <button type="button" class="producto-button btnProducto" data-action="insert">Crear producto</button>
     </div>
 
-    <div>
+    <div class="contenedor-2">
         <form id="formProductos">
             <!-- FORM CON INFO DE PRODUCTOS (CREAR, EDITAR) -->
             <div class="hide inputsContainer">
@@ -57,9 +57,9 @@ $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
                 <button type="button" class="producto-button" data-action="cerrar">Cerrar</button>
             </div>
             
-
-            <!-- LISTADO PRODUCTOS -->
-            <?php if (count($productos) === 0) : ?>
+        <div class="listadeProductos">
+        <!-- LISTADO PRODUCTOS -->
+        <?php if (count($productos) === 0) : ?>
                 <p>No hay productos</p>
             <?php else : ?>
                 <table class="head-table">
@@ -100,6 +100,7 @@ $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
                     </tbody>
                 </table>
             <?php endif ?>
+        </div>
         </form>
     </div>
 </div>

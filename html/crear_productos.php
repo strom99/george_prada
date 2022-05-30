@@ -87,7 +87,7 @@ $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
                                 <td><?php echo $producto['genero']; ?></td>
                                 <td><?php echo $producto['descripcion']; ?></td>
                                 <td>
-                                    <img style="width: 100px" src="../uploads/productos/<?php echo $producto['imagen']; ?>" alt="<?php echo $producto['nombre'] ?>">
+                                    <img style="width: 100px" src="uploads/productos/<?php echo $producto['imagen']; ?>" alt="<?php echo $producto['nombre'] ?>">
                                 </td>
                                 <td>
                                     <!-- BOTÓN EDITAR PRODUCTO (RELLENA FORMULARIO CON INFO DE PRODUCTO) -->

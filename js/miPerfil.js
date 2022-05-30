@@ -17,6 +17,7 @@ $(".cancelarInfoCuenta , .actualizarCuenta, .editatInfoCuenta").on(
         $(".cancelarInfoCuenta , .actualizarCuenta").css("display", "block");
         $(".editatInfoCuenta").hide();
         $(".formInfoCuenta input[type='Text']").prop("disabled", false);
+        $(".formInfoCuenta input[name='rol']").prop("disabled", true);
         break;
       default:
         alert("Opcion incorrecta");
@@ -105,10 +106,9 @@ function guardarCambiosContraseña(e) {
         cancelarActContraseña(e);
         alert("Actualizado correctamente");
       } else {
-        alert("Ha habido un error.");
+        $(".error").text(respJSON.error);
+        $(".divContraseñas").after($(".error"));
       }
-      let contra = respJSON.dats.contrasena;
-      $(".error").text(contra);
     },
   });
 }

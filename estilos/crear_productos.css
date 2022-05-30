@@ -41,6 +41,10 @@ th{
   width: 100px;
 }
 
+tr td{
+  flex-direction: column;
+}
+
 @media screen and (max-width:640px){
 
   .head-table tbody tr, .head-table tbody tr td , .head-table thead tr th{

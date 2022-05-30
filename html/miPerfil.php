@@ -34,8 +34,10 @@ var_dump($_SESSION['datosUsuario']);
             </div>
             <input name="form" type="hidden" value="formInfoCuenta">
         </form>
+        <div class="mensaje-error-cuenta">
+        </div>
     </div>
-    <div class="caja-nombre caja">
+    <div class="caja-nombre divContraseñas caja">
         <h2>Contraseña</h2>
         <form class="caja formContrasenas" action="">
             <div class="formContraseña1">
@@ -94,6 +96,7 @@ var_dump($_SESSION['datosUsuario']);
             <input name="form" type="hidden" value="formDatsComplementarios">
         </form>
     </div>
+    <!-- Pendiente a terminar form direcciones-->
     <div class="cajaDireccionesRegistradas caja caja-nombre">
         <h2>Direcciones registradas</h2>
         <form class="caja formDireccionesRegistro">

@@ -94,6 +94,11 @@ form > div,
   display: none;
 }
 
+
+#error{
+  background-color: rgba(250, 187, 187, 0.55);
+}
+
 @media (min-width: 700px) {
   .presentacion-usuario img {
     width: 120px;

@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = get_cfg_var('ruta_base');
+$_SESSION['RUTA_BASE'] = 'http://localhost/georgePrada/george_prada';
 $page = $_GET['page'] ?? 'paginaInicio';
 ?>
 

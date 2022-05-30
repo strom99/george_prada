@@ -125,6 +125,27 @@ switch ($_POST['form']) {
                 $response['status'] = $result;
             }
         break;
+        case 'formDireccionesRegistro':
+        break;
+        case 'formEliminarCuenta':
+            try {
+                $smt = $baseDatos->prepare("DELETE FROM usuario WHERE id = :id");
+                $smt->bindParam(':id', $_SESSION['datosUsuario']['id']);
+                $result1 = $smt->execute();
+
+                $smd = $baseDatos->prepare("DELETE FROM persona WHERE id = :id");
+                $smd->bindParam(':id', $_SESSION['datosUsuario']['id']);
+                $result2 = $smd->execute();
+
+                if($result1 && $result2){
+                    session_destroy();
+                    $response['url'] = $_SESSION["RUTA_BASE"] . '/index.php?page=InicioSesion';
+                }
+            } catch (PDOException $e) {
+                throw new Exception('Hubo un error al eliminar la cuenta' . $e->getMessage());
+                $response['error'] = "Error al eliminar la cuenta";
+            }
+        break;
 };
 
 echo json_encode($response);

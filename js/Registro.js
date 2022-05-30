@@ -1,4 +1,4 @@
-$(".formulario").validate({
+const completeValidator = $(".formulario").validate({
     rules:{
         usuario:{
             required:true,
@@ -38,24 +38,24 @@ $(".formulario").validate({
             required:"Necesitamos tu direccion de correo*",
             email:"Esta direccion de correo es invalida"
         }
+    },
+    submitHandler: function (form) {
+        $.ajax({
+            type: "POST",
+            url: "procesos/registrar.php",
+            dataType: "json",
+            data: $(form).serialize(),
+            success: function (respJSON) {
+                if (respJSON.error) {
+                    $(".mensaje-error").show();
+                    $(".mensaje-error").text(respJSON.error);
+                } else {
+                    location.href = respJSON.url;
+                }
+            }
+        });
     }
+
 });
 
-$(".formulario").on('submit' , function(e){
-    e.preventDefault();
 
-    $.ajax({
-        type:"POST",
-        url:"procesos/registrar.php",
-        dataType:"json",
-        data: $(this).serialize(),
-        success: function(respJSON){
-            if(respJSON.error){
-                $("#mensaje-error").text(respJSON.error);
-                $("#mensaje-error").show();
-            }else{
-                location.href= respJSON.url;
-            }
-        }
-    });
-})

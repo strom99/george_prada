@@ -4,9 +4,6 @@ CREATE DATABASE george_prada;
 
 USE george_prada;
 
-
-SELECT * FROM direcciones;
-
 #UPDATE persona SET nombre = "alison", apellido_1 = "choque", apellido_2 = "copajira", telefono = "33232" WHERE id = 6;
 
 CREATE TABLE rol (
@@ -49,7 +46,7 @@ CREATE TABLE direcciones(
 	user_id INT NULL,
 	CONSTRAINT fk_usuario FOREIGN KEY (user_id) REFERENCES usuario(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
-INSERT INTO direcciones (user_id) VALUES (1);
+#INSERT INTO direcciones (user_id) VALUES (1);
 
 
 
@@ -65,42 +62,12 @@ CREATE TABLE productos(
     descripcion TEXT
 );
 
-
-INSERT INTO productos VALUES(null, 'zapatillas nike','zapatillas-nike.png', 'nike', 34.99 ,'calzados',21,'Unisex','<p>Zapatillas europeras</p> <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-            </ul>');
 INSERT INTO productos VALUES(NULL , 'ALEATORIO','card8.jpg','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
 INSERT INTO productos VALUES(NULL , 'ALEATORIO','card11.png','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
 INSERT INTO productos VALUES(NULL , 'alfa','girl.jpeg','zara',50.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
 
-
-INSERT INTO productos VALUES(null, 'Top nike','top.jpeg', 'top', 35.99 ,'ropa',11,'Mujer','<p>Top corto</p> <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-            </ul>');
-INSERT INTO productos VALUES(null, 'camisera','polera.jpg', 'camiseta', 25.99 ,'ropa',11,'Hombre','<p>camiseta </p> <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquid facere nemo incidunt,
-                    quasi delectus vero enim voluptatem asperiore.</li>
-            </ul>');
+INSERT INTO productos VALUES(null, 'Top nike','image1.jpg', 'top', 35.99 ,'ropa',11,'Mujer','top top');
+INSERT INTO productos VALUES(null, 'camisera','image2.jpg', 'camiseta', 25.99 ,'ropa',11,'Hombre','camiseta');
 
 CREATE TABLE favoritos(
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,

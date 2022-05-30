@@ -6,7 +6,7 @@
         <div class="imagen-user">
             <img src="img/user5.webp" alt="icono usuario">
         </div>
-        <form class="formulario" action="<?php echo $_SESSION['RUTA_BASE'] ?>/procesos/proceso_login.php" method="POST">
+        <form class="formularioLogin" action="<?php echo $_SESSION['RUTA_BASE'] ?>/procesos/proceso_login.php" method="POST">
             <div class="cajaDatos">
                 <div class="caja-datos-user">
                     <label for="nombreUsuario">
@@ -41,7 +41,7 @@
                 <a class="contacto" href=#>Ponte en contacto con nosotros</a>
             </div>
         </form>
-        <div id="mensaje">
+        <div id="mensaje" class="mensaje-error-login">
         </div>
     </div>
 </div>

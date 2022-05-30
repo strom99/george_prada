@@ -26,35 +26,35 @@ $(".cancelarInfoCuenta , .actualizarCuenta, .editatInfoCuenta").on(
 );
 // funciones formulario de info cuenta
 function cancelarInfoCuenta(e) {
-    e.preventDefault();
-    $(".formInfoCuenta > input[type='Text']").css("border", "0");
-    $(".cancelarInfoCuenta , .actualizarCuenta").hide();
-    $(".editatInfoCuenta").show();
-    $(".formInfoCuenta input[type='Text']").prop("disabled", true);
-  };
+  e.preventDefault();
+  $(".formInfoCuenta > input[type='Text']").css("border", "0");
+  $(".cancelarInfoCuenta , .actualizarCuenta").hide();
+  $(".editatInfoCuenta").show();
+  $(".formInfoCuenta input[type='Text']").prop("disabled", true);
+};
 
 function actualizar(e) {
-    e.preventDefault();
-    const data = $(".formInfoCuenta").serialize();
-  
-    $.ajax({
-      url: "procesos/modificarUsuario.php",
-      type: "POST",
-      dataType: "json",
-      data,
-      success: function (respJSON) {
-        if (respJSON.status === "ok") {
-          cancelarInfoCuenta(e);
-          alert("Actualizado correctamente");
-        }else {
-          alert("Ha habido un error.");
-        }
-      },
-    });
-    console.log(data);
-  }
+  e.preventDefault();
+  const data = $(".formInfoCuenta").serialize();
 
-  // formulario actualizar contraseñas
+  $.ajax({
+    url: "procesos/modificarUsuario.php",
+    type: "POST",
+    dataType: "json",
+    data,
+    success: function (respJSON) {
+      if (respJSON.status === "ok") {
+        cancelarInfoCuenta(e);
+        alert("Actualizado correctamente");
+      } else {
+        alert("Ha habido un error.");
+      }
+    },
+  });
+  console.log(data);
+}
+
+// formulario actualizar contraseñas
 $(".actualizarContraseña , .cancelarActContraseña, .guardarContraseña").on(
   "click",
   function (e) {
@@ -143,15 +143,15 @@ $(".cancelarformUpdateContact , .actualizarInfoContact, .enviarformUpdateContact
   }
 );
 
-function cancelarInfoContacto(e){
+function cancelarInfoContacto(e) {
   e.preventDefault();
-  $(".formContacto > input[type='Text']").css('border','none');
+  $(".formContacto > input[type='Text']").css('border', 'none');
   $(".cancelarformUpdateContact, .actualizarInfoContact ").hide();
   $(".enviarformUpdateContact").show();
   $(".formContacto > input[type='Text']").prop("disabled", true);
 }
 
-function actualizarContacto(e){
+function actualizarContacto(e) {
   e.preventDefault();
 
   const x = $(".formContacto").serialize();
@@ -199,7 +199,7 @@ $(".cancelarDatsComplement , .actualizarDatsComplement, .enviarInputDatsCompleme
   }
 );
 
-function cancelarDatsComplementarios(e){
+function cancelarDatsComplementarios(e) {
   e.preventDefault();
   $(".enviarInputDatsComplementarios").css("display", "block");
   $(".cancelarDatsComplement, .actualizarDatsComplement").hide();
@@ -207,7 +207,7 @@ function cancelarDatsComplementarios(e){
   $(".formDatsComplementarios input[type='Text']").prop("disabled", true);
 }
 
-function actualizarDatsComplementarios(e){
+function actualizarDatsComplementarios(e) {
   e.preventDefault();
 
   const x = $(".formDatsComplementarios").serialize();
@@ -255,3 +255,38 @@ $(".cancelarDireccionInput1 , .actualizarDirecciones, .enviarInputDatsDireccion1
     }
   }
 );
+
+// Formulario eliminar cuenta de usuario
+$(".btn-eliminar-cuenta").on('click', function (e) {
+  e.preventDefault();
+  $('#modal-overlay').toggle(0);
+
+  $(".cancelarEliminarCuenta, .confirmarEliminarCuenta").on('click', function(e){
+    e.preventDefault();
+    let valor = e.target.value;
+    switch(valor){
+      case 'Cancelar':
+        $(".overlay").css("display","none");
+      break;
+      case 'Confirmar':
+        eliminarCuenta();
+      break;
+    }
+  })
+});
+
+function eliminarCuenta(){
+  const data = $(".formEliminarCuenta").serialize();
+
+  $.ajax({
+    url: "procesos/modificarUsuario.php",
+    type: "POST",
+    dataType: "json",
+    data,
+    success: function (respJSON) {
+      if (respJSON.url) {
+        location.href = respJSON.url;
+      }
+    },
+  });
+}

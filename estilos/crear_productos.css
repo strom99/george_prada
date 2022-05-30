@@ -46,21 +46,8 @@ tr td{
   flex-direction: column;
 }
 
-@media screen and (max-width:640px){
-
-  .head-table tbody tr, .head-table tbody tr td , .head-table thead tr th{
-    flex-direction: column;
-  }
-
-  .head-table tbody tr td:before{
-    display: flex;
-    content: attr(data-label);
-  
-  }
-}
 
 .inputsContainer{
-  width: 40%;
   padding: 30px 0px;
 }
 .btnProducto{
@@ -70,9 +57,9 @@ tr td{
 
 .inputsContainer input{
   width: 50%;
-  height: 35px;
+  height: 30px;
   border: 1px solid gray;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -80,3 +67,27 @@ tr td{
 .inputsContainer label{
   margin-left: 40px;
 }
+
+.btns-form-productos{
+  display: flex;
+  gap: 26px;
+}
+
+input[type="file"]{
+  border: none;
+}
+@media screen and (max-width:640px){
+  .head-table tbody tr, .head-table tbody tr td , .head-table thead tr th{
+    flex-direction: column;
+  }
+
+  .head-table tbody tr td:before{
+    display: flex;
+    content: attr(data-label);
+  }
+
+  .inputsContainer input{
+    width: 100%;
+  }
+}
+

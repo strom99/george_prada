@@ -2,7 +2,7 @@
 //objeto 
 $db_host = "localhost";
 $db_username = "root";
-$db_pass = "1234";
+$db_pass = "";
 $db_name = "george_prada";
 
 try {
@@ -12,6 +12,6 @@ try {
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
 } catch (PDOException $e) {
-    throw new Exception('La conexión a la base de datos a fallado: ' . $e->getMessage());
+    throw new Exception('La conexión a la base de datos a fallado');
 }
 

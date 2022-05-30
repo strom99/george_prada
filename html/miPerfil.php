@@ -1,11 +1,15 @@
 <?php
+
+if (!isset($_SESSION['datosUsuario'])) {
+    header('Location: ' . $_SESSION['RUTA_BASE'] . '/index.php?page=InicioSesion');
+    exit;
+}
 include 'procesos/conexionBD.php';
 $id_rol = $_SESSION['datosUsuario']['id'];
 $consulta_id = $baseDatos->prepare("SELECT * FROM usuario INNER JOIN persona ON usuario.persona_id = persona.id INNER JOIN rol ON usuario.rol_id = rol.id  WHERE usuario.id =:rol");
 $consulta_id->bindParam(':rol', $id_rol);
 $consulta_id->execute();
 $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
-var_dump($_SESSION['datosUsuario']);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
@@ -96,7 +100,7 @@ var_dump($_SESSION['datosUsuario']);
             <input name="form" type="hidden" value="formDatsComplementarios">
         </form>
     </div>
-    <!-- Pendiente a terminar form direcciones-->
+    <!--PENDIENTE A TERMINAR FORM DIRECCIONES -->
     <div class="cajaDireccionesRegistradas caja caja-nombre">
         <h2>Direcciones registradas</h2>
         <form class="caja formDireccionesRegistro">
@@ -119,12 +123,25 @@ var_dump($_SESSION['datosUsuario']);
                 <input class="actualizarDirecciones" type="submit" value="Actualizar">
                 <input class="enviarInputDatsDireccion1" type="button" value="Editar" name="update">
             </div>
-            <input type="hidden" name="formDireccionesRegistro">
+            <input type="hidden" name="form" value="formDireccionesRegistro">
         </form>
     </div>
     <div class="caja-nombre caja">
         <h2>Eliminar Cuenta</h2>
-        <form action=""></form>
+        <button class="btn-eliminar-cuenta">Eliminar Cuenta</button>
+        <!-- capa para mensaje de confirmacion eliminacion ccuenta-->
+        <div id="modal-overlay" class="overlay">
+            <div id="modal-content">
+                <form class=" formEliminarCuenta">
+                    <label for="">Confirmacion eliminacion de cuenta</label>
+                    <div>
+                        <input class="cancelarEliminarCuenta" type="submit" name="cancelar" value="Cancelar">
+                        <input class="confirmarEliminarCuenta" type="button" name="confirmar" value="Confirmar">
+                    </div>
+                    <input type="hidden" name="form" value="formEliminarCuenta">
+                </form>
+            </div>
+        </div>
     </div>
     <div id="error" class="error">
     </div>

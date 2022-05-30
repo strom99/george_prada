@@ -134,6 +134,7 @@ section div i{
     gap: 20px;
     margin: 0px 40px;
 }
+
 @media (min-width:1000px) {
     .contenedorPagina {
     }

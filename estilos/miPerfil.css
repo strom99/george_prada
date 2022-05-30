@@ -64,7 +64,7 @@ form > div,
   gap: 10px;
 }
 
-.formInfoCuenta input[type="text"] , .formContacto input[type="text"],.formContacto input[type="number"] {
+.formInfoCuenta input[type="text"] , .formContacto input[type="text"],.formDatsComplementarios input[type="text"], .formDatsComplementarios input[type="date"], .formDireccionesRegistro input[type='text'], .formDireccionesRegistro input[type='number'] {
   border: none;
 }
 /* Form actualizar contraseñas */
@@ -82,6 +82,15 @@ form > div,
 
 /* form info contacto*/
 .actualizarInfoContact ,.cancelarformUpdateContact{
+  display: none;
+}
+
+/*form datos complementarios*/
+.cancelarDatsComplement, .actualizarDatsComplement{
+  display: none;
+}
+/* form direcciones*/
+.cancelarDireccionInput1 , .actualizarDirecciones{
   display: none;
 }
 

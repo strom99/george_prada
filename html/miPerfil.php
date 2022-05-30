@@ -5,7 +5,7 @@ $consulta_id = $baseDatos->prepare("SELECT * FROM usuario INNER JOIN persona ON 
 $consulta_id->bindParam(':rol', $id_rol);
 $consulta_id->execute();
 $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
-var_dump($rol_tabla);
+var_dump($_SESSION['datosUsuario']);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
@@ -61,59 +61,62 @@ var_dump($rol_tabla);
         <h2>Informacion de contacto</h2>
         <form class="caja formContacto " action="">
             <label for="">Nombre: </label>
-            <input type="text" value="<?php echo ($rol_tabla['nombre'] == null) ? 'vacio' : $rol_tabla['nombre']; ?>">
+            <input type="text" name="nombre" value="<?php echo ($rol_tabla['nombre'] == null) ? ' ' : $rol_tabla['nombre']; ?>" disabled>
             <label for="">Primer Apellido: </label>
-            <input type="text" value="<?php echo ($rol_tabla['apellido_1'] == null) ? 'vacio' : $rol_tabla['apellido1']; ?>">
+            <input type="text" name="priApellido" value="<?php echo ($rol_tabla['apellido_1'] == null) ? ' ' : $rol_tabla['apellido_1']; ?>" disabled>
             <label for="">Segundo Apellido: </label>
-            <input type="text" value="<?php echo ($rol_tabla['apellido_2'] == null) ? 'vacio' : $rol_tabla['apellido2']; ?>">
+            <input type="text" name="seApellido" value="<?php echo ($rol_tabla['apellido_2'] == null) ? ' ' : $rol_tabla['apellido_2']; ?>" disabled>
             <label for="">Telefono: </label>
-            <input type="number" value="<?php echo ($rol_tabla['telefono'] == null) ? 'vacio' : $rol_tabla['telefono']; ?>">
+            <input type="text" name="telefono" value="<?php echo ($rol_tabla['telefono'] == null) ? ' ' : $rol_tabla['telefono']; ?>" disabled>
             <div>
                 <input class="cancelarformUpdateContact mostrar" type="button" value="Cancelar" name="cancel">
                 <input class="actualizarInfoContact" type="submit" value="Actualizar">
                 <input class="enviarformUpdateContact" type="button" value="Editar" name="update">
             </div>
+            <input name="form" type="hidden" value="formContacto">
         </form>
     </div>
 
     <div class="cajaDatosComplemetarios caja caja-nombre">
         <h2>Datos Complementarios</h2>
-        <form class="caja">
+        <form class="caja formDatsComplementarios">
             <label for="">Fecha nacimiento: </label>
-            <input class="fechaNacimientoInput" type="text" value="<?php echo ($rol_tabla['fecha_nacimiento'] == null) ? 'vacio' : $rol_tabla['fecha_nacimiento']; ?>">
+            <input class="fechaNacimientoInput" name="fechaNacimiento" type="date" value="<?php echo ($rol_tabla['fecha_nacimiento'] == null) ? ' ' : $rol_tabla['fecha_nacimiento']; ?>" disabled>
             <label for="">Pais: </label>
-            <input class="paisInput" type="text" value="<?php echo ($rol_tabla['pais'] == null) ? 'vacio' : $rol_tabla['pais']; ?>">
+            <input class="paisInput" name="pais" type="text" value="<?php echo ($rol_tabla['pais'] == null) ? ' ' : $rol_tabla['pais']; ?>" disabled>
             <label for="">Ciudad: </label>
-            <input class="ciudadInput" type="text" value="<?php echo ($rol_tabla['ciudad'] == null) ? 'vacio' : $rol_tabla['ciudad']; ?>">
+            <input class="ciudadInput" name="ciudad" type="text" value="<?php echo ($rol_tabla['ciudad'] == null) ? ' ' : $rol_tabla['ciudad']; ?>" disabled>
             <div>
-                <input class="cancelarUpdateInput" type="submit" value="Cancelar" name="cancel">
+                <input class="cancelarDatsComplement" type="button" value="Cancelar" name="Cancelar">
                 <input class="actualizarDatsComplement" type="submit" value="Actualizar">
-                <input class="enviarInputDatsComplementarios" type="submit" value="Editar" name="update">
+                <input class="enviarInputDatsComplementarios" type="button" value="Editar" name="Editar">
             </div>
+            <input name="form" type="hidden" value="formDatsComplementarios">
         </form>
     </div>
     <div class="cajaDireccionesRegistradas caja caja-nombre">
         <h2>Direcciones registradas</h2>
-        <form class="caja">
+        <form class="caja formDireccionesRegistro">
             <label for="">Nombre Completo: </label>
-            <input class="inputNombreCompleto1" type="text" value="">
+            <input class="inputNombreCompleto1" type="text" value="" disabled>
             <label for="">Telefono: </label>
-            <input class="inputTelefono1" type="text" value="">
+            <input class="inputTelefono1" type="number" value="" disabled>
             <label for="">Calle direccion: </label>
-            <input class="inputLineaDireccion1" type="text">
+            <input class="inputLineaDireccion1" type="text" disabled>
             <label for="">Numero Apartamento: </label>
-            <input class="inputPiso1" type="text">
+            <input class="inputPiso1" type="text" disabled>
             <label for="">Codigo postal: </label>
-            <input class="inputCodPostal1" type="text">
+            <input class="inputCodPostal1" type="number" disabled>
             <label for="">Ciudad:</label>
-            <input class="inputCiudad1" type="text">
+            <input class="inputCiudad1" type="text" disabled>
             <label for="">Provincia</label>
-            <input class="inputProvincia1" type="text">
+            <input class="inputProvincia1" type="text" disabled>
             <div>
-                <input class="cancelarDireccionInput1" type="submit" value="Cancelar" name="cancel">
+                <input class="cancelarDireccionInput1" type="button" value="Cancelar" name="cancel">
                 <input class="actualizarDirecciones" type="submit" value="Actualizar">
-                <input class="enviarInputDatsDireccion1" type="submit" value="Editar" name="update">
+                <input class="enviarInputDatsDireccion1" type="button" value="Editar" name="update">
             </div>
+            <input type="hidden" name="formDireccionesRegistro">
         </form>
     </div>
     <div id="error" class="error">

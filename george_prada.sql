@@ -4,7 +4,6 @@ CREATE DATABASE george_prada;
 
 USE george_prada;
 
-#UPDATE persona SET nombre = "alison", apellido_1 = "choque", apellido_2 = "copajira", telefono = "33232" WHERE id = 6;
 
 CREATE TABLE rol (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -46,8 +45,6 @@ CREATE TABLE direcciones(
 	user_id INT NULL,
 	CONSTRAINT fk_usuario FOREIGN KEY (user_id) REFERENCES usuario(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
-#INSERT INTO direcciones (user_id) VALUES (1);
-
 
 
 CREATE TABLE productos(
@@ -65,7 +62,6 @@ CREATE TABLE productos(
 INSERT INTO productos VALUES(NULL , 'ALEATORIO','card8.jpg','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
 INSERT INTO productos VALUES(NULL , 'ALEATORIO','card11.png','nike',23.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
 INSERT INTO productos VALUES(NULL , 'alfa','girl.jpeg','zara',50.32,'ropa',31,'Unisex','<p> ropa nueva </p>');
-
 INSERT INTO productos VALUES(null, 'Top nike','image1.jpg', 'top', 35.99 ,'ropa',11,'Mujer','top top');
 INSERT INTO productos VALUES(null, 'camisera','image2.jpg', 'camiseta', 25.99 ,'ropa',11,'Hombre','camiseta');
 

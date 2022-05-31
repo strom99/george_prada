@@ -1,7 +1,7 @@
 <div class="centro">
     <div class="centro-part1">
-        <div>
-            <h1>George Prada</h1>
+        <div class="imagen-george-prada">
+        <img src="img/Group2.png" alt="group2">
         </div>
         <div class="contenedorPagina detalles">
             <div class="primeraImg">
@@ -10,30 +10,30 @@
             <form class="formulario" action="<?php echo $_SESSION['RUTA_BASE'] ?>/procesos/registrar.php" method="POST">
                 <div class="cajaDatos usuario">
                     <p>
-                        Nombre de usuario
+                        Username
                     </p>
-                    <input class="datos" type="text" name="usuario" placeholder="Ingresa tu usuario">
+                    <input class="datos" type="text" name="usuario" placeholder="Enter your username">
                 </div>
                 <div class="cajaDatos contraseña1">
                     <p>
-                        Contraseña
+                        Password
                     </p>
-                    <input class="datos contrasena " type="password" name="contrasena" placeholder="Ingresa tu contraseña">
+                    <input class="datos contrasena " type="password" name="contrasena" placeholder="Enter your password">
                 </div>
                 <div class="cajaDatos contrasena2">
                     <p>
-                        Confirmar Contraseña
+                        Confirm Password
                     </p>
-                    <input class="datos" type="password" name="contrasena2" placeholder="Confirmar contraseña">
+                    <input class="datos" type="password" name="contrasena2" placeholder="Confirm Password">
                 </div>
                 <div class="cajaDatos correo">
                     <p>
-                        Correo Electronico
+                            Email
                     </p>
-                    <input class="datos" type="email" name="email" placeholder="Ingresa tu correo">
+                    <input class="datos" type="email" name="email" placeholder="Enter your email">
                 </div>
                 <div class="formulario-btn">
-                    <button class="boton" type="submit" name="registrar">Registrar</button>
+                    <button class="boton" type="submit" name="registrar">Register</button>
                 </div>
 
                 <div id="mensaje-error" class="mensaje-error">
@@ -44,7 +44,7 @@
     </div>
     <div class="contenedor-presentacion">
         <div class="caja-imagen-presentacion">
-            <img src="img/conjunto.webp" alt="conjunto ropa deportiva">
+            <img src="img/card4.png" alt="conjunto ropa deportiva">
         </div>
         <div>
             <section>
@@ -52,21 +52,18 @@
                     <i class="fa-solid fa-check"></i>
                     <h2>Comodidad al tacto</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis sint cumque nesciunt a deserunt reprehenderit perferendis eos quaerat exercitationem, recusandae eius qui placeat architecto, facere excepturi cum ad repellendus mollitia.</p>
             </section>
             <section>
                 <div>
                     <i class="fa-solid fa-check"></i>
                     <h2>Encuentra tu mejor estilo</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis sint cumque nesciunt a deserunt reprehenderit perferendis eos quaerat exercitationem, recusandae eius qui placeat architecto, facere excepturi cum ad repellendus mollitia.</p>
             </section>
             <section>
                 <div>
                     <i class="fa-solid fa-check"></i>
                     <h2>Personaliza tu vida deportiva</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis sint cumque nesciunt a deserunt reprehenderit perferendis eos quaerat exercitationem, recusandae eius qui placeat architecto, facere excepturi cum ad repellendus mollitia.</p>
             </section>
         </div>
     </div>

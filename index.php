@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Modificar esto para estructura de cada uno cuando clone el repositorio
-$_SESSION['RUTA_BASE'] = 'http://localhost/georgePrada/george_prada';
+$_SESSION['RUTA_BASE'] = 'http://localhost/george_prada';
 $page = $_GET['page'] ?? 'paginaInicio';
 ?>
 
@@ -51,8 +51,8 @@ $page = $_GET['page'] ?? 'paginaInicio';
         include "html/menu.php"; ?>
         <div class="banner-cookie">
             <div>
-                <p>¿Permitir el uso de cookies en este navegador?</p>
-                <button id="accept">Acceptar</button>
+                <p>¿Allow the use of cookies in this browser?</p>
+                <button id="accept">Accept</button>
             </div>
         </div>
     <?php } ?>

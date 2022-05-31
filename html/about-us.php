@@ -67,9 +67,8 @@
     </main>
     <div class="banner">
         <div class="box-info">
-            <h3>Sobre Nosotros</h3>
-            <p>En George Prada somos amantes de los hierros desde que tenemos memoria. Vivimos por y para entrenar.
-            </p>
+            <h3>About Us</h3>
+            <p>At George Prada we have been iron lovers for as long as we can remember. We live by and to train.</p>
         </div>
     </div>
 

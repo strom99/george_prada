@@ -115,6 +115,8 @@ textarea {
   width: 100%;
   background-color: #008CB2;
   border: none;
+  color: white;
+  font-size: 18px;
 }
 
 #submit[value="Enviar"] {

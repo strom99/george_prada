@@ -8,9 +8,9 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
 <div class="contenedor">
     <header>
         <div class="main-info">
-            <h2>Comprar camisetas de gimnasios Online de marcas de confianza</h2>
-            <p>Si estas buscando camisetas gym baratas, estas en lugar adecuado. Los mejores modelos y precios, solo de
-                la mejor calidad. Comprueba nuestros modelos.</p>
+            <h2>Buy gym t-shirts Online from trusted brands</h2>
+            <p>If you are looking for cheap gym shirts, you are in the right place. The best models and prices, only from
+                The best quality. Check our models.</p>
         </div>
         <div class="content-cards">
             <?php foreach ($array as $producto => $valor) {
@@ -29,9 +29,9 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </header>
     <aside>
-        <h3>Filtrar por</h3>
+        <h3>Filter by</h3>
         <div class="content-info">
-            <p>Haz tú busqueda....</p>
+            <p>Do your search...</p>
             <input type="search" id="search">
         </div>
         <div class="categories">
@@ -63,7 +63,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
             </ul>
         </div>
         <div class="productos">
-            <p>Productos</p>
+            <p>Products</p>
             <div>
                 <input type="checkbox"><label for="leggins">Leggins</label>
             </div>
@@ -71,7 +71,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
                 <input type="checkbox"><label for="shorts">Shorts</label>
             </div>
             <div>
-                <input type="checkbox"><label for="camisas">Camisas</label>
+                <input type="checkbox"><label for="camisas">T-Shirt</label>
             </div>
             <div>
                 <input type="checkbox"><label for="oversize">Oversize</label>
@@ -84,7 +84,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
         <div class="precios">
-            <p>Precios</p>
+            <p>Prices</p>
             <div>
                 <input type="checkbox"><label for="precio">20€</label>
             </div>
@@ -102,7 +102,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
 </div>
 <div class="products-features">
     <div>
-        <h2>Mejores Productos</h2>
+        <h2>Best Products</h2>
     </div>
     <div class="container-imagenes">
         <div>

@@ -1,4 +1,4 @@
 <footer>
-    En George Prada queremos compartir contigo esta pasión y acompañarte paso a paso hasta conseguir tus
-    objetivos &copy 2020.
+    At George Prada we want to share this passion with you and accompany you step by step until you achieve your
+    objectives & copy 2020
 </footer>

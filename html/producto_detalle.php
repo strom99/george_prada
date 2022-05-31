@@ -68,13 +68,13 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
         </div>
         <div class="formularios">
             <form action="" class="form-seleccionar-tallas">
-                <label for="talla">Talla:</label>
+                <label for="talla">Size:</label>
                 <select name="seleccionar-talla" class="button-seleccionar-talla">
-                    <option value="Talla1" selected>Talla 1</option>
-                    <option value="Talla2">Talla 2</option>
-                    <option value="Talla3">Talla 3</option>
-                    <option value="Talla4">Talla 4</option>
-                    <option value="Talla5">Talla 5</option>
+                    <option value="Talla1" selected>M</option>
+                    <option value="Talla2">S</option>
+                    <option value="Talla3">L</option>
+                    <option value="Talla4">XL</option>
+                    <option value="Talla5">XXL</option>
                 </select>
             </form>     
             <form action="" method="post" class="form-seleccion-botones">
@@ -87,13 +87,13 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                     <input type="hidden" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt($producto['cantidad'],COD,KEY);?>">
                     <input type="hidden" name="genero" id="genero" value="<?php echo openssl_encrypt($producto['genero'],COD,KEY);?>">
                     <input type="hidden" name="descripcion" id="descripcion" value="<?php echo openssl_encrypt($producto['descripcion'],COD,KEY);?>">
-                    <button type="submit" id="btnProducto" name="btnProducto" value="Agregar">Añadir a la cesta</button>
+                    <button type="submit" id="btnProducto" name="btnProducto" value="Agregar">Add to cart</button>
             </form>
         </div>
     </div>
 
     <section class="descripcion-producto">
-        <h3>Información del producto</h3>
+        <h3>Product Information</h3>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, adipisci mollitia ducimus quisquam repellat
             soluta nulla consequatur fugiat, nostrum saepe, praesentium nihil ullam omnis vitae animi fugit libero. Id,
@@ -103,15 +103,15 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
     </section>
     <section class="dejarComentario">
         <form action="productos.html">
-            <h4>Deja tu Comentario</h4>
+            <h4>Leave your comment</h4>
             <div class="caja-comentario">
-                <textarea> Ingresa tu comentario...</textarea>
-                <input type="submit" value="Enviar comentario">
+                <textarea>Enter your comment...</textarea>
+                <input type="submit" value="Send comment">
             </div>
         </form>
     </section>
     <section class="valoraciones-producto">
-        <h3>Valoraciones producto</h3>
+        <h3>Products reviews</h3>
         <div class="comentarios">
             <article class="usuario-comentario">
                 <div class="valoracion-cliente-estrellas">
@@ -177,7 +177,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
     </section>
     <?php else : ?>
     <section>
-        El producto no ha sido encontrado
+    The product has not been found
     </section>
     <?php endif; ?>
 </main>

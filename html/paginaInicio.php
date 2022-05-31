@@ -10,7 +10,10 @@
                 <img src="./img/ropa4.png" alt="imagen">
             </div>
             <div class="image-2">
-                <img src="./img/imagen-12.webp" alt="imagen">
+                <img src="./img/card12.webp" alt="imagen">
+            </div>
+            <div class="image-3">
+                <img src="./img/card13.png" alt="imagen">
             </div>
         </div>
         <div class="sections-products">
@@ -22,7 +25,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
             <div class="card">
@@ -33,7 +36,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
             <div class="card">
@@ -44,7 +47,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
             <div class="card">
@@ -55,12 +58,12 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">Ver Más</a></button>
+                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
         </div>
         <div class="banner">
-            <p>¿Quiere correos electrónicos que realmente leerá usted!, sobre los últimos detalles y ofertas exclusivas de nuestros productos?</p>
+            <p>¿Want emails you'll actually read! About the latest details and exclusive offers on our products?</p>
             <button class="click">Click Here</button>
         </div>
         <div class="sections-products-2">

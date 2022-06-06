@@ -1,94 +1,94 @@
 h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 input,
 p,
 label {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .primeraImg {
-    width: 135px;
-    margin: auto;
-    height: 135px;
-    position: relative;
-    bottom: 61px;
-    display: flex;
-    border-radius: 50%;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 1.5px 1.5px 0.5px gray;
+  width: 135px;
+  margin: auto;
+  height: 135px;
+  position: relative;
+  bottom: 61px;
+  display: flex;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 1.5px 1.5px 0.5px gray;
 }
 
-.centro  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.centro-part1{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
+.centro-part1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
 }
 
 .iconUser {
-    width: 100px;
+  width: 100px;
 }
 
 .cajaDatos {
-    width: 100%;
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .formulario-btn {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .boton {
-    background-color: #008CB2;
-    color: white;
-    padding: 8px 20px;
-    display: block;
-    border: none;
-    font-size: 17px;
-    margin: 10px auto;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #008cb2;
+  color: white;
+  padding: 8px 20px;
+  display: block;
+  border: none;
+  font-size: 17px;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.contenedorPagina , .contenedor-presentacion{
-    width: 90%;
-    height: auto;
-    padding: 20px;
+.contenedorPagina,
+.contenedor-presentacion {
+  width: 90%;
+  height: auto;
+  padding: 20px;
 }
 
-.detalles{
-    margin-top: 40px;
-    border-radius: 20px;
-    background-color: #77bdb317;
+.detalles {
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: #77bdb317;
 }
-
 
 input {
-    border: 1.5px solid gray;
-    background-color: white;
-    height: 35px;
-    border-radius: 5px;
-    margin-top: 5px;
-    padding: 5px 10px;
-    font-family: inherit;
+  border: 1.5px solid gray;
+  background-color: white;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-family: inherit;
 }
 
 div .error-php {
-    display: none;
+  display: none;
 }
 
 #usuario-error,
@@ -96,54 +96,62 @@ div .error-php {
 #contrasena2-error,
 #email-error,
 .error-php {
-    background-color: #eeeeee;
-    padding: 10px;
-    margin: 3px;
-    color: #dc0000;
-    border-radius: 5px;
+  background-color: #eeeeee;
+  padding: 10px;
+  margin: 3px;
+  color: #dc0000;
+  border-radius: 5px;
 }
 
-.contenedor-presentacion{
-    width: 100%;
-    height: 100vh;
-    background-color: #404040;
-    color: #ffffffbf;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
+.contenedor-presentacion {
+  width: 100%;
+  height: 100vh;
+  background-color: #404040;
+  color: #ffffffbf;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
 
-.caja-imagen-presentacion{
-    width: 300px;
-    margin: auto;
+.caja-imagen-presentacion {
+  width: 300px;
+  margin: auto;
 }
 
-section div:first-child{
-    display: flex;
-    gap: 15px;
+section div:first-child {
+  display: flex;
+  gap: 15px;
 }
 
-section div i{
-    color: #19b7e0;
-    font-size: 25px;
+section div i {
+  color: #19b7e0;
+  font-size: 25px;
+}
+.cajaDatos p i {
+  color: black;
 }
 
-.contenedor-presentacion:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0px 40px;
+.contenedor-presentacion:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-@media (min-width:1000px) {
-    .contenedorPagina {
-    }
-
-    .centro{
-        flex-direction: row;
-    }
+span {
+  position: relative;
+  bottom: 5px;
+  font-weight: 900;
 }
-.imagen-george-prada{
-    margin-bottom: 20px;
-    margin-left: 20px;
+
+@media (min-width: 1000px) {
+  .contenedorPagina {
+  }
+
+  .centro {
+    flex-direction: row;
+  }
+}
+.imagen-george-prada {
+  margin-bottom: 20px;
+  margin-left: 20px;
 }

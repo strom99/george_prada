@@ -16,7 +16,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
             <?php foreach ($array as $producto => $valor) {
             ?>
             <div class="card">
-                <img src="./img/<?php echo $valor['imagen'] ?>" alt="imagen-modwelo-gym">
+                <img src="uploads/productos/<?php echo $valor['imagen'] ?>" alt="imagen-modwelo-gym">
                 <div class="min-info">
                     <span><?php echo $valor['genero'] ?></span>
                     <a

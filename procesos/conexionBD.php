@@ -2,7 +2,7 @@
 //objeto 
 $db_host = "localhost";
 $db_username = "root";
-$db_pass = "1234";
+$db_pass = "";
 $db_name = "george_prada";
 
 try {

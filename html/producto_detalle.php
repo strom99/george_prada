@@ -87,7 +87,7 @@ $producto = $consulta_producto->fetch(PDO::FETCH_ASSOC);
                     <input type="hidden" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt($producto['cantidad'],COD,KEY);?>">
                     <input type="hidden" name="genero" id="genero" value="<?php echo openssl_encrypt($producto['genero'],COD,KEY);?>">
                     <input type="hidden" name="descripcion" id="descripcion" value="<?php echo openssl_encrypt($producto['descripcion'],COD,KEY);?>">
-                    <button type="submit" id="btnProducto" name="btnProducto" value="Agregar">Add to cart</button>
+                    <button class="btn-general" type="submit" id="btnProducto" name="btnProducto" value="Agregar">Add to cart</button>
             </form>
         </div>
     </div>

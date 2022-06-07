@@ -7,7 +7,7 @@ $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
 <div class="contenedor">
     <div class="title-header">
         <h1>Panel de productos</h1>
-        <button type="button" class="producto-button btnProducto" data-action="insert">Crear producto</button>
+        <button type="button" class="producto-button btnProducto btn-general" data-action="insert">Crear producto</button>
     </div>
 
     <div class="contenedor-2">
@@ -53,8 +53,8 @@ $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
                     <input type="text" name="descripcion">
                 </div>
                 <div class="btns-form-productos">
-                    <button class="producto-button main-form-submit-button" data-action="insert" type="submit">Crear / Actualizar producto</button>
-                    <button type="button" class="producto-button" data-action="cerrar">Cerrar</button>
+                    <button class="producto-button main-form-submit-button btn-general" data-action="insert" type="submit">Crear / Actualizar producto</button>
+                    <button type="button" class="producto-button btn-general" data-action="cerrar">Cerrar</button>
                 </div>
             </div>
 
@@ -92,9 +92,9 @@ $productos = ($baseDatos->query('SELECT * FROM productos'))->fetchAll();
                                     </td>
                                     <td>
                                         <!-- BOTÓN EDITAR PRODUCTO (RELLENA FORMULARIO CON INFO DE PRODUCTO) -->
-                                        <button class="producto-button" type="button" data-id="<?php echo $producto['id'] ?>" data-producto='<?php echo json_encode($producto) ?>' data-action="edit">Editar</button>
+                                        <button class="producto-button btn-general" type="button" data-id="<?php echo $producto['id'] ?>" data-producto='<?php echo json_encode($producto) ?>' data-action="edit">Editar</button>
                                         <!-- BOTÓN ELIMINAR PRODUCTO -->
-                                        <button class="producto-button" type="submit" data-id="<?php echo $producto['id'] ?>" data-action="delete">Eliminar</button>
+                                        <button class="producto-button btn-general" type="submit" data-id="<?php echo $producto['id'] ?>" data-action="delete">Eliminar</button>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

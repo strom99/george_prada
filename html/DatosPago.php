@@ -32,8 +32,8 @@
         <input type="date" name="introducir_fecha" id="fecha" placeholder="Ingresa la fecha de caducidad" required>
       </p>
 
-      <button type="submit" name="aceptar_pago" id="aceptar">Pagar</button>
-      <button type="submit" name="cancelar_pago" id="cancelar">Cancelar</button>
+      <button class="btn-general" type="submit" name="aceptar_pago" id="aceptar">Pagar</button>
+      <button class="btn-general" type="submit" name="cancelar_pago" id="cancelar">Cancelar</button>
 
       </form>
     </div>

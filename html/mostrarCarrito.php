@@ -27,7 +27,7 @@
                 <td >
                 <form action="" method="post">
                     <input type="hidden" name="id" id="id" value="<?php echo openssl_encrypt($producto['ID'],COD3,KEY3);?>">
-                    <button class="btn btn-danger" name="btnProducto" value="Eliminar" type="submit">Eliminar</button>
+                    <button class="btn btn-danger btn-general" name="btnProducto" value="Eliminar" type="submit">Eliminar</button>
                 </form>
                 </td>
                 

@@ -32,7 +32,7 @@ $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
             <label for="rol">Rol</label>
             <input name="rol" type="text" value="<?php echo $rol_tabla['etiqueta'] ?>" disabled>
             <div>
-                <input class="cancelarInfoCuenta" type="button" value="Cancelar" name="cancel">
+                <input class="cancelarInfoCuenta " type="button" value="Cancelar" name="cancel">
                 <input class="actualizarCuenta" type="submit" value="Actualizar">
                 <input class="editatInfoCuenta" type="button" value="Editar" name="update">
             </div>

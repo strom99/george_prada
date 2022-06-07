@@ -25,7 +25,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
+                    <button class="btn-general"><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
             <div class="card">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
+                    <button class="btn-general"><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
             <div class="card">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
+                    <button class="btn-general"><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
             <div class="card">
@@ -58,13 +58,13 @@
                 </div>
                 <div class="min-info">
                     <span>64.90 EUR</span>
-                    <button><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
+                    <button class="btn-general"><a href="<?php echo $_SESSION["RUTA_BASE"]?>/index.php?page=productos">See more</a></button>
                 </div>
             </div>
         </div>
         <div class="banner">
             <p>¿Want emails you'll actually read! About the latest details and exclusive offers on our products?</p>
-            <button class="click">Click Here</button>
+            <button class="click btn-general">Click Here</button>
         </div>
         <div class="sections-products-2">
             <div class="sections-imagenes">

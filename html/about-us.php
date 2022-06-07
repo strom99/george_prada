@@ -81,7 +81,7 @@
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium, nam debitis libero
                 </p>
-                <button>Shop Now</button>
+                <button class="btn-general" >Shop Now</button>
             </div>
         </div>
 
@@ -93,7 +93,7 @@
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium, nam debitis libero
                 </p>
-                <button>Shop Now</button>
+                <button class="btn-general">Shop Now</button>
             </div>
         </div>
 
@@ -105,7 +105,7 @@
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium, nam debitis libero
                 </p>
-                <button>Shop Now</button>
+                <button class="btn-general">Shop Now</button>
             </div>
         </div>
     </div>

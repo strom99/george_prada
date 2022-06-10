@@ -26,7 +26,6 @@ span{
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
-    padding: 0px 20px;
 }
 
 .iconUser{
@@ -37,12 +36,6 @@ span{
 .datos{
     flex-grow: 1;
 }
-
-.cajaDatos{
-    display: flex;
-    width: 100%;
-    gap: 10px;
-} 
 
 .cajaDatos label{
     width: 25px;
@@ -59,15 +52,6 @@ span{
     color: white;
 }
 
-input{
-    border:1.5px solid gray;
-    background-color: white;
-    height: 35px;
-    border-radius: 5px;
-     margin-top: 5px;
-    padding: 5px 10px;
-    font-family: inherit;
-}
 
 .contacto {
     display: block;
@@ -116,7 +100,8 @@ input.boton-inicio[value]{
     gap: 30px;
 }
 .box-information div:first-child{
-    width: 345px;
+    max-width: 345px;
+    padding: 10px;
 }
 
 section{
@@ -135,7 +120,34 @@ section h3{
     flex-direction: column;
 }
 
+.hr-detalles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.hr-detalles span{
+    padding: 10px;
+}
+
+hr{
+    width: 100%;
+}
+
+.linksRegister{
+    margin-top: 26px;
+}
+.margin{
+    padding: 20px;
+}
+
+@media (max-width:400px) {
+    section{
+        width: 350px;
+    }
+    
+}
 @media (min-width: 1000px) {
     .box-login{
         flex-direction: row;

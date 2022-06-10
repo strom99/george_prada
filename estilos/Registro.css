@@ -38,18 +38,6 @@ label {
   gap: 55px;
 }
 
-.iconUser {
-  width: 100px;
-}
-
-.cajaDatos {
-  width: 100%;
-  margin-bottom: 5px;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
 .formulario-btn {
   margin: 30px;
 }
@@ -71,24 +59,6 @@ label {
   width: 90%;
   height: auto;
   padding: 20px;
-}
-
-.detalles {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-input {
-  border: 1.5px solid gray;
-  background-color: white;
-  height: 35px;
-  border-radius: 5px;
-  margin-top: 5px;
-  padding: 5px 0px 5px 35px;
-  font-family: inherit;
-  width: 100%;
 }
 
 div .error-php {
@@ -130,9 +100,6 @@ section div i {
   color: #19b7e0;
   font-size: 25px;
 }
-.cajaDatos p i {
-  color: black;
-}
 
 .contenedor-presentacion:nth-child(2) {
   display: flex;
@@ -156,31 +123,6 @@ span {
   font-size: 30px;
 }
 
-.box-options-register{
-  gap: 15px;
-  
-}
-
-.btn-sencill{
-  padding: 8px;
-  background: white;
-  border: 1px solid gray;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-.lg-facebook{
-  width: 10px;
-}
-
-.btn-sencill img{
-  width: 16px;
-}
-.icono-user{
-  position: absolute;
-  left: 13px;
-}
 @media (min-width: 1000px) {
   .imagen-george-prada {
     align-self: center;

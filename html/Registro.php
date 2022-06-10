@@ -48,9 +48,9 @@
                     </div>
                     <hr>
                     <div>
-                        <a>Log in</a>
+                        <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=InicioSesion">Log in</a>
                         <span>.</span>
-                        <a>¿Did you forgotten your password?</a>
+                        <a href="#">¿Did you forgotten your password?</a>
                     </div>
                 </form>
                 

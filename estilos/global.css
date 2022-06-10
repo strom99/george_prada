@@ -15,22 +15,21 @@ ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
-.lista-opcion-user a{
+.lista-opcion-user a {
   color: white;
 }
 
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 i {
   color: white;
 }
-
 
 /* Menu */
 .barra-menu {
@@ -48,7 +47,7 @@ i {
   align-items: center;
 }
 
-.nav-mobile .lista-menu{
+.nav-mobile .lista-menu {
   padding-top: 65px;
 }
 
@@ -57,7 +56,8 @@ i {
   color: white;
 }
 
-.hamburguesa,.lista-menu {
+.hamburguesa,
+.lista-menu {
   background: none;
   border: none;
   cursor: pointer;
@@ -70,11 +70,13 @@ i {
   transform: scale(1.1);
 }
 
-.lista-menu li a:hover , .lista-opcion-user li a:hover{
+.lista-menu li a:hover,
+.lista-opcion-user li a:hover {
   color: #008cb2;
 }
 .user,
-.bolsa, .hamburguesa {
+.bolsa,
+.hamburguesa {
   font-size: 27px;
 }
 
@@ -84,10 +86,10 @@ i {
   flex: 1;
   display: none;
 }
-.bolsa span{
+.bolsa span {
   color: white;
- font-size: 20px;
- margin-left: 4px;
+  font-size: 20px;
+  margin-left: 4px;
 }
 .nav-mobile {
   position: fixed;
@@ -111,49 +113,51 @@ i {
   padding: 10px;
 }
 
-.logo{
+.logo {
   width: 55px;
 }
 
-.user_btns , .user-div ,.mobile-menu_logo{
+.user_btns,
+.user-div,
+.mobile-menu_logo {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.user-div h3{
+.user-div h3 {
   color: white;
 }
-.menu-user-general{
+.menu-user-general {
   display: none;
 }
-.nav-user-mobile{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    gap: 10px;
+.nav-user-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 10px;
 }
 
-  .nav-user-desktop{
-    display: none;
-  }
+.nav-user-desktop {
+  display: none;
+}
 
-.header-expanded-mobile{
-    top: 70px;
-    height: 100%;
-    right: 0;
-    display: block;
-    position: absolute;
-    background-color: black;
-    position: absolute;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 20;
-    text-align: end;
-    }
+.header-expanded-mobile {
+  top: 70px;
+  height: 100%;
+  right: 0;
+  display: block;
+  position: absolute;
+  background-color: black;
+  position: absolute;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 20;
+  text-align: end;
+}
 
-.salir-usuario{
+.salir-usuario {
   background-color: white;
   padding: 5px 20px;
   border-radius: 10px;
@@ -172,7 +176,7 @@ footer {
   justify-content: center;
   margin-top: 30px;
 }
-.banner-cookie{
+.banner-cookie {
   width: 100%;
   height: 100px;
   position: fixed;
@@ -182,33 +186,33 @@ footer {
   text-align: center;
   display: none;
 }
-.banner-cookie div{
+.banner-cookie div {
   margin-top: 25px;
-} 
-.btn-general{
+}
+.btn-general {
   width: 120px;
   height: 35px;
   border: none;
-  background-color: #008CB2;
+  background-color: #062c58;
   border-radius: 20px;
   color: white;
   cursor: pointer;
   margin-top: 4px;
 }
 
-#mensaje-error, #mensaje{
-    display: none;
-    background: antiquewhite;
-    padding: 10px;
-    border-radius: 8px;
+#mensaje-error,
+#mensaje {
+  display: none;
+  background: antiquewhite;
+  padding: 10px;
+  border-radius: 8px;
 }
 /* botones sencillos */
-.box-options-register{
+.box-options-register {
   gap: 15px;
-  
 }
 
-.btn-sencill{
+.btn-sencill {
   padding: 8px;
   background: white;
   border: 1px solid gray;
@@ -218,12 +222,11 @@ footer {
   gap: 12px;
 }
 
-
-.lg-facebook{
+.lg-facebook {
   width: 10px;
 }
 
-.btn-sencill img{
+.btn-sencill img {
   width: 16px;
 }
 
@@ -242,12 +245,13 @@ footer {
   align-items: center;
 }
 
-input {
+input[type="text"],
+input[type="password"],
+input[type="email"] {
   border: 1.5px solid gray;
   background-color: white;
   height: 35px;
   border-radius: 5px;
-  margin-top: 5px;
   padding: 5px 0px 5px 35px;
   font-family: inherit;
   width: 100%;
@@ -257,15 +261,13 @@ input {
   width: 100px;
 }
 
-
-.icono-user{
+.icono-user {
   position: absolute;
   left: 13px;
 }
 .cajaDatos p i {
   color: black;
 }
-
 
 /** mientras sea mayor a 600px no se mostraran estas opciones **/
 @media (min-width: 680px) {
@@ -278,17 +280,17 @@ input {
   .nav-desktop {
     display: flex;
   }
-  .nav-user-mobile{
+  .nav-user-mobile {
     display: none;
   }
-.nav-user-desktop{
+  .nav-user-desktop {
     display: flex;
     flex-direction: column;
     width: 350px;
     gap: 10px;
   }
 
-  .header-expanded-user{
+  .header-expanded-user {
     height: auto;
     top: 70px;
     right: 0px;
@@ -299,7 +301,5 @@ input {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    
   }
-
 }

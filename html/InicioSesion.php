@@ -41,7 +41,7 @@
 
             <div class="linksRegister">
                 <hr>
-                <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=Registro"">Don't have an account yet???</a>
+                <a href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=Registro">Don't have an account yet???</a>
                 <a href="#">Did you forget your password?</a>
             </div>
         </div>

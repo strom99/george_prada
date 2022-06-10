@@ -1,9 +1,10 @@
 <div class="box-login">
     <div class="centro">
         <div class="imagen-george-prada">
-            <img src="img/gplogo2.png" alt="" srcset="">
+            <img src="img/gplogo2.png" alt="">
         </div>
         <div class="formularioLogin margin">
+            <h3>Log in to George Prada</h3>
             <div class="detalles box-options-register">
                 <button class="btn-sencill">
                     <svg class="lg-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="DodgerBlue">
@@ -21,18 +22,18 @@
                 <span>o</span>
                 <hr>
             </div>
-            <form class="formularioLogin" action="<?php echo $_SESSION['RUTA_BASE'] ?>/procesos/proceso_login.php" method="POST">
+            <form class="formularioLogin formLogin" method="POST">
                 <div class="cajaDatos usuario caja-datos-user">
                     <p class="icono-user" for="usuario">
                         <i class="fa-solid fa-user"></i>
                     </p>
-                    <input class="datos datos-user" type="text" id="nombreUsuario" name="user" placeholder="Username">
+                    <input class="datos datos-user" type="text" id="nombreUsuario" name="usuario" placeholder="Username">
                 </div>
                 <div class="cajaDatos  caja-datos-contra">
                     <p class="icono-user" for="usuario">
                         <i class="fa-solid fa-lock"></i>
                     </p>
-                    <input class="datos" type="password" id="contraUsuario" name="password" placeholder="Password">
+                    <input class="datos" type="password" id="contraUsuario" name="contrasena" placeholder="Password">
                 </div>
                 <input class="boton-inicio" name="boton-inicio" type="submit" value="Log in">
             </form>
@@ -47,12 +48,12 @@
         </div>
     </div>
     <div class=" box-information">
-                    <div>
-                        <img src="img/verano-girl.jpg" alt="">
-                    </div>
-                    <section>
-                        <h3>Are you ready dor this summer??</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat fugit rem labore voluptate aspernatur, repellendus ea quam dolores quisquam in consectetur est provident mollitia. Iusto quis provident delectus veniam rem!</p>
-                    </section>
-            </div>
+        <div>
+            <img src="img/verano-girl.jpg" alt="">
         </div>
+        <section>
+            <h3>Are you ready dor this summer??</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat fugit rem labore voluptate aspernatur, repellendus ea quam dolores quisquam in consectetur est provident mollitia. Iusto quis provident delectus veniam rem!</p>
+        </section>
+    </div>
+</div>

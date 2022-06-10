@@ -1,4 +1,4 @@
-const completo = $(".formularioLogin").validate({
+const completo = $(".formLogin").validate({
     rules: {
         usuario: {
             required: true,
@@ -25,6 +25,7 @@ const completo = $(".formularioLogin").validate({
     },
     /* ejecutacion cuando el formulario es valido [submitHandler] */
     submitHandler: function (form) {
+        console.log(form);
         $.ajax({
             type: "POST",
             url: "procesos/proceso_login.php",
@@ -32,6 +33,7 @@ const completo = $(".formularioLogin").validate({
             // envia los inputs del formulario (name) con post
             data: $(form).serialize(),
             success: function (respJSON) {
+                console.log();
                 if (respJSON.error) {
                     $(".mensaje-error-login").show();
                     $(".mensaje-error-login").text(respJSON.error);

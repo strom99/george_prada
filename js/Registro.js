@@ -40,6 +40,7 @@ const completeValidator = $(".formulario").validate({
         }
     },
     submitHandler: function (form) {
+        console.log(form);
         $.ajax({
             type: "POST",
             url: "procesos/registrar.php",

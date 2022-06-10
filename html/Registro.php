@@ -18,7 +18,7 @@
                         <p>Registrate con Gmail</p>    
                     </button>
                 </div>
-                <form class="formulario" action="<?php echo $_SESSION['RUTA_BASE'] ?>/procesos/registrar.php" method="POST">
+                <form class="formulario" method="POST">
                     <div class="cajaDatos usuario">
                         <p class="icono-user" for="usuario">
                             <i class="fa-solid fa-user"></i>

@@ -101,7 +101,7 @@ input.boton-inicio[value] {
 }
 
 section {
-  width: 530px;
+  max-width: 380px;
   text-align: center;
   color: #ffffffe8;
 }

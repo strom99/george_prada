@@ -10,17 +10,16 @@ $consulta_id = $baseDatos->prepare("SELECT * FROM usuario INNER JOIN persona ON 
 $consulta_id->bindParam(':rol', $id_rol);
 $consulta_id->execute();
 $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
+var_dump($rol_tabla);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
-        <img class="portada-usuario" src="img/moon.jpeg" alt="fondo perfil">
-        <div class="presentacion-usuario">
-            <img src="img/zorro.png" alt="perfil usuario">
-            <section class="seccion-usuario">
-                <h2><?php echo $rol_tabla['usuario'] ?></h2>
-                <span><?php echo ($rol_tabla['ciudad'] == null) ? 'vacio' : $rol_tabla['ciudad']; ?></span>
-            </section>
-        </div>
+        <form enctype="multipart/form-data">
+            <label for="">
+                <img src="<?php echo $_SESSION['RUTA_BASE'] . '/' . $rol_tabla['imagen_perfil'] ?>" alt="foto de perfil" class="foto-perfil">
+            </label>
+            <input type="file" value="Subir Imagen">
+        </form>
     </div>
     <div class="cajaInformacionCuenta caja caja-nombre">
         <h2 class="h2">Informacion cuenta</h2>

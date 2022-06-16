@@ -6,8 +6,7 @@
 }
 .caja-presentacion-usuario {
   width: 100%;
-  height: 260px;
-  display: flex;
+  border: 2px solid green;
   flex-direction: column;
 }
 
@@ -30,9 +29,6 @@
   gap: 10px;
 }
 
-.caja-presentacion-usuario img {
-  height: 140px;
-}
 .presentacion-usuario img {
   position: absolute;
   top: 145px;
@@ -123,6 +119,25 @@ form > div,
     border-radius: 10px;
     padding: 5px 20px;
     background: white;
+}
+
+.box-presentacion-perfil{
+  display: flex;
+  align-items: center;
+}
+
+.box-presentacion-perfil section{
+  flex: 1;
+}
+
+.box-presentacion-perfil  label{
+  width: 300px;
+  display: flex;
+  height: 300px;
+}
+
+.box-presentacion-perfil  label img{
+  border-radius: 50%;
 }
 @media (min-width: 700px) {
   .presentacion-usuario img {

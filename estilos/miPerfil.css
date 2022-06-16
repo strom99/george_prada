@@ -130,15 +130,21 @@ form > div,
   flex: 1;
 }
 
-.box-presentacion-perfil  label{
+.box-presentacion-perfil div{
   width: 300px;
   display: flex;
   height: 300px;
 }
 
-.box-presentacion-perfil  label img{
+.div-img-perfil div img{
   border-radius: 50%;
 }
+
+.box-portada-perfil img{
+  height: 150px ;
+  display: flex;
+}
+
 @media (min-width: 700px) {
   .presentacion-usuario img {
     width: 120px;

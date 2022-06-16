@@ -14,18 +14,21 @@ var_dump($rol_tabla);
 ?>
 <div class="contenedor">
     <div class="caja-presentacion-usuario">
-            <label for="">
-                <img src="img/cohete.png" alt="">
-            </label>
+        <div class="box-portada-perfil">
+            <img src="img/cohete.png" alt="">
+            <button type="submit"></button>
+        </div>
         <div class="box-presentacion-perfil">
-                <label for="">
+            <div class="div-img-perfil">
+                <div for="">
                     <img src="img/Marti.jpg" alt="">
-                </label>
+                </div>
                 <input type="submit" value="Subir Imagen">
                 <input type="file" value="Subir Imagen" hidden>
+            </div>
             <section>
-                <h3><?php echo ($rol_tabla['usuario'] == null) ? ' ' : $rol_tabla['usuario'];?></h3>
-                <span><?php echo ($rol_tabla['ciudad'] == null) ? ' ' : $rol_tabla['ciudad<'];?></span>
+                <h3><?php echo ($rol_tabla['usuario'] == null) ? ' ' : $rol_tabla['usuario']; ?></h3>
+                <span><?php echo ($rol_tabla['ciudad'] == null) ? ' ' : $rol_tabla['ciudad<']; ?></span>
             </section>
         </div>
     </div>

@@ -3,6 +3,9 @@ DROP DATABASE IF EXISTS george_prada;
 CREATE DATABASE george_prada;
 
 USE george_prada;
+SELECT * FROM usuario;
+SELECT * FROM rol;
+UPDATE usuario SET rol_id = 2 WHERE usuario = "storm99";
 
 
 CREATE TABLE rol (

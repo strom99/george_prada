@@ -6,6 +6,9 @@ include_once '../procesos/conexionBD.php';
 $response = ['error'=> null];
 // formularios de actualizacion perfil
 switch ($_POST['form']) {
+    case 'form-img-perfil':
+        $response['status'] = 'ok';
+        break;
     case 'formInfoCuenta':
 
         $usuario = $_POST['usuario'];

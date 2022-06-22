@@ -13,22 +13,23 @@ $rol_tabla = $consulta_id->fetch(PDO::FETCH_ASSOC);
 var_dump($rol_tabla);
 ?>
 <div class="contenedor">
-    <div class="caja-presentacion-usuario">
+    <div class="box-presentacion-user">
         <div class="box-portada-perfil">
-            <img src="img/cohete.png" alt="">
-            <button type="submit"></button>
+            <img src="img/verano-girl.jpg" alt="">
         </div>
-        <div class="box-presentacion-perfil">
-            <div class="div-img-perfil">
-                <div for="">
-                    <img src="img/Marti.jpg" alt="">
-                </div>
-                <input type="submit" value="Subir Imagen">
-                <input type="file" value="Subir Imagen" hidden>
-            </div>
+        <div class="box-perfil-img">
+            <form class="form-img-perfil"  method="POST" enctype="multipart/form-data">
+                <img src="img/zorro.png" alt="">
+                <input type="file" hidden>
+                <label>
+                    <i style="color: gray;" class="fa-solid fa-camera"></i>
+                    <input type="submit" value="">
+                </label>
+                <input name="form" type="hidden" value="form-img-perfil">
+            </form>
             <section>
                 <h3><?php echo ($rol_tabla['usuario'] == null) ? ' ' : $rol_tabla['usuario']; ?></h3>
-                <span><?php echo ($rol_tabla['ciudad'] == null) ? ' ' : $rol_tabla['ciudad<']; ?></span>
+                <span><?php echo ($rol_tabla['ciudad'] == null) ? ' ' : $rol_tabla['ciudad']; ?></span>
             </section>
         </div>
     </div>
@@ -36,11 +37,11 @@ var_dump($rol_tabla);
         <h2 class="h2">Informacion cuenta</h2>
         <form class="caja formInfoCuenta">
             <label for="usuario">Usuario</label>
-            <input name="usuario" type="text" value="<?php echo $rol_tabla['usuario'] ?>" disabled>
+            <input name="usuario" type="text" value="<?php echo ($rol_tabla['usuario'] == null) ? ' ' : $rol_tabla['usuario']; ?>" disabled>
             <label for="correo">Correo</label>
-            <input name="email" type="text" value="<?php echo $rol_tabla['email'] ?>" disabled>
+            <input name="email" type="text" value="<?php echo ($rol_tabla['email'] == null) ? ' ' : $rol_tabla['email']; ?>" disabled>
             <label for="rol">Rol</label>
-            <input name="rol" type="text" value="<?php echo $rol_tabla['etiqueta'] ?>" disabled>
+            <input name="rol" type="text" value="<?php echo ($rol_tabla['etiqueta'] == null) ? ' ' : $rol_tabla['etiqueta']; ?>" disabled>
             <div>
                 <input class="cancelarInfoCuenta " type="button" value="Cancelar" name="cancel">
                 <input class="actualizarCuenta" type="submit" value="Actualizar">

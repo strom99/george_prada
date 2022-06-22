@@ -1,3 +1,24 @@
+// formulario de cambio de imagen perfil
+$(".form-img-perfil").on('click', function(e){
+  e.preventDefault();
+  const data = $(".form-img-perfil").serialize();
+
+  $.ajax({
+    url: "procesos/modificarUsuario.php",
+    type: "POST",
+    dataType: "json",
+    data,
+    success: function (respJSON) {
+      console.log('click');
+      if (respJSON.status === "ok") {
+        alert("Actualizado correctamente");
+      } else {
+        alert("Ha habido un error.");
+      }
+    },
+  });
+});
+
 $(".cancelarInfoCuenta , .actualizarCuenta, .editatInfoCuenta").on(
   "click",
   function (e) {

@@ -13,7 +13,58 @@
   display: flex;
   justify-content: space-between;
 }
+/* TABLA MOBILE INICIO*/
+.head-table{
+  display: flex;
+  /*flex-direction: column;*/
+  border: 1px solid black;
+}
 
+.head-table thead{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background: #021f4a;
+  color: white;
+
+}
+
+.head-table tbody tr:nth-child(odd){
+  background-color: #007fff1c;
+}
+.head-table thead tr , .head-table tbody tr{
+  display: flex;
+  flex-direction: column;  
+}
+ 
+.head-table tbody{
+  width: 70%;
+}
+
+
+.head-table thead tr th , 
+.head-table tbody tr td{
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+.head-table tbody tr+tr{
+  border-top: 1px solid black;
+}
+
+.imagen-th{
+  height: 100px !important;
+}
+
+.tabla-mobile{
+  display: none;
+}
+
+/* TABLA MOBILE FIN*/
+
+
+/* TABLA DESKTOP INICIO*/
+/*
 .head-table{
   display: flex;
   flex-direction: column;
@@ -21,8 +72,8 @@
   border: 1px solid black;
 }
 
-.head-table thead tr , 
-.head-table tbody tr{
+.head-table thead tr th , 
+.head-table tbody tr td{
   display: flex;
 }
 
@@ -45,7 +96,7 @@ th{
 tr td{
   flex-direction: column;
 }
-
+*/
 
 .inputsContainer{
   padding: 30px 0px;
@@ -77,8 +128,16 @@ input[type="file"]{
   border: none;
 }
 @media screen and (max-width:640px){
-  .head-table tbody tr, .head-table tbody tr td , .head-table thead tr th{
-    flex-direction: column;
+  .contenedor{
+    margin: 10px 0px;
+  }
+
+  .original-tabla{
+    display: none;
+  }
+
+  .tabla-mobile{
+    display: block;
   }
 
   .head-table tbody tr td:before{

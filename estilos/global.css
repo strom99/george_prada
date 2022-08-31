@@ -189,6 +189,7 @@ footer {
 .banner-cookie div {
   margin-top: 25px;
 }
+
 .btn-general {
   width: 120px;
   height: 35px;
@@ -235,6 +236,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 /* caja datos inputs con iconos*/
 .cajaDatos {

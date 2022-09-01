@@ -143,10 +143,6 @@ h2 {
     font-size: 17px;
 }
 
-.valoracion-cliente-estrellas {
-    display: flex;
-}
-
 .valoracion-cliente-estrellas img {
     width: 20px;
     gap: 10px;

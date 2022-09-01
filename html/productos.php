@@ -1,10 +1,3 @@
-<?php
-
-include 'procesos/conexionBD.php';
-$number = $baseDatos->prepare("SELECT * FROM productos");
-$number->execute();
-$array = $number->fetchAll(PDO::FETCH_ASSOC);
-?>
 <div class="contenedor">
     <header>
         <div class="main-info">
@@ -12,21 +5,7 @@ $array = $number->fetchAll(PDO::FETCH_ASSOC);
             <p>If you are looking for cheap gym shirts, you are in the right place. The best models and prices, only from
                 The best quality. Check our models.</p>
         </div>
-        <div class="content-cards">
-            <?php foreach ($array as $producto => $valor) {
-            ?>
-            <div class="card">
-                <img src="uploads/productos/<?php echo $valor['imagen'] ?>" alt="imagen-modwelo-gym">
-                <div class="min-info">
-                    <span><?php echo $valor['genero'] ?></span>
-                    <a
-                        href="<?php echo $_SESSION['RUTA_BASE'] ?>/index.php?page=producto_detalle&id=<?php echo $valor['id'] ?>"><?php echo $valor['nombre']  ?></a>
-                    <img src=" ./img/clasi1.png" alt="estrellas" class="estrella">
-                    <span class="precio"><?php echo $valor['precio']?>€</span>
-                </div>
-            </div>
-            <?php }  ?>
-        </div>
+        <?php include 'tarjetas-productos.php'?>
     </header>
     <aside>
         <h3>Filter by</h3>

@@ -18,57 +18,15 @@ header {
     width: 100%;
 }
 
-.card img {
-    width: 80%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.min-info img {
-    width: 30%;
-    height: 35px;
-    object-fit: cover;
-}
-
-.min-info {
-    display: flex;
-    flex-direction: column;
-}
 .main-info{
     margin-left: 20px;
     margin-top: 10px;
-}
-
-.content-cards {
-    width: 100%;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-
-.content-cards h4 {
-    color: gray;
-}
-
-.precio {
-    color: #008CB2;
-    font-weight: bolder;
-}
-
-.estrella {
-    margin: 0px auto;
 }
 
 .main-info {
     margin-bottom: 50px;
 }
 
-.card {
-    width: 300px;
-}
 
 /* Aside */
 aside {
@@ -170,6 +128,7 @@ a:hover{
 .ratings img{
     width: 82%;
 }
+
 .precios p{
     padding: 0.2em;
     background: #011635 !important;
@@ -184,6 +143,10 @@ a:hover{
 .precios label{
     font-size: 17.5px;
     padding-left: 5px;
+}
+
+.circle-icon-productos button:nth-child(2), .circle-icon-productos button:nth-child(3){
+    display: none;
 }
 @media screen and (max-width:900px){
     aside{

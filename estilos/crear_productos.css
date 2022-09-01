@@ -14,9 +14,8 @@
   justify-content: space-between;
 }
 /* TABLA MOBILE INICIO*/
-.head-table{
+/*.head-table{
   display: flex;
-  /*flex-direction: column;*/
   border: 1px solid black;
 }
 
@@ -97,6 +96,9 @@ tr td{
   flex-direction: column;
 }
 */
+.circle-icon-productos button:first-child{
+  display: none;
+}
 
 .inputsContainer{
   padding: 30px 0px;

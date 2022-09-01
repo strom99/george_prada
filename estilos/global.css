@@ -31,6 +31,30 @@ i {
   color: white;
 }
 
+/* ICONOS PRODUCTOS INICIO*/
+.circle-icon-productos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 45px;
+  top: 10px;
+  gap: 6px;
+}
+
+.circle-icon-productos button{
+  border: none;
+  background: none;
+}
+
+.circle-icon-productos button i{
+  background-color: #008CB2;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+/* ICONOS PRODUCTOS FIN */
+
 /* Menu */
 .barra-menu {
   background-color: black;
@@ -273,6 +297,56 @@ input[type="email"] {
 .cajaDatos p i {
   color: black;
 }
+
+/* ESTILOS TARJETAS PRODUCTOS USADO EN 2 PAGINAS*/
+
+.content-cards {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 315px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.content-cards h4 {
+  color: gray;
+}
+
+.precio {
+  color: #008CB2;
+  font-weight: bolder;
+}
+
+.card img {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.min-info img {
+  width: 30%;
+  height: 35px;
+  object-fit: cover;
+}
+
+.min-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.estrella {
+  margin: 0px auto;
+}
+
+/* ESTILOS TARJETAS PRODUCTOS USADO EN 2 PAGINAS FIN */
 
 /** mientras sea mayor a 600px no se mostraran estas opciones **/
 @media (min-width: 680px) {

@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
 include '../procesos/conexionBD.php';
 $action = $_POST['action'];
@@ -70,7 +73,7 @@ if (isset($action)) {
             $response['error_message'] = $stmt->errorInfo();
             break;
         default: 
-            $response['status'] = 'error';
+            $response['status'] = 'error todo';
         break;
     }
 }
